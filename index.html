@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html>
-<title>Site Bai</title>
+<link href="bai.png" rel="icon">
+<title>Site Bai | Ph.D. @Purdue CS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="./css/theme.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-background-green">
+<style>
+.collapsible {
+  background-color: #190;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  width: 10%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #190;
+}
+
+.collapsible1 {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  padding: 3px;
+  width: 10%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 15px;
+}
+
+.active1, .collapsible1:hover {
+  background-color: #ffffff;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+<body class="w3-background-grey">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -24,12 +67,31 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
     <!-- Left Column -->
     <div class="w3-twothird">
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-black w3-padding-16" style="width: 150px; margin: 0px"><i class="fa fa-smile-o fa-fw w3-margin-right w3-xxlarge w3-text-black
+          "></i>Bio</h2>
+        <p style="margin-right: 50px; margin-left: 50px; font-size: 18px"><i class="fa fa-circle"></i> &nbsp &nbsp I am currently a senior CS undergraduate student at Xi'an Jiaotong University(XJTU). I am also working as a research assistant at the Institute of Artificial Intelligence and Robotics. I am working with <a href="http://gr.xjtu.edu.cn/web/zeuslan">Prof. Xuguang Lan</a>, <a href="http://en.xjtu.edu.cn/info/1018/1640.htm">Prof. Nanning Zheng</a> and <a href="https://zhanghanbo.github.io/home/"> Hanbo Zhang</a> on <b>Reinforcement Learning</b>. I am also interested in and have research experinece on Machine Learning, Robotics and Computer Vision. 
+        	<br><i class="fa fa-circle"></i> &nbsp &nbsp I will be joining <b><a href="http://www.cs.purdue.edu/">Purdue CS</a></b> as a Ph.D. candidate to work on <b>Statistical Machine Learning and Learning Theory</b> with <a href='https://www.cs.purdue.edu/homes/jhonorio/'>Prof. Jean Honorio</a> in 2020 Fall.</p>
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-bell fa-fw w3-margin-right w3-xxlarge w3-text-black
+          "></i>News</h2>
+        <p style="margin-right: 50px; margin-left: 50px; font-size: 18px">
+        	<i class="fa fa-circle-o"></i> &nbsp Offered admission to CS PhD with full sholarship from Purdue University<span style="float: right">02/27/2020</span><br>
+        	<i class="fa fa-circle-o"></i> &nbsp A marvelous week with Prof. David Hsu from NUS during his visit to our group <span style="float: right">11/30/2019</span><br>
+        	<i class="fa fa-circle-o"></i> &nbsp Wonderful time at Venetian Hotel, Macau, China to attend IROS 2019  <span style="float: right">11/07/2019</span><br>
+        	<i class="fa fa-circle-o"></i> &nbsp 2 papers I participated in got accepted in IROS 2019 <span style="float: right">06/20/2019</span><br>
+      </div>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-black
           "></i>Education</h2>
         <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><b>Xi’an Jiaotong University (XJTU), <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen College</a></b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>2016.9. - 2020.6.</span></h5>
+          <h5 class="w3-opacity-off"><span style="float:left"><b>Xi’an Jiaotong University, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen College</a></b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>2016.9. - 2020.6.</span></h5>
           <br><p><span style="float:left">Bachelor of Engineering in Computer Science (Honors Science Program)</span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Xi'an, China</p>
+        </div>
+        <hr>
+        <div class="w3-container w3-text-black">
+          <h5 class="w3-opacity-off"><span style="float:left"><b>Xi’an Jiaotong University, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen College</a></b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Sep. 2014 - Sep. 2016.</span></h5>
+          <br><p><span style="float:left"><a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young / Honors Youth Program</a></span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Xi'an, China</p>
         </div>
         <hr>
         <div class="w3-container w3-text-black">
@@ -41,11 +103,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h5 class="w3-opacity-off"><span style="float:left"><b>National University of Singapore</b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Jul. 2018 - Aug. 2018.</span></h5>
           <br><p><span style="float:left">Summer Workshop</span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Singapore</p>
         </div>
-        <hr>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><b>Xi’an Jiaotong University</b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Sep. 2014 - Sep. 2016.</span></h5>
-          <br><p><span style="float:left"><a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young / Honors Youth Program</a></span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Xi'an, China</p>
-        </div>
         <br>
       </div>
       
@@ -54,31 +111,49 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           "></i>Publication</h2>
         <h5 class="w3-opacity-off"><b>Preprint</b></h5>
         <div class="w3-container w3-text-black">
-          <img src="HTRPO.jpg" width="160px" style="float:right;margin:5px">
-          <h5 class="w3-opacity-off"><b>Hindsight Trust Region Policy Optimization [<a href="https://arxiv.org/pdf/1907.12439.pdf">pdf</a>]</b></h5>
+          <img src="FetchPickAndPlace.gif" height="130px", width="260px" style="float:right;margin:5px">
+          <h5 class="w3-opacity-off"><b>Hindsight Trust Region Policy Optimization [<a href="https://arxiv.org/pdf/1907.12439.pdf">pdf</a>] [<a href="https://github.com/HTRPOCODES/HTRPO-v2">code</a>]</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>arXiv preprint arXiv:1907.12439. Under review in ICML 2020.</h6>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang*, <b>Site Bai*</b>, Xuguang Lan, Nanning Zheng</h6>
-          <p>Put forward a reinforcement learning method introducing hindsight methodology to TRPO; Achieved high data-efficiency in sparse reward 
+          <button type="button" class="collapsible">Details</button>
+          <div class="content">
+            <p>Put forward a reinforcement learning method introducing hindsight methodology to TRPO; Achieved high data-efficiency in sparse reward 
             environments and maintained learning stability by restricting variance during the policy update process.</p>
+            <img src="FetchPush.gif" height="180px", width="360px" style="float:left;margin:5px">
+            <img src="FetchSlide.gif" height="180px", width="360px" style="float:right;margin:5px">
+          </div>
+          <br>
           <hr>
         </div>
         <h5 class="w3-opacity-off"><b>Published</b></h5>
         <div class="w3-container w3-text-black">
-          <img src="roi.jpg" width="160px" style="float:right;margin:5px">
-          <h5 class="w3-opacity-off"><b>ROI-based Robotic Grasp Detection for Object Overlapping Scenes [<a href="https://arxiv.org/pdf/1808.10313.pdf">pdf</a>]</b></h5>
+          <img src="roi.jpg" height="130px" style="float:right;margin:5px">
+          <h5 class="w3-opacity-off"><b>ROI-based Robotic Grasp Detection for Object Overlapping Scenes [<a href="https://arxiv.org/pdf/1808.10313.pdf">pdf</a>][<a href="https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch">code</a>][<a href="http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4">dataset</a>]</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
-          <p>Proposed a robotic grasp detection algorithm called ROI-GD based on Region of Interest(ROI); Achieved successful robotic grasps at the rates
+          <button type="button" class="collapsible">Details</button>
+          <div class="content">
+            <p>Proposed a robotic grasp detection algorithm called ROI-GD based on Region of Interest(ROI); Achieved successful robotic grasps at the rates
             of 92.5% and 83.8% in single-object and multi-object scenes respectively.</p>
+            <img src="roi.gif" width="750px" height="400px" style="margin:5px">
+          </div>
+          <br>
         </div>
         <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><b>A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes [<a href="https://arxiv.org/pdf/1809.07081.pdf">pdf</a>]</b></h5>
+          <img src="relation.gif" width="180px", height="160px" style="float:right">
+          <h5 class="w3-opacity-off"><b>A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes [<a href="https://arxiv.org/pdf/1809.07081.pdf">pdf</a>][<a href="https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch">code</a>][<a href="https://www.youtube.com/watch?v=hxXlMLtjBGM&t=48s">video</a>][<a href="http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4">dataset</a>]</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
-          <img src="Mutitask.jpg" width="230px" style="float:right;margin:5px">
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
-          <p>Proposed a multi-task convolutional neural network integrating vision-based robotic grasp detection and visual manipulation relationship reasoning together; 
+          <button type="button" class="collapsible">Details</button>
+          <div class="content">
+            <p>Proposed a multi-task convolutional neural network integrating vision-based robotic grasp detection and visual manipulation relationship reasoning together; 
             Realized successful autonomous grasps with a success rate of 90.6%, 71.9% and 59.4% in object cluttered scenes, familiar stacking scenes and complex stacking
-            scenes respectively.</p><br>
+            scenes respectively.</p>
+            <img src="Mutitask.jpg" height=130px" style="float:right;margin:5px">
+            <img src="relation_res.jpg" height="130px" width="500" style="float:left;margin:5px">
+          </div>
+          <br>
+          <br>
         </div>
       </div>
       
@@ -87,38 +162,47 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container w3-text-black">
           <h5 class="w3-opacity-off"><b>Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University | Research Intern</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-user w3-margin-right"></i>Supervisor: <a href="http://gr.xjtu.edu.cn/web/zeuslan">Prof. Xuguang Lan</a> and <a href="http://en.xjtu.edu.cn/info/1018/1640.htm">Prof. Nanning Zheng</a><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Dec. 2017 - <span class="w3-tag w3-theme w3-round">Current</span></h6>
-          <p><b>Hindsight Trust Region Policy Optimization: </b>Derived functions involved in the optimization problem of Hindsight TRPO; Completed all the experiments of baseline algorithms including Hindsight Policy Gradient, Hindsight 
+          <b>Hindsight Trust Region Policy Optimization: </b> <button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Derived functions involved in the optimization problem of Hindsight TRPO; Completed all the experiments of baseline algorithms including Hindsight Policy Gradient, Hindsight 
             Experience Replay and Trust Region Policy Optimization; Played with many deep reinforcement learning algorithms along the way, including mainstream valued-based algorithms like Deuling DQN, Rainbow, etc. and policy-based
             algorithms including Guided Policy Search(GPS), Generative Advantage Estimation(GAE), etc.</p>
-          <p><b>ROI-based Robotic Grasp Detection: </b>Labeled more than 600 images including the object instances, manipulation relationships, contributing to a multi-object grasping dataset; Learned several grasping algorithms including 
+          </div><br>
+          <b>ROI-based Robotic Grasp Detection: </b> <button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Labeled more than 600 images including the object instances, manipulation relationships, contributing to a multi-object grasping dataset; Learned several grasping algorithms including 
             Hand-eye coordination for robotic grasping and Visuomotor Controller for Grasping; Implemented Baxter robot interface using ROS.</p>
-          <p><b>Robotic Grasping System for Object Stacking Scenes: </b>Debugged the programs for grasping experiments; Fine-tunned the parameters of the algorithm; Collated part of the paper.</p>
-          <p><b>Watercraft Detection: </b>Played with mainstream detection algorithms including R-CNN series, SSD and YOLO series; Achieved the highest accuracy of 90.4% with faster-RCNN.</p>
-          <p><b>Other Contribution: </b><a href="http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4">Visual Manipulation Relationship Dataset.</a></p>
+          </div><br>
+          <b>Robotic Grasping System for Object Stacking Scenes: </b><button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Debugged the programs for grasping experiments; Fine-tunned the parameters of the algorithm; Collated part of the paper.</p>
+          </div><br>
+          <b>Watercraft Detection: </b><button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Played with mainstream detection algorithms including R-CNN series, SSD and YOLO series; Achieved the highest accuracy of 90.4% with faster-RCNN.</p>
+          </div><br>
+          <b>Other Contribution: </b><a href="http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4">Visual Manipulation Relationship Dataset.</a>
           <hr>
         </div>
         <div class="w3-container w3-text-black">
           <h5 class="w3-opacity-off"><b>School of Computing Summer Workshop, National University of Singapore | Participant</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i>Supervisor: <a href="https://www.comp.nus.edu.sg/~ngtk/">Prof. Ng Teck Khim</a><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Jul. 2018 - Aug. 2018.</span></h6>
-          <p><b>Deep ConvNet Based Image Style Migration: </b>Achieved style migration on scenery photos and doodling images applying VGG-19; 
+          <b>Deep ConvNet Based Image Style Migration: </b> <button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Achieved style migration on scenery photos and doodling images applying VGG-19; 
             Learned Wavelet Transformation, Fast Fourier Transformation, edge detection filters, denoising, etc., for image processing along 
             the way; Demonstrated this project with a <a href="https://drive.google.com/file/d/1R2NzC3mEhXGFI8bKbZd3eoxvVqr6l4wA/view?usp=sharing">poster</a>.</p>
-          <hr>
-        </div>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><b>Institute of Computer Software and Theory, Xi'an Jiaotong University | Research Intern</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i>Supervisor: <a href="http://gr.xjtu.edu.cn/web/hlsun/english">Prof. Heli Sun</a><span style="float:right"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov. 2017 - Jan. 2018.</span></h6>
-          <p><b>Trajectory Data Mining: </b>Reviewed Spatio-Temporal Reachable Regions Algorithm; Implemented it on massive taxi trajectory
-            data in Shenzhen with Python.</p>
+          </div>
           <hr>
         </div>
         <div class="w3-container w3-text-black">
           <h5 class="w3-opacity-off"><b>National Undergraduate Mathematical Contest in Modeling | Contestant</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i>Supervisor: Dr. Lei Chen and <a href="http://gr.xjtu.edu.cn/web/hqlee">Prof. Huanqin Li</a><span style="float:right"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul. 2017 - Sep. 2017.</span></h6>
-          <p><b>CT System Parameter Calibration and CT Image Construction: </b>Constructed a mathematical model to calibrate CT scanning angles; Used plane geometry
-            to estimate the system initial value; Applied Filtered Backprojection algorithm to construct CT images; Award: National 2nd Prize (top 3%).</p>
-          <p><b>Contest Training Program: </b>Many other research done on various topics including Infectious Predicrtion, Housing 
-            Price Forecasting and Flight Timetable Scheduling during contest training program.</p>
+          <h6 class="w3-text-black"><i class="fa fa-user fa-fw w3-margin-right"></i>Supervisor: Dr. Lei Chen and <a href="http://gr.xjtu.edu.cn/web/hqlee">Prof. Huanqin Li</a> | Team: <a href="https://www.zhuozhiweb.com/home">Zhuo Zhi</a> and Zexiao Wang<span style="float:right"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul. 2017 - Sep. 2017.</span></h6>
+          <b>CT System Parameter Calibration and CT Image Construction: </b> <button type="button" class="collapsible1"><u>Details</u></button>
+          <div class="content">
+            <p>Constructed a mathematical model to calibrate CT scanning angles; Used plane geometry
+            to estimate the system initial value; Applied Filtered Backprojection algorithm to construct CT images.</p>
+          </div>
           <hr>
         </div>
       </div>
@@ -131,17 +215,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
  
       <div class="w3-white w3-text-black w3-card-4">
         <div class="w3-container">
-          <img src="cover.jpg" style="width:100%" alt="">
-        </div>
-        
+          <center><img src="BaiSite.jpg" style="width: 250px; height: 250px; margin-top: 20px; margin-bottom: 20px" alt=""></center>
         <hr>
-        <div class="w3-container">
-        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a></p>
-        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="tel:+8618986052591">+86 189 8605 2591</a></p>
-        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Xi'an, Shaanxi, China</p>
-        <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://github.com/best99317">Github</a></p>
-        <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.linkedin.com/in/best99317/">LinkedIn</a></p>
-        <p><i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://github.com/best99317/SiteBai/blob/master/SiteBai_CV.pdf">Curriculum Vitae</a></p>
+        <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a>
+        &nbsp <i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-black"></i><a href="SiteBai_CV.pdf">Curriculum Vitae</a>
+        <br>
+        <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="tel:+8618986052591">+86 189 8605 2591</a>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
+        <br>
+        <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Xi'an, Shaanxi, China
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://github.com/best99317">Github</a>
+        <br> <img src="google_scholar.png" width="16px", height="16px" style="margin-left: 4px"> &nbsp &nbsp <a href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en">Google Scholar</a>
         </div>
         <hr>
         
@@ -181,11 +265,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         
         <div class="w3-container">
           <p class="w3-large"><b><i class="fa fa-trophy fa-fw w3-margin-right w3-text-black"></i>Selected Honors & Awards</b></p>
-          <p>"Siyuan" Scholarship of Xi’an Jiaotong University<span style="float:right">Oct. 2018</span></p>
-          <p>National 2nd Prize in Undergraduate Mathematical Contest in Modeling (top 3%)<span style="float:right">Nov. 2017</span></p>
-          <p>Outstanding Individual in Social Activities of XJTU<span style="float:right">Oct. 2017</span></p>
-          <p>"Siyuan" Scholarship of Xi’an Jiaotong University<span style="float:right">Oct. 2017</span></p>
-          <p>1st Prize in XJTU English Translation Contest (top 5%)<span style="float:right">Dec. 2016</span></p><br>
+          <b>2019</b><br>
+          <p>&nbsp  IROS 2019 Travel Award</p>
+          <b>2018</b><br>
+          <p>&nbsp  "Siyuan" Scholarship of Xi’an Jiaotong University (15%)</p>
+          <p>&nbsp  2nd Prize in National Mathematical Modeling Contest (3%)</p>
+          <b>2017</b><br>
+          <p>&nbsp  Outstanding Individual in Social Activities of XJTU (1%)</p>
+          <p>&nbsp  "Siyuan" Scholarship of Xi’an Jiaotong University (15%)</p>
+          <b>2016</b><br>
+          <p>&nbsp  1st Prize in XJTU English Translation Contest (3%)</p>
+          <p>&nbsp  3st Prize in XJTU English Reading Contest (20%)</p>
+          <p>&nbsp  3st Prize in XJTU English Speaking Contest (20%)</p>
         </div>
         <hr>
         <div class="w3-container">  
@@ -203,7 +294,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:20%">20%</div>
           </div>
           <br>
-          
+          <hr>
+          <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q"></script>
         </div>
       </div><br>
 
@@ -216,10 +308,42 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-light-green w3-center w3-margin-top">
+<footer class="w3-container w3-green w3-center w3-margin-top">
   <p> </p>
 
 </footer>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
