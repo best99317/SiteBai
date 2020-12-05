@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link href="bai.png" rel="icon">
+<link href="bai.jpg" rel="icon">
 <title>Site Bai | Ph.D. @Purdue CS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=2., shrink-to-fit=no, user-scalable=yes">
@@ -154,7 +154,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container w3-text-black">
           <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Hindsight Trust Region Policy Optimization</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>07/01/2019-04/30/2020</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 0px">This project aims at the performance of Reinforcement Learning agents in sparse-reward environments. It leverages the idea of Hindsight and the policy-based algorithm Trust Region Policy Optimization (TRPO). Hindsight refers to the algorithm’s ability to generalize learning from encountered samples to all across goal space, including ones not intended for the current task. Other than incorporating hindsight to TRPO, two techniques are proposed here: (1) QKL, a quadratic approximation to the KL divergence constraint on the trust region, leading to reduced variance in KL divergence estimation and improved stability in policy update; (2) Hindsight Goal Filtering (HGF), a filtering mechanism that selects conductive hindsight goals. Experiments also highlight the performance of HTRPO on various tasks.</h6>
-          <center><img src="HTRPO_image/htrpo_optimization.jpg" width="70%" style="margin: 1%"></center>
+          <center><img src="HTRPO_image/HTRPO_optimization.jpg" width="70%" style="margin: 1%"></center>
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>Paper</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
           <button type="button" class="collapsible w3-round"><b>Details</b></button>
@@ -164,9 +164,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>2. Hindsight: </b>Hindsight refers to the algorithm’s ability to learn from information across goals, including ones not intended for the current task. <b>Take the robot arm end-effector reaching task as an example.</b> Given <b>a goal or target position g</b>, the end-effector may not be able to reach it under some preliminary policy. Under the sparse reward mechanism, no reward is given at the moment, and this move would therefore become a waste for training. But it's important to notice that <b>in general, the robot is learning to reach all target position in the physical space, not just the given goal; the only purpose for the given goal is to collect valid trainig samples in deep reinforcement learning.</b> Thus, we can also use the position the end-effector actually reached as the <b>hindsight goal g'</b> so that this sample would be valid for training, and therefore, save a significant amount of extra sample collecting.</p>
             <center><img src="HTRPO_image/hindsight_goal.jpg" width="30%"></center>
             <p><b>3. Trust Region Policy Optimization: </b> Details can be found in <a href="https://arxiv.org/abs/1502.05477">this paper</a>. The optimization problem can be written as follows:</p>
-            <center><img src="HTRPO_image/trpo_optimization.jpg" width="40%"></center>
+            <center><img src="HTRPO_image/TRPO_optimization.jpg" width="40%"></center>
             <p><b>4. HTRPO Optimization Problem: </b> Starting from the optimization problem, (1) Rewrite the problem as an expectation form w.r.b. to goals; (2) Replace the goal of the sample-collecting policy with hindsight goal g' by using importance sampling; (3) Bound the trust region with Quadratic KL-divergence; (4) Discretize the problem with Weighted Importance Sampling. Details can be found in <a href="https://arxiv.org/abs/1502.05477">this paper</a>. The optimization problem can be derived into the following form, and can be solved using <b>Karush-Kuhn-Tucker (KKT) conditions</b>.</p>
-            <center><img src="HTRPO_image/htrpo_optimization.jpg" width="80%"></center>
+            <center><img src="HTRPO_image/HTRPO_optimization.jpg" width="80%"></center>
             <p><b>5. Experiment Tasks: </b>We evaluate HTRPO in various sparse reward tasks, including simple benchmarks, image-based Atari games, and simulated robot control. To be specific, HTRPO is tested in Bit Flipping, Empty Maze, Ms. Pac-Man, Fetch Reach, Fetch Push, Fetch Slide, Fetch Pick And Place, and Sawyer Reach. Demonstrations are shown below.</p>
             <center><img src="HTRPO_image/HTRPO.jpg" width="50%"></center>
             <p><b>6. Results: </b>Results show HTRPO’s strong generality to different kinds of tasks and policies, and its significant improvement in performance level.</p>
@@ -194,7 +194,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>2. Natural Policy Gradient (NPG): </b> NPG is propsed in <b><a href="https://papers.nips.cc/paper/2001/file/4b86abe48d358ecf194c56c69108433e-Paper.pdf">a NeurIPS 2001 paper</a> by Sham M. Kakade</b>. The spotlight of NPG is that it combines natural gradient with policy gradient, bounds the updates with Fisher Information Matrices, and solves the problem by taylor expansion approximation and conjugate-gradient descent. Borrowed from <a href="">Katerina Fragkiadaki's slides</a>,</p>
             <center><img src="HTRPO_image/npg.jpg" width="60%" style="margin-bottom: 1%"></center>
             <p><b>3. Trust Region Policy Optimization (TRPO): </b> TRPO is propsed <b><a href="https://arxiv.org/pdf/1502.05477.pdf">a NeurIPS 2015 paper</a> by John Schulman</b>. It is quite similar to NPG. The main difference is the way TRPO bound the update by TV-divergence, which is then approximated by KL-divergence. It also porves that TRPO converges monotonically as the updates increase. With the solving process similar to that of NPG, the optimization problem of TRPO is:</p></p>
-            <center><img src="HTRPO_image/trpo_optimization.jpg" width="35%" style="margin-bottom: 1%"></center>
+            <center><img src="HTRPO_image/TRPO_optimization.jpg" width="35%" style="margin-bottom: 1%"></center>
             <p><b>4. Hindsight Experience Replay (HER): </b> HER is propsed <b><a href="https://arxiv.org/pdf/1502.05477.pdf">a NeurIPS 2017 paper</a> by Marcin Andrychowicz</b>. The concept of "Hindsight" in deep reinforcement learing was proposed for the first time. HER construct a replay buffer to collect the hindsight data from past experiences, and incoporate it with value-based and off-policy deep RL algorithms like DQN and DDPG, which can be trained with data of any offline distribution.</p>
             <p><b>5. Hindsight Policy Gradient (HPG): </b>HPG proposed by <b>Paulo Rauber in <a href="https://arxiv.org/pdf/1711.06006.pdf"> this ICLR 2019 paper</a></b> extends Hindsight from off-policy to on-policy VPG. It formalizes the policy gradient with hindsight data by leveraging goal-conditioned policy gradient and importance sampling. The hindsight policy gradient is given in the following theorem.
             <center><img src="HTRPO_image/hpg.jpg" width="80%" style="margin-bottom: 1%"></center>
@@ -243,7 +243,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>1. Grasp Detection: </b>The grasp detection phase basically follow the mechanism of the porject "ROI-based Robotic Grasp Detection". It detects objects and grasps on ROI features and outputs their specified affiliations to ensure a higher grasp accuracy.</p>
             <center><img src="Robot_image/relation.jpg" width="100%" style="margin: 1%"></center>
             <p><b>2. Visual Manipulation Relationship Reasoning: </b>Visual Manipulation Relationship regulates the order of the objects to be grasped based on their visual demonstration of spatial relationship. Normally, the ones on top of others are to be grasped first. The relationship reasoning is realized by predicting whether there are overlapping between the objects detected using the Object Pairing Pooling Layer. After figuring out the relationship between each object pair, we can construct a relationship tree describing the relationships among all objects detected in the scene.</p>
-            <center><img src="Robot_image/Relationship_tree.jpg" width="60%" style="margin: 1%"></center>
+            <center><img src="Robot_image/relationship_tree.jpg" width="60%" style="margin: 1%"></center>
             <p><b>3. Dataset Demonstration: </b></p>
             <center><img src="Robot_image/relation_dataset.jpg" width="100%" style="margin: 1%"></center>
           </div>
@@ -286,7 +286,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1508.06576.pdf')"><b>Reference</b></button> 
           <button type="button" class="collapsible w3-round"><b>Poster</b></button>
           <div class="content">
-            <embed src="Style_image/poster.pdf" width="100%" height="1000px" />
+            <embed src="Style_image/Poster.pdf" width="100%" height="1000px" />
           </div>
           <button type="button" class="collapsible w3-round"><b>HD Demo</b></button>
           <div class="content">
