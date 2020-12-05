@@ -53,7 +53,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   background-color: #f1f1f1;
 }
 
-.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
+.my-blue{color:#fff!important;background-color:#000099!important}
+.my-hover-blue:hover{background-color: #ff0000}
 .w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
 .link-button{background-color: #000099;
   color: white;
@@ -64,6 +65,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   text-align: middle;
   outline: none;
   font-size: 15px;}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10%; /* Place the button at the bottom of the page */
+  right: 2%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #000099; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ff0000; /* Add a dark-grey background on hover */
+}
 </style>
 <body class="w3-background-grey">
 
@@ -236,5 +257,25 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </body>
 </html>
