@@ -55,7 +55,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 }
 
 .my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
-.w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
 .link-button{background-color: #000099;
   color: white;
   cursor: pointer;
@@ -65,6 +64,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   text-align: middle;
   outline: none;
   font-size: 15px;}
+.link-button:hover{background-color: #ff0000;}
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -157,7 +157,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <center><img src="HTRPO_image/HTRPO_optimization.jpg" width="70%" style="margin: 1%"></center>
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>Paper</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
-          <button type="button" class="collapsible w3-round"><b>Details</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p><b>1. Sparse Reward: </b>Sparse reward means the agent is given a distinctively high reward only upon reaching the desired final goal state, provides the possibility to obviate designing a delicate reward mechanism. It also guarantees that the agent focuses on the intended task itself without any deviation. Though born with a simple form, sparse reward diminishes the chances for policy to converge, especially in the initial random exploration stage, since the agent can hardly get positive feedbacks.</p>
             <center><img src="HTRPO_image/sparse_reward.jpg" width="70%"></center>
@@ -172,7 +172,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>6. Results: </b>Results show HTRPO’s strong generality to different kinds of tasks and policies, and its significant improvement in performance level.</p>
             <center><img src="HTRPO_image/results.jpg" width="100%" style="margin-bottom: 1%"></center>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" width="32.5%" src="HTRPO_image/fetch_slide.mp4" type="video/mp4" style="float:right;margin:3px">Your browser does not support the video tag.</video>
             <video controls="controls" loop="loop" autoplay="autoplay" width="32.5%" src="HTRPO_image/fetch_pickandplace.mp4" type="video/mp4" style="float:right;margin:3px">Your browser does not support the video tag.</video>
@@ -184,7 +184,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <img src="HTRPO_image/drl.jpg" width="35%" style="float: right; margin-top: 3%">
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project implements some main-stream deep reinforcement learning algorithms, currently including "Vanilla" Policy Gradient (PG), Natural Policy Gradient (NPG), Trust Region Policy Optimization (TRPO), Hindsight Experience Replay (HER), Hindsight Policy Gradient (HPG), and Remember and Forget for Experience Replay (ReF-ER). These algorithms are implemented on toy environments like Bit-flipping and Grid World.</h6>
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/best99317/Deep-RL-Package')"><b>Code</b></button>
-          <button type="button" class="collapsible w3-round"><b>Details</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p><b>1. "Vanilla" Policy Gradient (VPG): </b> VPG mainly adopts the characteristics of the Policy Gradient algorithm, which is introdueced in the classic <b><a href="https://papers.nips.cc/paper/1999/file/464d828b85b0bed98e80ade0a5c43b0f-Paper.pdf">"REINFORCE" algorithm</a> proposed by Richard S. Sutton</b>. VPG here adds the word "Vanilla" to its name mainly aims to defer from other policy gradient algorithms mentioned in this porject. In order to be consistent with the Actor-Critic coding frame of this project, we manually add an extra "Critic", i.e. a value function for VPG, which also coordinates with the introduction on <a href="https://spinningup.openai.com/en/latest/algorithms/vpg.html">Open AI Spinning Up</a>. To quote from the website, the gradient of the expected finite-horizon undiscounted return of the policy is therefore written as:</p>
             <center><img src="https://spinningup.openai.com/en/latest/_images/math/ada1266646d71c941e77e3fd41bba9d92d06b7c2.svg" width="40%" style="margin-bottom: 1%"></center>
@@ -215,7 +215,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>Paper</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round"><b>Details</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p><b>1. Novalty of ROI-based Grasp detection: </b>ROI-based grasp detection (ROI-GD) considers the affiliation between the grasps and their corresponding objects in order to avoid detection error by attributing the labeled grasp to other incorrect objects, especially in object overlapping secenes. ROI-GD extract ROI features from raw object scene images and then detect grasps based on ROI features.</p>
             <center><img src="Robot_image/roi_novalty.jpg" width="50%" style="margin: 1%"></center>
@@ -224,7 +224,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>3. Results Demonstration: </b></p>
             <center><img src="Robot_image/roi_res1.jpg" width="40%" style="margin: 1%"><img src="Robot_image/roi_res2.jpg" width="55%" style="margin: 1%"></center>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
@@ -238,7 +238,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round"><b>Details</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p><b>1. Grasp Detection: </b>The grasp detection phase basically follow the mechanism of the porject "ROI-based Robotic Grasp Detection". It detects objects and grasps on ROI features and outputs their specified affiliations to ensure a higher grasp accuracy.</p>
             <center><img src="Robot_image/relation.jpg" width="100%" style="margin: 1%"></center>
@@ -247,7 +247,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p><b>3. Dataset Demonstration: </b></p>
             <center><img src="Robot_image/relation_dataset.jpg" width="100%" style="margin: 1%"></center>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
@@ -258,7 +258,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <center><img src="Robot_image/dsae.jpg" width="90%" style="margin: 1%"></center>
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/best99317/Spatial-Auto-Encoder')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/best99317/Spatial-Auto-Encoder/tree/master/test_image')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round"><b>Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
             <img src="Robot_image/dsae_platform.jpg" width="40%" style="margin: 1%"><img src="Robot_image/dsae_demo.jpg" width="55%" style="margin: 1%">
           </div>
@@ -270,8 +270,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container w3-text-black">
           <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Machine Learning Algorithms Toolkit Python & C++ Implementation</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%; margin-left: 1%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>Home<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Collaborators: </b>Myself<br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>12/10/2020-current</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project implements classical machine learning algorithms from scratch in both Python and C++ without any ML framworks like Pytorch or scikit-learn. It is currently under construction. More implementations are being added...</h6>
-          <button type="button" class="w3-round link-button" onclick="window.open('')"><b>Code</b></button> 
-          <button type="button" class="collapsible w3-round"><b>Details</b></button>
+          <button type="button" class="w3-round link-button link-button" onclick="window.open('')"><b>Code</b></button> 
+          <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p>None at the moment...</p>
           </div>
@@ -284,11 +284,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project aims to offer a playful image-processing tool to stylize pictures or even doodles into master paintings. Firstly, it realized style migration with the help of  VGG-19 neural networks. Secondly, using the stylized images from the first part, it allows people to create art pieces on their own, turning simple doodles into beautiful freehand brushwork. In a word, this project helps you to create your own imaginary Singapore. </h6>
           <center><img src="Style_image/style_demo.jpg" width="66%" style="margin:1%;"></center>
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1508.06576.pdf')"><b>Reference</b></button> 
-          <button type="button" class="collapsible w3-round"><b>Poster</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Poster</b></button>
           <div class="content">
             <embed src="Style_image/Poster.pdf" width="100%" height="1000px" />
           </div>
-          <button type="button" class="collapsible w3-round"><b>HD Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>HD Demo</b></button>
           <div class="content">
             <p><b>1. Different Styles</b></p>
             <center><img src="Style_image/demo/2.jpg" width="30%" height="200px" style="margin: 1%;"><img src="Style_image/demo/style2.jpg" width="30%" height="200px" style="margin: 1%;"><img src="Style_image/demo/output2.jpg" width="30%" height="200px" style="margin: 1%;"></center>
@@ -305,26 +305,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp <a href="http://en.mcm.edu.cn/html_en/section/b77a1402496e05863c96de6120931806.html">China Mathematical Contest in Modeling</a>: Parameters Calibration on CT System</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%； margin-left: 0.5%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>School of Mathematics and Statistics<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b><a href="http://gr.xjtu.edu.cn/en/web/chenlei">Lei Chen</a>, <a href="http://gr.xjtu.edu.cn/web/hqlee">Huanqin Li</a>; <b>Collaborators: </b>Zexiao Wang, <a href="https://zhuo-zhi.github.io/">Zhuo Zhi</a><br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>09/15/2017-09/17/2017</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project tackles with the Problem A in 2017 China Mathematical Contest in Modeling. It establishes models as well as the corresponding algorithms for CT System parameter calibration and CT imaging reconstruction from radiation data. The CT parametr calibration is firstly formalized into an optimization problem. It is then solved by genetic algorithm, utilizing the geometry of the CT platform, the energy absorption data, and the Radon Transfromation. Secondly, the CT image can be constructed from the energy absorption data by applying the Filtered Back Projection (FBP) algorithm. The paper and code presented (in Chinese) got the National Second Award (500/50000 teams) in the contest.</h6>
           <center><img src="mm_image/mm_ct2.jpg" width="20%" style="margin: 1%;"><img src="mm_image/ct3.jpg" width="20%" style="margin: 1%;"><img src="mm_image/ct4.jpg" width="20%" style="margin: 1%;"><img src="mm_image/mm_demo.jpg" width="20%" style="margin: 1%;"></center>
-          <button type="button" class="collapsible w3-round"><b>Problem</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Problem</b></button>
           <div class="content">
             <embed src="mm_image/mm_2017a.pdf" width="100%" height="1000px" />
           </div>
-          <button type="button" class="collapsible w3-round"><b>Paper</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Paper</b></button>
           <div class="content">
             <embed src="mm_image/mm_paper.pdf" width="100%" height="1000px" />
           </div>
-          <button type="button" class="collapsible w3-round"><b>Code</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Code</b></button>
           <div class="content">
             <embed src="mm_image/mm_code.pdf" width="100%" height="1000px" />
           </div>
-          <button type="button" class="collapsible w3-round"><b>Demo</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
             <p><b>1. Phantom Module:</b></p>
             <center><img src="mm_image/mm_ct2.jpg" width="45%" style="margin: 1%;"><img src="mm_image/mm_demo.jpg" width="45%" style="margin: 1%;"></center>
             <p><b>2. Unknown Object:</b></p>
             <center><img src="mm_image/mm_ct.jpg" width="45%" style="margin: 1%;"><img src="mm_image/mm_demo2.jpg" width="45%" style="margin: 1%;"></center>
           </div>
-          <button type="button" class="collapsible w3-round" onclick="window.open('mm_image/appendix.xls')"><b>Data</b></button>
+          <button type="button" class="collapsible w3-round link-button" onclick="window.open('mm_image/appendix.xls')"><b>Data</b></button>
           <br>
         </div>
         <br>

@@ -53,8 +53,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   background-color: #f1f1f1;
 }
 
-.my-blue{color:#fff!important;background-color:#000099!important}
-.my-hover-blue:hover{background-color: #ff0000}
+.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
 .w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
 .link-button{background-color: #000099;
   color: white;
@@ -65,7 +64,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   text-align: middle;
   outline: none;
   font-size: 15px;}
-
+.link-button:hover{background-color: #ff0000;}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -88,6 +87,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-background-grey">
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><b>Back to Top</b></button>
 <!-- Page Container -->
 <div class="w3-content" style="max-width:1400px;">
   <!-- The Grid -->
@@ -157,11 +157,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang*, <b>Site Bai*</b>, Xuguang Lan, Nanning Zheng</h6>
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>PDF</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
-          <button type="button" class="collapsible w3-round"><b>Abstract</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
           <div class="content">
             <p>Reinforcement Learning(RL) with sparse rewards is a major challenge. We propose <b>Hindsight Trust Region Policy Optimization(HTRPO)</b>, a new RL algorithm that extends the highly successful TRPO algorithm with hindsight to tackle the challenge of sparse rewards. Hindsight refers to the algorithm’s ability to learn from information across goals, including ones not intended for the current task. HTRPO leverages two main ideas. It introduces QKL, a quadratic approximation to the KL divergence constraint on the trust region, leading to reduced variance in KL divergence estimation and improved stability in policy update. It also presents Hindsight Goal Filtering(HGF) to select conductive hindsight goals. In experiments, we evaluate HTRPO in various sparse reward tasks, including simple benchmarks, image-based Atari games, and simulated robot control. Ablation studies indicate that QKL and HGF contribute greatly to learning stability and high performance. Comparison results show that in all tasks, HTRPO consistently outperforms both TRPO and HPG, a state-of-the-art algorithm for RL with sparse rewards.</p>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Video</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
@@ -179,11 +179,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round"><b>Abstract</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
           <div class="content">
             <p>Grasp detection considiering <b>the affiliations between grasps and their owner</b> in object overlapping scenes is a necessary and challenging task for the practical use of the robotic grasping approach. In this paper, a robotic grasp detection algorithm named ROI-GD is proposed to provide a feasible solution to this problem based on Region of Interest (ROI), which is the region proposal for objects. <b>ROI-GD uses features from ROIs to detect grasps instead of the whole scene</b>. It has two stages: the first stage is to provide ROIs in the input image and the second-stage is the grasp detector based on ROI features. We also contribute a multi-object grasp dataset, which is much larger than Cornell Grasp Dataset, by labeling Visual Manipulation Relationship Dataset. Experimental results demonstrate that ROI-GD performs much better in object overlapping scenes and at the meantime, remains comparable with state-of-the-art grasp detection algorithms on Cornell Grasp Dataset and Jacquard Dataset. Robotic experiments demonstrate that ROI-GD can help robots grasp the target in single-object and multi-object scenes with the overall success rates of 92.5% and 83.8% respectively. </p>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Video</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
@@ -193,17 +193,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container w3-text-black">
            
           <h5 class="w3-opacity-off"><b>[2] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
-          <img src="Robot_image/relationship.jpg" width="30%" style="float:right; margin-top: 4px">
+          <img src="Robot_image/relationship.JPG" width="30%" style="float:right; margin-top: 4px">
           <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
           <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
           <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round"><b>Abstract</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
           <div class="content">
             <p><b>Autonomous robotic grasping</b> plays an important role in intelligent robotics. However, how to help the robot <b>grasp specific objects in object stacking scenes</b> is still an open problem, because there are two main challenges for autonomous robots: (1)it is a comprehensive task to know what and how to grasp; (2)it is hard to deal with the situations in which the target is hidden or covered by other objects. In this paper, we propose a multi-task convolutional neural network for autonomous robotic grasping, which can help the robot find the target, make the plan for grasping and finally grasp the target step by step in object stacking scenes. We integrate vision-based <b>robotic grasping detection and visual manipulation relationship reasoning</b> in one single deep network and build the autonomous robotic grasping system. Experimental results demonstrate that with our model, Baxter robot can autonomously grasp the target with a success rate of 90.6%, 71.9% and 59.4% in object cluttered scenes, familiar stacking scenes and complex stacking scenes respectively.</p>
           </div>
-          <button type="button" class="collapsible w3-round"><b>Video</b></button>
+          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
           <div class="content">
             <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
@@ -277,5 +277,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+</script>
 </body>
 </html>
