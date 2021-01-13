@@ -3,7 +3,7 @@
 <link href="bai.jpg" rel="icon">
 <title>Site Bai | Ph.D. @Purdue CS</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=2., shrink-to-fit=no, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=.6666">
 <link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="./css/theme.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -54,6 +54,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 }
 
 .my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
+.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
+
 .w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
 .link-button{background-color: #000099;
   color: white;
@@ -87,136 +89,159 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-background-grey">
 
+<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left"
+  style="display:none; width: 280px; direction:rtl;" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
+  <div class="w3-bar-block background-white"
+    style="padding-left: 10%;padding-top: 2%; padding-bottom: 5%; border-left: 3px solid #000099; border-right: 3px solid #000099; border-top: 3px solid #000099; direction: ltr;">
+    <h4><b>Contact & Links</b></h4>
+    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="mailto:best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a>
+    <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="tel:+8618986052591">+86 189 8605 2591</a>
+    <br><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
+    <br><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://www.google.com/maps/place/Wuhan,+Hubei,+China/@30.5642671,114.1705636,10z/data=!4m13!1m7!3m6!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!2sWuhan,+Hubei,+China!3b1!8m2!3d30.5930013!4d114.3058777!3m4!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!8m2!3d30.5930013!4d114.3058777?hl=en">Wuhan,
+      Hubei, China</a>
+    <br><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://github.com/best99317">Github</a>
+    <br>&nbsp;<i class="ai ai-google-scholar w3-margin-right w3-large w3-text-black"></i>&nbsp;<a
+      href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en">Google Scholar</a>
+    <br><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="https://online-calculator.org/howoldami-mdy.aspx?month=3&day=17&year=1999">03/17/1999</a>
+  </div>
+  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
+      <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
+      <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
+      <!-- <a href="index.html#News" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
+      <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
+      <a href="publication.html" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
+      <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
+        & Projects</a>
+      <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
+        & Awards</a>
+      <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
+        Skills</a>
+      <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
+      <a href="personal.html" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
+      <a href="SiteBai_CV.pdf" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
+    </b>
+  </h4>
+  <br>
+  <div class="w3-container"
+    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
+    <script type="text/javascript"
+      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
+      async="async" style="width: 100%"></script>
+    <br>
+    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
+        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
+        style="width: 100%"></a>
+    <br>
+    <br>
+  </div>
+
+
+  <!-- End Left Column -->
+</div>
+
+<div class="w3-main" style="margin-left:280px">
 <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Back to Top</b></button>
 <!-- Page Container -->
-<div class="w3-content" style="max-width:1400px;">
+<div class="w3-content" style="max-width:98%">
   <!-- The Grid -->
   <div class="w3-row-padding">
     <div class="w3-card-4">
       <div class="w3-container my-blue w3-card ">
-        <h1 style="float: left; margin-bottom: 0px">Site(Cedar) Bai · 柏思特 </h1><br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>English Name Pronun: /ˈsiːdər/&nbsp &nbsp Chinese Name Pronun: /sihˈtə/</b></p>
+        <button class="w3-button w3-xlarge w3-hide-large"
+          style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;"
+          onclick="w3_open()">&#9776;</button>
+        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Site(Cedar) Bai · 柏思特 </h1><br><br><br>
+        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>English Name Pronun: /ˈsiːdər/&nbsp &nbsp Chinese Name
+            Pronun: /sihˈtə/</b></p>
       </div>
     </div> 
     
-    <!-- Left Column -->
-    <div class="w3-quarter">
- 
-      <div class="w3-white w3-text-black w3-card-4">
-        <div class="w3-bar-block w3-background-yellow" style="padding-left: 15%;padding-top: 5%; padding-bottom: 5%; border-left: 3px solid #000099; border-right: 3px solid #000099">
-          <h4><b>Contact & Links</b></h4>
-          <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="mailto:best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a>
-          <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="tel:+8618986052591">+86 189 8605 2591</a>
-          <br><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
-          <br><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.google.com/maps/place/Wuhan,+Hubei,+China/@30.5642671,114.1705636,10z/data=!4m13!1m7!3m6!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!2sWuhan,+Hubei,+China!3b1!8m2!3d30.5930013!4d114.3058777!3m4!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!8m2!3d30.5930013!4d114.3058777?hl=en">Wuhan, Hubei, China</a>
-          <br><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://github.com/best99317">Github</a>
-          <br>&nbsp;<i class="ai ai-google-scholar w3-margin-right w3-large w3-text-black"></i>&nbsp;<a href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en">Google Scholar</a>
-          <br><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="https://online-calculator.org/howoldami-mdy.aspx?month=3&day=17&year=1999">03/17/1999</a>
+      
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-black w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-black
+        "></i>Publication</h2>
+      <h5 class="w3-opacity-off"><b>Preprint</b></h5>
+      <div class="w3-container w3-text-black">
+        <video controls="controls" loop="loop" autoplay="autoplay" height="130px" src="HTRPO_image/fetch_pickandplace.mp4" type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
+        <video controls="controls" loop="loop" autoplay="autoplay" height="130px" src="HTRPO_image/fetch_slide.mp4" type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
+        <h5 class="w3-opacity-off"><b>[1] Hindsight Trust Region Policy Optimization</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>arXiv preprint arXiv:1907.12439. </h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang*, <b>Site Bai*</b>, Xuguang Lan, Nanning Zheng</h6>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>PDF</b></button> 
+        <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Reinforcement Learning(RL) with sparse rewards is a major challenge. We propose <b>Hindsight Trust Region Policy Optimization(HTRPO)</b>, a new RL algorithm that extends the highly successful TRPO algorithm with hindsight to tackle the challenge of sparse rewards. Hindsight refers to the algorithm’s ability to learn from information across goals, including ones not intended for the current task. HTRPO leverages two main ideas. It introduces QKL, a quadratic approximation to the KL divergence constraint on the trust region, leading to reduced variance in KL divergence estimation and improved stability in policy update. It also presents Hindsight Goal Filtering(HGF) to select conductive hindsight goals. In experiments, we evaluate HTRPO in various sparse reward tasks, including simple benchmarks, image-based Atari games, and simulated robot control. Ablation studies indicate that QKL and HGF contribute greatly to learning stability and high performance. Comparison results show that in all tasks, HTRPO consistently outperforms both TRPO and HPG, a state-of-the-art algorithm for RL with sparse rewards.</p>
         </div>
-        <div class="w3-bar-block my-blue"><h4  style="margin-top: 0px; margin-bottom: 0px"><b>
-          <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 15%">Home</a>
-          <a href="index.html#Bio" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Bio</a>
-          <a href="index.html#News" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">News</a>
-          <a href="index.html#Education" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Education</a>
-          <a href="publication.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Publication</a>
-          <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Research & Projects</a>
-          <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Honors & Awards</a>
-          <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Courses</a>
-          <a href="courses.html#skills" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Skills</a>
-          <a href="personal.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Personal</a>
-          <a href="SiteBai_CV.pdf" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Curriculum Vitae</a></b></h4>
+        <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
-
-        <div class="w3-container" style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">  
-          <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33" async="async" style="width: 100%"></script>
-          <!-- <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q">
-          </script> -->
-          <br>
-          <a href='https://clustrmaps.com/site/1b6vn'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099'/ style="width: 100%"></a>
-          <br>
-          <br>
-        </div>
+        
+        <br>
       </div>
-      
-    <!-- End Left Column -->
-    </div>
-    
-
-    <!-- Right Column -->
-    <div class="w3-threequarter">
-      
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-black
-          "></i>Publication</h2>
-        <h5 class="w3-opacity-off"><b>Preprint</b></h5>
-        <div class="w3-container w3-text-black">
-          <video controls="controls" loop="loop" autoplay="autoplay" height="130px" src="HTRPO_image/fetch_pickandplace.mp4" type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-          <video controls="controls" loop="loop" autoplay="autoplay" height="130px" src="HTRPO_image/fetch_slide.mp4" type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-          <h5 class="w3-opacity-off"><b>[1] Hindsight Trust Region Policy Optimization</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>arXiv preprint arXiv:1907.12439. </h6>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang*, <b>Site Bai*</b>, Xuguang Lan, Nanning Zheng</h6>
-          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>PDF</b></button> 
-          <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
-          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
-          <div class="content">
-            <p>Reinforcement Learning(RL) with sparse rewards is a major challenge. We propose <b>Hindsight Trust Region Policy Optimization(HTRPO)</b>, a new RL algorithm that extends the highly successful TRPO algorithm with hindsight to tackle the challenge of sparse rewards. Hindsight refers to the algorithm’s ability to learn from information across goals, including ones not intended for the current task. HTRPO leverages two main ideas. It introduces QKL, a quadratic approximation to the KL divergence constraint on the trust region, leading to reduced variance in KL divergence estimation and improved stability in policy update. It also presents Hindsight Goal Filtering(HGF) to select conductive hindsight goals. In experiments, we evaluate HTRPO in various sparse reward tasks, including simple benchmarks, image-based Atari games, and simulated robot control. Ablation studies indicate that QKL and HGF contribute greatly to learning stability and high performance. Comparison results show that in all tasks, HTRPO consistently outperforms both TRPO and HPG, a state-of-the-art algorithm for RL with sparse rewards.</p>
-          </div>
-          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
-          <div class="content">
-            <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
-          </div>
-          
-          <br>
+      <hr style="border:3px solid #000099">
+      <h5 class="w3-opacity-off"><b>Published</b></h5>
+      <div class="w3-container w3-text-black">
+        <img src="Robot_image/roi.jpg" height="130px" style="float:right;">
+        <img src="Robot_image/cover.jpg" height="130px" style="float:right; margin-right: 10px">
+        <h5 class="w3-opacity-off"><b>[1] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
+        <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
+        <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Grasp detection considiering <b>the affiliations between grasps and their owner</b> in object overlapping scenes is a necessary and challenging task for the practical use of the robotic grasping approach. In this paper, a robotic grasp detection algorithm named ROI-GD is proposed to provide a feasible solution to this problem based on Region of Interest (ROI), which is the region proposal for objects. <b>ROI-GD uses features from ROIs to detect grasps instead of the whole scene</b>. It has two stages: the first stage is to provide ROIs in the input image and the second-stage is the grasp detector based on ROI features. We also contribute a multi-object grasp dataset, which is much larger than Cornell Grasp Dataset, by labeling Visual Manipulation Relationship Dataset. Experimental results demonstrate that ROI-GD performs much better in object overlapping scenes and at the meantime, remains comparable with state-of-the-art grasp detection algorithms on Cornell Grasp Dataset and Jacquard Dataset. Robotic experiments demonstrate that ROI-GD can help robots grasp the target in single-object and multi-object scenes with the overall success rates of 92.5% and 83.8% respectively. </p>
         </div>
-        <hr style="border:3px solid #000099">
-        <h5 class="w3-opacity-off"><b>Published</b></h5>
-        <div class="w3-container w3-text-black">
-          <img src="Robot_image/roi.jpg" height="130px" style="float:right;">
-          <img src="Robot_image/cover.jpg" height="130px" style="float:right; margin-right: 10px">
-          <h5 class="w3-opacity-off"><b>[1] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
-          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
-          <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
-          <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
-          <div class="content">
-            <p>Grasp detection considiering <b>the affiliations between grasps and their owner</b> in object overlapping scenes is a necessary and challenging task for the practical use of the robotic grasping approach. In this paper, a robotic grasp detection algorithm named ROI-GD is proposed to provide a feasible solution to this problem based on Region of Interest (ROI), which is the region proposal for objects. <b>ROI-GD uses features from ROIs to detect grasps instead of the whole scene</b>. It has two stages: the first stage is to provide ROIs in the input image and the second-stage is the grasp detector based on ROI features. We also contribute a multi-object grasp dataset, which is much larger than Cornell Grasp Dataset, by labeling Visual Manipulation Relationship Dataset. Experimental results demonstrate that ROI-GD performs much better in object overlapping scenes and at the meantime, remains comparable with state-of-the-art grasp detection algorithms on Cornell Grasp Dataset and Jacquard Dataset. Robotic experiments demonstrate that ROI-GD can help robots grasp the target in single-object and multi-object scenes with the overall success rates of 92.5% and 83.8% respectively. </p>
-          </div>
-          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
-          <div class="content">
-            <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
-          </div>
-          <br>
+        <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
         <br>
-        <div class="w3-container w3-text-black">
-           
-          <h5 class="w3-opacity-off"><b>[2] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
-          <img src="Robot_image/relationship.JPG" width="30%" style="float:right; margin-top: 4px">
-          <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
-          <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
-          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
-          <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
-          <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
-          <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
-          <div class="content">
-            <p><b>Autonomous robotic grasping</b> plays an important role in intelligent robotics. However, how to help the robot <b>grasp specific objects in object stacking scenes</b> is still an open problem, because there are two main challenges for autonomous robots: (1)it is a comprehensive task to know what and how to grasp; (2)it is hard to deal with the situations in which the target is hidden or covered by other objects. In this paper, we propose a multi-task convolutional neural network for autonomous robotic grasping, which can help the robot find the target, make the plan for grasping and finally grasp the target step by step in object stacking scenes. We integrate vision-based <b>robotic grasping detection and visual manipulation relationship reasoning</b> in one single deep network and build the autonomous robotic grasping system. Experimental results demonstrate that with our model, Baxter robot can autonomously grasp the target with a success rate of 90.6%, 71.9% and 59.4% in object cluttered scenes, familiar stacking scenes and complex stacking scenes respectively.</p>
-          </div>
-          <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
-          <div class="content">
-            <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
-          </div>
-          <br>
-          <br>
-        </div>
       </div>
-    <!-- End Right Column -->
+      <br>
+      <div class="w3-container w3-text-black">
+          
+        <h5 class="w3-opacity-off"><b>[2] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
+        <img src="Robot_image/relationship.JPG" width="30%" style="float:right; margin-top: 4px">
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
+        <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
+        <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p><b>Autonomous robotic grasping</b> plays an important role in intelligent robotics. However, how to help the robot <b>grasp specific objects in object stacking scenes</b> is still an open problem, because there are two main challenges for autonomous robots: (1)it is a comprehensive task to know what and how to grasp; (2)it is hard to deal with the situations in which the target is hidden or covered by other objects. In this paper, we propose a multi-task convolutional neural network for autonomous robotic grasping, which can help the robot find the target, make the plan for grasping and finally grasp the target step by step in object stacking scenes. We integrate vision-based <b>robotic grasping detection and visual manipulation relationship reasoning</b> in one single deep network and build the autonomous robotic grasping system. Experimental results demonstrate that with our model, Baxter robot can autonomously grasp the target with a success rate of 90.6%, 71.9% and 59.4% in object cluttered scenes, familiar stacking scenes and complex stacking scenes respectively.</p>
+        </div>
+        <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+        </div>
+        <br>
+        <br>
+      </div>
     </div>
-    
-    
-  <!-- End Grid -->
+
   </div>
+     
+  <!-- End Grid -->
+</div>
   
   <!-- End Page Container -->
 </div>
@@ -276,6 +301,14 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 </body>

@@ -3,7 +3,7 @@
 <link href="bai.jpg" rel="icon">
 <title>Site Bai | Ph.D. @Purdue CS</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=2., shrink-to-fit=no, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=.6666">
 <link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="./css/theme.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -56,6 +56,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 .my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
 .w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
+.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
+
 .link-button{
   color: black;
   cursor: pointer;
@@ -70,75 +72,97 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-background-grey">
 
+
+<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left"
+  style="display:none; width: 280px; direction:rtl;" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
+  <div class="w3-bar-block background-white"
+    style="padding-left: 10%;padding-top: 2%; padding-bottom: 5%; border-left: 3px solid #000099; border-right: 3px solid #000099; border-top: 3px solid #000099; direction: ltr;">
+    <h4><b>Contact & Links</b></h4>
+    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="mailto:best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a>
+    <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="tel:+8618986052591">+86 189 8605 2591</a>
+    <br><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
+    <br><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://www.google.com/maps/place/Wuhan,+Hubei,+China/@30.5642671,114.1705636,10z/data=!4m13!1m7!3m6!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!2sWuhan,+Hubei,+China!3b1!8m2!3d30.5930013!4d114.3058777!3m4!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!8m2!3d30.5930013!4d114.3058777?hl=en">Wuhan,
+      Hubei, China</a>
+    <br><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a
+      href="https://github.com/best99317">Github</a>
+    <br>&nbsp;<i class="ai ai-google-scholar w3-margin-right w3-large w3-text-black"></i>&nbsp;<a
+      href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en">Google Scholar</a>
+    <br><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="https://online-calculator.org/howoldami-mdy.aspx?month=3&day=17&year=1999">03/17/1999</a>
+  </div>
+  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
+      <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
+      <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
+      <!-- <a href="index.html#News" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
+      <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
+      <a href="publication.html" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
+      <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
+        & Projects</a>
+      <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
+        & Awards</a>
+      <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
+        Skills</a>
+      <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
+      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
+      <a href="personal.html" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
+      <a href="SiteBai_CV.pdf" class="w3-bar-item w3-button"
+        style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
+    </b>
+  </h4>
+  <br>
+  <div class="w3-container"
+    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
+    <script type="text/javascript"
+      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
+      async="async" style="width: 100%"></script>
+    <br>
+    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
+        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
+        style="width: 100%"></a>
+    <br>
+    <br>
+  </div>
+
+
+  <!-- End Left Column -->
+</div>
+
+<div class="w3-main" style="margin-left:280px">
 <!-- Page Container -->
-<div class="w3-content" style="max-width:1400px;">
+<div class="w3-content" style="max-width:98%">
   <!-- The Grid -->
   <div class="w3-row-padding">
     <div class="w3-card-4">
       <div class="w3-container my-blue w3-card ">
-        <h1 style="float: left; margin-bottom: 0px">Site(Cedar) Bai · 柏思特 </h1><br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>English Name Pronun: /ˈsiːdər/&nbsp &nbsp Chinese Name Pronun: /sihˈtə/</b></p>
+        <button class="w3-button w3-xlarge w3-hide-large"
+          style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;"
+          onclick="w3_open()">&#9776;</button>
+        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Site(Cedar) Bai · 柏思特 </h1><br><br><br>
+        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>English Name Pronun: /ˈsiːdər/&nbsp &nbsp Chinese Name
+            Pronun: /sihˈtə/</b></p>
       </div>
-    </div> 
-    
-    <!-- Left Column -->
-    <div class="w3-quarter">
- 
-      <div class="w3-white w3-text-black w3-card-4">
-        <div class="w3-bar-block w3-background-yellow" style="padding-left: 15%;padding-top: 5%; padding-bottom: 5%; border-left: 3px solid #000099; border-right: 3px solid #000099">
-          <h4><b>Contact & Links</b></h4>
-          <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="mailto:best99317@stu.xjtu.edu.cn">best99317@stu.xjtu.edu.cn</a>
-          <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="tel:+8618986052591">+86 189 8605 2591</a>
-          <br><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
-          <br><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://www.google.com/maps/place/Wuhan,+Hubei,+China/@30.5642671,114.1705636,10z/data=!4m13!1m7!3m6!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!2sWuhan,+Hubei,+China!3b1!8m2!3d30.5930013!4d114.3058777!3m4!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!8m2!3d30.5930013!4d114.3058777?hl=en">Wuhan, Hubei, China</a>
-          <br><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://github.com/best99317">Github</a>
-          <br>&nbsp;<i class="ai ai-google-scholar w3-margin-right w3-large w3-text-black"></i>&nbsp;<a href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en">Google Scholar</a>
-          <br><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self" href="https://online-calculator.org/howoldami-mdy.aspx?month=3&day=17&year=1999">03/17/1999</a>
-        </div>
-        <div class="w3-bar-block my-blue"><h4  style="margin-top: 0px; margin-bottom: 0px"><b>
-          <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 15%">Home</a>
-          <a href="index.html#Bio" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Bio</a>
-          <a href="index.html#News" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">News</a>
-          <a href="index.html#Education" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Education</a>
-          <a href="publication.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Publication</a>
-          <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Research & Projects</a>
-          <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Honors & Awards</a>
-          <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Courses</a>
-          <a href="courses.html#skills" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Skills</a>
-          <a href="personal.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Personal</a>
-          <a href="SiteBai_CV.pdf" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 15%">Curriculum Vitae</a></b></h4>
-        </div>
+    </div>    
 
-        <div class="w3-container" style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">  
-          <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33" async="async" style="width: 100%"></script>
-          <!-- <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q">
-          </script> -->
-          <br>
-          <a href='https://clustrmaps.com/site/1b6vn'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099'/ style="width: 100%"></a>
-          <br>
-          <br>
-        </div>
-      </div>
-      
-    <!-- End Left Column -->
-    </div>
-    
-
-    <!-- Right Column -->
-    <div class="w3-threequarter">
-      
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-black
-          "></i>Under Construction ...</h2>
-      </div>
-    <!-- End Right Column -->
-    </div>
-    
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-black w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-black
+        "></i>Under Construction ...</h2>
+    </div>    
     
   <!-- End Grid -->
   </div>
   
   <!-- End Page Container -->
+</div>
 </div>
 
 <footer class="w3-container my-blue w3-center">
@@ -176,6 +200,15 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
+<script>
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  }
 </script>
 </body>
 </html>
