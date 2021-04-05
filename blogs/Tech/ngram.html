@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<link href="bai.jpg" rel="icon">
+<title>Site Bai | Ph.D. @Purdue CS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=.6666">
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "PT Serif", serif
+  }
+</style>
+<style>
+  .collapsible {
+    background-color: #000099;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    width: 10%;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #000099;
+  }
+
+  .collapsible1 {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    padding: 3px;
+    width: 10%;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active1,
+  .collapsible1:hover {
+    background-color: #ffffff;
+  }
+
+  .content {
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .my-blue,
+  .my-hover-blue:hover {
+    color: #fff !important;
+    background-color: #000099 !important
+  }
+
+  .w3-button:hover {
+    color: #000 !important;
+    background-color: #FFFFFF !important
+  }
+
+  .background-white,
+  .hover-background-white:hover {
+    color: #000 !important;
+    background-color: #FFFFFF !important
+  }
+
+  .link-button,
+  .hover-link-button:hover{
+    color: #000099;
+    cursor: pointer;
+    background-color: white;
+    text-align: middle;
+  }
+
+.vl {
+  border-left: 5px solid white;
+  height: 40px;
+}
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+</style>
+
+
+<body class="w3-background-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content" style="max-width:98%">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <div class="w3-card-4">
+          <div class="w3-container my-blue w3-card ">
+            <p style="float: right; margin-top: 0px; margin-top: 2.5%; margin-right: 3%;"><b>02/20/2021</b></p>
+            <button class="w3-button w3-xlarge"
+              style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color:rgba(65, 63, 206, 0.705)"
+              onclick="history.back()">&#8678; Back</button>
+            <div class="vl" style="float: left;margin-top: 1%; margin-right: 1%; margin-left: 1%;"></div>
+            <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Knowledge Fragments</h1><br><br><br>
+          </div>
+        </div>
+
+        <section id="name" style="margin-left: 8%;margin-right: 8%;">
+
+          <h2 class="w3-text-black w3-padding-16" style="background-color:rgba(99, 255, 85, 0.705);"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-black
+        "></i>Discounting, Backoff and Interpolation in NLP N-Gram</h2>
+            <h2 style="margin-right: 30px; margin-left: 30px;">N-Gram</h2>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">The model of n-gram is to leverage the previous (n-1) words to predict the next word. 
+              Such assumption that the probability distribution of the next word is only dependent of its previous (n-1) words is called the <b>Markov Assumption</b>.
+              Starting from the simplest, if the probability is only dependent of itself, the model is called a "Uni-Gram". Then `P(w_i) = \frac{C(w_i)}{N}`. If the probability is
+              conditioned on the previous word, the model is called "Bi-Gram". The probability is estimated by the frequency of the particular bi-gram out of all possible bi-grams given the previous word.
+              <br>
+              <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`p(w_i|w_{i-1}) = \frac {C(w_{i-1}w_i)}{\sum_w C(w_{i-1}w)}`</center></p>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">
+              The number of bi-grams starting with the previous word is also the count of the previous word.
+              <br>
+              <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`p(w_i|w_{i-1}) = \frac {C(w_{i-1}w_i)}{C(w_{i-1})}`</center>
+            </p>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">Generalizing to n-grams,
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`p(w_i|w_{i-n+1:i-1}) = \frac {C(w_{i-n+1:i-1}w_i)}{C(w_{i-n+1:i-1})}`</center>
+            </p>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">There may be a
+              lot of n-grams
+              that never appear in the corpus, and the probabilities computed by the above model would be zero, which is not the
+              real case.
+              Thus the technique of smoothing is adopted to assign some probability mass to zero counts.
+            </p>
+
+            <h2 style="margin-right: 30px; margin-left: 30px;">Add-One Smoothing</h2>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">
+              The most straight forward one is the Add-one Smoothing, also known as <b>Laplace Smoothing</b>. Simply add 1 count to every n-gram 
+              and increase the total count of n-grams by the size of the vocabulary. For uni-grams: </p>
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`P^\star(w_i) = \frac{C(w_i)}{\sum_i(C(w_i))} = \frac{C(w_i)+1}{\sum_i(C(w_i)+1)} = \frac{C(w_i)+1}{N+V}`</center>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">For bi-grams:</p>
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`p^\star(w_i|w_{i-1}) = \frac {C(w_{i-1}w_i) + 1}{\sum_{w}(C(w_{i-1}w)+1)} = \frac {C(w_{i-1}w_i) + 1}{C(w_{i-1}) + V}`</center>
+            
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">
+              One problem of Add-one Smoothing is that for those n-grams with non-zero but small counts, their probability changes drastically. 
+              Say in a corpus with a vocabulary of 1000 words, the bi-gram "dog eats" appears once, and the word "dog" appears twice. 
+              The initial `P(eats|dog) = \frac{1}{2}`, but the smoothed `P(eats|dog) = \frac{1+1}{2+1000}`.
+              <br> The extension of Add-one Smoothing is Add-k Smoothing, and is computed as:
+              <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`P_{Add-k}^\star(w_i|w_{i-1})=\frac{C(w_{i-1}w_i)+k}{C(w_{i-1})+kV}`</center>
+            </p>
+            
+            <h2 style="margin-right: 30px; margin-left: 30px;">Discount v.s. Discounting v.s. Smoothing</h2>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">
+            <b>Discounting: </b>The term Discounting is just a parallel perspective to look at smoothing. Because smoothing is also a kind of discount on the 
+            non-zero word counts. One kind of smoothing method we'll cover later is called Absolute-Discounting Smoothing. Thus discounting generally 
+            refers to the samething as smoothing.
+            <br><b>Discount: </b>Discount, on the other hand, is a ratio that describes how much the counts have changed after the smoothing. Still take Add-One Smoothing as an example.
+            Say there are `N` words in the corpus and `V` tokens in the vocabulary. The count of each token in the vocabulary is `C(w_i)`, and the probability of each token is `P(w_i) = \frac{C(w_i)}{N}`.
+            Define the count of words in regard of unchanged size of the corpus after Add-One Smoothing as <b>adjusted counts</b> or <b>effective counts</b> `C^\star(w_i)`. 
+            If the smoothed counts were to remain the same proportion, we would have `N = \sum_{i=1}^VC(w_i) = \sum_{i=1}^VC^\star(w_i)` and that `P(w_i) = P^\star(w_i)`, i.e. `\frac{C(w_i)}{N} = \frac{C(w_i)+1}{N+V}`.
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`C^\star(w_i) = \frac{(C(w_i)+1)N}{N+V}`</center>
+            </p>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">That is to say, after smoothing, the current count of the word `w_i` 
+              counts as appearing `C^\star(w_i)` times in the original corpus.
+              <br> Now we finally the fine the ratio of discount:</p>
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`d_i = \frac{C^\star(w_i)}{C(w_i)} = \frac{(C(w_i)+1)N}{C(w_i)(N+V)}`</center>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">That is to say, the count of the word `w_i` is now in `d_i` proportion of its original counts.
+              <br>Similarly, for bi-grams, we have:</p>
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`C^\star(w_{i-1}w_i) = \frac{(C(w_{i-1}w_i)+1)N}{C(w_{i-1})+V}`</center>
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`d_i = \frac{(C(w_{i-1}w_i)+1)N}{C(w_i)(C(w_{i-1})+V)}`</center>
+
+            
+            <h2 style="margin-right: 30px; margin-left: 30px;">Good-Turing Smoothing</h2>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">Unlike Add-One Smoothing who smooths the probability by directly adding one count, 
+              Good-Turing Smoothing re-distributes the probability mass based on the frequency of n-grams. Say there are `N` words in the corpus. The number of words appearing `c` times is `n_c`.
+            Then `N = \sum_{c=1}^\inftyn_c*c`. Now we set the smoothed frequency to be `c^\star`, given the total amount of words
+            unchanged, we have 
+            <center style="font-size: 20px; margin-top: 0px; margin-bottom: 0px">`\sum_{c^\star=1}^\inftyn_c*c^\star=\sum_{c=1}^\inftyn_{c+1}*(c+1)`</center></p>
+            <p style="margin-right: 50px; margin-left: 50px; font-size: 20px; margin-top: 0px; margin-bottom: 0px">That gives us `c^\star = \frac{n_{c+1}*(c+1)}{n_c}` 
+              and the smoothed probability being `P_c^\star = \frac{c^\star}{N} = \frac{n_{c+1}*(c+1)}{n_c*N}`.
+              <br>For example, for those words with zero probability, the count `c = 0`, and there are 10 000 such words, i.e. `n_0 = 10000`. Say given the number of words appearing once `n_1 = 2000`,
+              we can compute `c^\star = (0+1)\times 2000 / 10000 = 0.2`.
+              <br>Notice that for a word appearing, say 10 times, in the corpus, the statistical properties of this word tend to be more accurate and smoothing would, to some extent, diminish such merit.
+              Thus, in many cases, we only consider do smoothing within a threshold, i.e. `c^\star = \frac{(c+1)\frac{n_{c+1}}{n_c} -c \frac{(k+1)n_{k+1}}{n_1}} {1-\frac{(k+1)n_{k+1}}{n_1}}, 1 \leq c \leq k`.</p>
+
+
+            <h2 style="margin-right: 30px; margin-left: 30px;">Backoff: Katz Smoothing</h2>
+              
+              <p>上面的方法都是解决零频率 N 元语法问题，此外还可以通过利用对应的 N-1 元或更低元的语法来计算。主要有两种方法：Backoff 和 Interpolation，Backoff 中，只有当阶数较高的 N
+                元语法中存在零计数时，才把阶数较高的 N 元语法降为阶数较低的 N 元语法。</p>
+              <ul>
+                <ul>
+                  <li>1987 年提出</li>
+                  <li><img
+                      src="https://www.zhihu.com/equation?tex=%5Chat+%7BP%7D%28w_i%7Cw_%7Bi-2%7Dw_%7Bi-1%7D%29+%3D+%7BP%28w_i%7Cw_%7Bi-2%7Dw_%7Bi-1%7D%29%2C+c%28w_%7Bi-2%7Dw_%7Bi-1%7Dw_i%29+%3E+0%7D%E2%80%8B"
+                      alt="[公式]" eeimg="1"
+                      data-formula="\hat {P}(w_i|w_{i-2}w_{i-1}) = {P(w_i|w_{i-2}w_{i-1}), c(w_{i-2}w_{i-1}w_i) > 0}&#8203;"> </li>
+                  <li><img
+                      src="https://www.zhihu.com/equation?tex=%5Chat+%7BP%7D%28w_i%7Cw_%7Bi-2%7Dw_%7Bi-1%7D%29+%3D+%7B%5Calpha_1+P%28w_i%7Cw_%7Bi-1%7D%29%2C+c%28w_%7Bi-2%7Dw_%7Bi-1%7Dw_i%29+%3D+0%5C+and%5C+c%28w_%7Bi-1%7Dw_i%29+%3E+0%7D"
+                      alt="[公式]" eeimg="1"
+                      data-formula="\hat {P}(w_i|w_{i-2}w_{i-1}) = {\alpha_1 P(w_i|w_{i-1}), c(w_{i-2}w_{i-1}w_i) = 0\ and\ c(w_{i-1}w_i) > 0}">
+                  </li>
+                  <li><img
+                      src="https://www.zhihu.com/equation?tex=%5Chat+%7BP%7D%28w_i%7Cw_%7Bi-2%7Dw_%7Bi-1%7D%29+%3D+%7B%5Calpha_2+P%28w_i%29%2C+other%7D"
+                      alt="[公式]" eeimg="1" data-formula="\hat {P}(w_i|w_{i-2}w_{i-1}) = {\alpha_2 P(w_i), other}"> </li>
+                  <li>α 的目的是使等式的结果为真正的概率，保证： <img
+                      src="https://www.zhihu.com/equation?tex=%5Csum_%7Bi%2Cj%7D+P%28w_n%7Cw_iw_j%29+%3D+1" alt="[公式]" eeimg="1"
+                      data-formula="\sum_{i,j} P(w_n|w_iw_j) = 1"> </li>
+                </ul>
+              </ul>
+
+
+            <h2 style="margin-right: 30px; margin-left: 30px;">Interpolation: Jelinek-Mercer Smoothing</h2>
+                <ul>
+                  <li>1980 年提出，使用线性插值把不同阶的语法结合起来，不同阶通过权值加权</li>
+                  <li><img
+                      src="https://www.zhihu.com/equation?tex=%5Chat+%7BP%7D%28w_n%7Cw_%7Bn-1%7Dw_%7Bn-2%7D%29+%3D+%7B%5Clambda_1+P%28w_n%7Cw_%7Bn-1%7Dw_%7Bn-2%7D%29+%2B%5Clambda_2+P%28w_n%7Cw_%7Bn-1%7D%29+%2B+%5Clambda_3+P%28w_n%29%7D%2C%5C+%5Csum_i+%5Clambda_i+%3D+1"
+                      alt="[公式]" eeimg="1"
+                      data-formula="\hat {P}(w_n|w_{n-1}w_{n-2}) = {\lambda_1 P(w_n|w_{n-1}w_{n-2}) +\lambda_2 P(w_n|w_{n-1}) + \lambda_3 P(w_n)},\ \sum_i \lambda_i = 1">
+                  </li>
+                  <li>实际不仅仅只为三元语法训练三个 λ，还把每一个 λ 看成上下文的函数。</li>
+                </ul>
+              
+
+            <h2 style="margin-right: 30px; margin-left: 30px;">Absolute Discounting</h2>
+
+             
+            <h2 style="margin-right: 30px; margin-left: 30px;">Kneser-Ney Smoothing</h2>
+
+              <p>另外还有以下两种表现不错的平滑算法，可以参考：<a
+                  href="https://link.zhihu.com/?target=https%3A//nbviewer.jupyter.org/github/hscspring/Note_NLP/blob/master/CMU-NeuralNetworksforNLP2017/02-lm/02-lmNote.ipynb"
+                  class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">LM</a></p>
+              <ul>
+                <li>Absolute Discounting: Discounting of the counts for frequent N-grams is necessary to save some probability mass
+                  for the smoothing algorithm to distribute to the unseen N-grams.</li>
+                <li>Kneser-Ney Smoothing: Augments absolute discounting with a more sophisticated way to handle the lower-order
+                  unigram distribution.</li>
+              </ul>
+              <p>对于大语料，可以使用非常简单的 Stupid Backoff：放弃了计算真实的概率分布，高阶没有折扣概率，如果高阶 N-gram 的计数为零，只需退回到低阶 N-gram，使用固定权重，可以参考：<a
+                  href="https://link.zhihu.com/?target=https%3A//nbviewer.jupyter.org/github/hscspring/Note_NLP/blob/master/CMU-NeuralNetworksforNLP2017/02-lm/02-lmNote.ipynb"
+                  class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">LM</a>。</p>
+              <p>Ngram 可以用于处理上下文有关的错误，基本思想是：对于句子中的每个单词生成它的一切可能的错误拼写，或者是只包括排版印刷错误而造成的错拼，或者是也包括同音词造成的错拼，然后选出使该句子具有最高先验概率的拼写。此外还有 Bayes
+                分类法、Bayes 分类法与三元语法结合、判定表方法、基于转换的学习方法、潜在语义分析法、筛选算法（效果最好）。</p>
+              <h2>小结</h2>
+              <ul>
+                <li>N 元语法</li>
+                <ul>
+                  <li>一个单词的概率只依赖于它前面一个单词的这种假设叫作 Markov 假设，这样的模型叫 Bi-gram，即二元语法模型，也叫一阶 Markov 模型。</li>
+                  <li>N 增加时，精确度相应增加，同时生成句子的局限性增加（可选的下个词减少）；严重依赖于语料库。</li>
+                </ul><br>
+                <li>数据平滑</li>
+                <ul>
+                  <li>Add-One (Add-α)：简单，未登录词或低概率词会被给予过高的概率。</li>
+                  <li>Witten-Bell：看一个零概率 N 元语法的概率可以用首次看一个 N 元语法的概率模拟。</li>
+                  <li>Good-Turing：可以复杂，但简单修改也能工作的很好；仍然没有区分不同类型的罕见事件。</li>
+                  <li>Katz Smoothing (Backoff)/Jelinek-Mercer Smoothing (Deleted Interpolation)：利用对应的 N-1
+                    元或更低元的语法（结合不同阶）来计算；前者只有当阶数较高的 N 元语法中存在零计数时，才把阶数较高的 N 元语法降为阶数较低的 N 元语法。。</li>
+                  <li>Absolute Discounting/Kneser-Ney Smoothing：前者对 N 元语法计数进行绝对折扣；后者假设过去在更多情境中出现的词语更有可能出现在某些新的语境中。</li>
+                </ul>
+              </ul>
+              <ul>
+                <li> 具体表现<br> </li>
+                <ul>
+                  <li>Jelinek-Mercer 在小型训练集上表现更好； Katz 在大型训练集上表现更好。</li>
+                  <li>Katz 平滑对大数量的 N-gram 表现良好； Kneser-Ney 最适合小数量。</li>
+                  <li>在低（非零）计数的 Ngram 上，Jelinek-Mercer 优于 Katz。</li>
+                  <li>Absolute Discounting 优于 Linear Discounting。</li>
+                  <li>应用场景</li>
+                  <li>Applications like Text Categorization Add one smoothing can be used.</li>
+                  <li>State of the art technique Kneser-Ney Smoothing: both interpolation and backoff versions can be used.</li>
+                  <li>Very large training set like web data like Stupid Backoff are more efficient.</li>
+                </ul>
+              </ul>
+              <p>这章虽然是非常简单的 Ngram 语法，但 Smoothing 的各种算法却非常有意思，从中可以深刻地感受到对一个简单问题处理的智慧，我想这可能也是算法的魅力吧。关于 Witten-Bell Smoothing
+                找了好久才找到一个容易理解的资料（参考文献 2），更多关于 N-gram 和 Smoothing 可以参阅：<a
+                  href="https://link.zhihu.com/?target=https%3A//nbviewer.jupyter.org/github/hscspring/Note_NLP/blob/master/CMU-NeuralNetworksforNLP2017/02-lm/02-lmNote.ipynb"
+                  class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">LM</a></p>
+              <p><b>参考文献</b>：</p>
+              <ul>
+                <li><a href="https://link.zhihu.com/?target=https%3A//gawron.sdsu.edu/compling/course_core/lectures/smoothing.htm"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">Computational
+                    Linguistics</a> 加一平滑的例子不错。</li>
+                <li><a
+                    href="https://link.zhihu.com/?target=http%3A//gki.informatik.uni-freiburg.de/teaching/ws0607/advanced/lecture.html"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">Foundations of
+                    Artificial Intelligence · Advanced AI Techniques - Lectures</a> 参考了 7b 的 Witten-Bell 平滑。</li>
+                <li><a
+                    href="https://link.zhihu.com/?target=https%3A//nlp.stanford.edu/~wcmac/papers/20050421-smoothing-tutorial.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer"
+                    data-za-detail-view-id="1043">20050421-smoothing-tutorial.pdf</a> 和 <a
+                    href="https://link.zhihu.com/?target=https%3A//www.cl.uni-heidelberg.de/courses/ss15/smt/scribe6.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">scribe6.pdf</a>
+                  比较全面介绍了各种平滑算法的思想。</li>
+                <li><a href="https://link.zhihu.com/?target=https%3A//github.com/hscspring/All4NLP/tree/master/Ngram"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">All4NLP/Ngram at
+                    master · hscspring/All4NLP</a> 有两个不错的 PPT。</li>
+              </ul>
+              <p>还有几个可以的课件：</p>
+              <ul>
+                <li><a
+                    href="https://link.zhihu.com/?target=http%3A//l2r.cs.uiuc.edu/~danr/Teaching/CS546-09/Lectures/Lec5-Stat-09-ext.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">CS546:Learning
+                    and NLP Lec 6: Ngrams and Backoff Models</a></li>
+                <li><a href="https://link.zhihu.com/?target=https%3A//www.cs.jhu.edu/~jason/665/PDFSlides/lect05-smoothing.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer"
+                    data-za-detail-view-id="1043">lect05-smoothing.pdf</a></li>
+                <li><a href="https://link.zhihu.com/?target=http%3A//www.cs.virginia.edu/~kc2wc/teaching/NLP16/slides/03-smooth.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">lect03-smooth</a>
+                </li>
+                <li><a
+                    href="https://link.zhihu.com/?target=http%3A//www.cs.brandeis.edu/~cs136a/CS136a_Slides/CS136a_Lect11_PerplexityAndSmoothing.pdf"
+                    class=" wrap external" target="_blank" rel="nofollow noreferrer"
+                    data-za-detail-view-id="1043">CS136a_Lect11_PerplexityAndSmoothing</a></li>
+              </ul>
+            </div>
+              <br>
+              <br>
+            </p>
+          </div>
+        </section>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+  </div>
+
+  <footer class="w3-container my-blue w3-center">
+    <p> </p>
+
+  </footer>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "More...";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Less...";
+          moreText.style.display = "inline";
+        }
+      }
+    
+      function myFunction1() {
+        var dots1 = document.getElementById("dots1");
+        var moreText1 = document.getElementById("more1");
+        var btnText1 = document.getElementById("myBtn1");
+
+        if (dots1.style.display === "none") {
+          dots1.style.display = "inline";
+          btnText1.innerHTML = "More...";
+          moreText1.style.display = "none";
+        } else {
+          dots1.style.display = "none";
+          btnText1.innerHTML = "Less...";
+          moreText1.style.display = "inline";
+        }
+      }
+
+      function myFunction2() {
+        
+        var dots2 = document.getElementById("dots2");
+        var moreText2 = document.getElementById("more2");
+        var btnText2 = document.getElementById("myBtn2");
+
+        if (dots2.style.display === "none") {
+          dots2.style.display = "inline";
+          btnText2.innerHTML = "More...";
+          moreText2.style.display = "none";
+        } else {
+          dots2.style.display = "none";
+          btnText2.innerHTML = "Less...";
+          moreText2.style.display = "inline";
+        }
+      }
+
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</body>
+
+</html>

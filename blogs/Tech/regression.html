@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<link href="bai.jpg" rel="icon">
+<title>Site Bai | Ph.D. @Purdue CS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=.6666">
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "PT Serif", serif
+  }
+</style>
+<style>
+  .collapsible {
+    background-color: #000099;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    width: 10%;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #000099;
+  }
+
+  .collapsible1 {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    padding: 3px;
+    width: 10%;
+    border: none;
+    text-align: middle;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active1,
+  .collapsible1:hover {
+    background-color: #ffffff;
+  }
+
+  .content {
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .my-blue,
+  .my-hover-blue:hover {
+    color: #fff !important;
+    background-color: #000099 !important
+  }
+
+  .w3-button:hover {
+    color: #000 !important;
+    background-color: #FFFFFF !important
+  }
+
+  .background-white,
+  .hover-background-white:hover {
+    color: #000 !important;
+    background-color: #FFFFFF !important
+  }
+
+  .link-button,
+  .hover-link-button:hover{
+    color: #000099;
+    cursor: pointer;
+    background-color: white;
+    text-align: middle;
+  }
+
+.vl {
+  border-left: 5px solid white;
+  height: 40px;
+}
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+</style>
+
+
+<body class="w3-background-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content" style="max-width:98%">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <div class="w3-card-4">
+          <div class="w3-container my-blue w3-card ">
+            <p style="float: right; margin-top: 0px; margin-top: 2.5%; margin-right: 3%;"><b>02/20/2021</b></p>
+            <button class="w3-button w3-xlarge"
+              style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color:rgba(65, 63, 206, 0.705)"
+              onclick="history.back()">&#8678; Back</button>
+            <div class="vl" style="float: left;margin-top: 1%; margin-right: 1%; margin-left: 1%;"></div>
+            <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Knowledge Fragments</h1><br><br><br>
+          </div>
+        </div>
+
+        <section id="name" style="margin-left: 8%;margin-right: 8%;">
+
+          <h2 class="w3-text-black w3-padding-16" style="background-color:rgba(99, 255, 85, 0.705);"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-black
+        "></i>Linear Regression, Regression with Non-linear Basis, Bias-Variance Trade-off</h2>
+          <embed src="Note0208.pdf" width="100%" height="1000px"/>
+          
+        </section>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+  </div>
+
+  <footer class="w3-container my-blue w3-center">
+    <p> </p>
+
+  </footer>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "More...";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Less...";
+          moreText.style.display = "inline";
+        }
+      }
+    
+      function myFunction1() {
+        var dots1 = document.getElementById("dots1");
+        var moreText1 = document.getElementById("more1");
+        var btnText1 = document.getElementById("myBtn1");
+
+        if (dots1.style.display === "none") {
+          dots1.style.display = "inline";
+          btnText1.innerHTML = "More...";
+          moreText1.style.display = "none";
+        } else {
+          dots1.style.display = "none";
+          btnText1.innerHTML = "Less...";
+          moreText1.style.display = "inline";
+        }
+      }
+
+      function myFunction2() {
+        
+        var dots2 = document.getElementById("dots2");
+        var moreText2 = document.getElementById("more2");
+        var btnText2 = document.getElementById("myBtn2");
+
+        if (dots2.style.display === "none") {
+          dots2.style.display = "inline";
+          btnText2.innerHTML = "More...";
+          moreText2.style.display = "none";
+        } else {
+          dots2.style.display = "none";
+          btnText2.innerHTML = "Less...";
+          moreText2.style.display = "inline";
+        }
+      }
+
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</body>
+
+</html>
