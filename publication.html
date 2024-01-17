@@ -98,8 +98,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
     <h4><b>Contact & Links</b></h4>
     <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
       href="mailto:bai123@purdue.edu">bai123 AT purdue DOT edu</a>
-    <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
-      href="tel:+8618986052591">+86 189 8605 2591</a>
+    <!-- <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
+      href="tel:xxx">xxx</a> -->
     <br><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-black"></i><a
       href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
     <br><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i><a
@@ -122,8 +122,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
       <a href="publication.html" class="w3-bar-item w3-button"
         style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
-      <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
-        & Projects</a>
+      <!-- <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
+        & Projects</a> -->
       <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
         & Awards</a>
       <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
@@ -132,7 +132,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
       <a href="personal.html" class="w3-bar-item w3-button"
         style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
-      <a href="SiteBai_CV.pdf" class="w3-bar-item w3-button"
+      <a href="SiteBai_En.pdf" class="w3-bar-item w3-button"
         style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
     </b>
   </h4>
@@ -175,14 +175,53 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       <h2 class="w3-text-black w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-black
         "></i>Publication</h2>
       <h5 class="w3-opacity-off"><b>Preprint</b></h5>
+      
+      
+      <hr style="border:3px solid #000099">
+      <h5 class="w3-opacity-off"><b>Published</b></h5>
+      <div class="w3-container w3-text-black">
+        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
+        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
+        <!-- <img src="dccnn_image/dccnn.png" width="35%" style="float:right;"> -->
+        <h5 class="w3-opacity-off"><b>[1] Local Composite Saddle Point Optimization</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 12th International Conference on Learning Representations <b>(ICLR 2024)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://arxiv.org/pdf/2305.15643.pdf')"><b>PDF</b></button>
+        <!-- <button type="button" class="w3-round link-button"
+          onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Distributed optimization (DO) approaches for saddle point problems (SPP) have recently gained in popularity 
+            due to the critical role they play in machine learning (ML). Existing works mostly target smooth unconstrained 
+            objectives in Euclidean space, whereas ML problems often involve constraints or non-smooth regularization, 
+            which results in a need for composite optimization. Moreover, although non-smooth regularization often serves 
+            to induce structure (e.g., sparsity), standard aggregation schemes in distributed optimization break this 
+            structure. Addressing these issues, we propose Federated Dual Extrapolation (FeDualEx), an extra-step 
+            primal-dual algorithm with local updates, which is the first of its kind to encompass both saddle point 
+            optimization and composite objectives under the distributed paradigm. Using a generalized notion of Bregman 
+            divergence, we analyze its convergence and communication complexity in the homogeneous setting. Furthermore, 
+            the empirical evaluation demonstrates the effectiveness of FeDualEx for inducing structure in these challenging 
+            settings.
+          </p>
+        </div>
+        <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+            type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+        </div> -->
+        <br>
+      </div>
       <div class="w3-container w3-text-black">
         <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/dccnn.png" width="35%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[1] Dual Convexified Convolutional Neural Networks</b></h5>
-        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>arXiv preprint arXiv:2205.14056 <b>(Under Submission)</b></h6>
+        <h5 class="w3-opacity-off"><b>[2] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Transactions on Machine Learning Research <b>(TMLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Chuyang Ke, Jean Honorio</h6>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2205.14056.pdf')"><b>PDF</b></button>
@@ -208,15 +247,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div> -->
         <br>
       </div>
-      
-      <hr style="border:3px solid #000099">
-      <h5 class="w3-opacity-off"><b>Published</b></h5>
       <div class="w3-container w3-text-black">
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <h5 class="w3-opacity-off"><b>[1] Hindsight Trust Region Policy Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[3] Hindsight Trust Region Policy Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 30th International Joint Conference on Artificial Intelligence <b>(IJCAI 2021)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, <b>Site Bai</b>, Xuguang
           Lan, David Hsu, Nanning Zheng</h6>
@@ -248,7 +284,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       <div class="w3-container w3-text-black">
         <img src="Robot_image/roi.jpg" width="9%" style="float:right;">
         <img src="Robot_image/cover.jpg" width="10%" style="float:right; margin-right: 10px">
-        <h5 class="w3-opacity-off"><b>[2] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[4] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
         <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
@@ -266,7 +302,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       </div>
       <br>
       <div class="w3-container w3-text-black">
-        <h5 class="w3-opacity-off"><b>[3] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[5] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
         <img src="Robot_image/relationship.JPG" width="20%" style="float:right; margin-top: 0.01%">
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
