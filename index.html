@@ -7,10 +7,13 @@
 <link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="./css/theme.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
 </style>
@@ -190,7 +193,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>Chinese Pronunciation: /sihˈtə/ &nbsp </b></p>
         <audio id="player" src="./blogs/Casual/Site.mp3"></audio><a style="color: #FFFFFF" onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-1x' style="margin-top: 0.5%; float:left"></i></a>
         <!-- <p style="float: left; margin-top: 0.15%; margin-bottom: 0.5%"> &nbsp &nbsp <a href = "personal.html#name" style="color: #FFFFFF">More...</a></p> -->
-        <p style="float: right; margin-top: 0px; margin-bottom: 0.5%"><b>Last Updated: 02/11/2025</b></p>
+        <p style="float: right; margin-top: 0px; margin-bottom: 0.5%"><b>Last Updated: 06/06/2025</b></p>
       </div>
     </div> 
       
@@ -228,7 +231,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           <i class="fa fa-caret-right"></i> &nbsp I am currently a Ph.D. student at <a href="http://www.purdue.edu">Purdue University</a>, <a href="http://www.cs.purdue.edu/">Department of Computer Science</a>, working with <a href='https://bbullins.github.io/'>Prof. Brian Bullins</a> on <b>optimization (theory) for machine learning</b>. I've also worked with <a href="https://raymond-yeh.com/">Prof. Raymond Yeh</a> on <b>model immunization</b>, and <a href='https://www.cs.purdue.edu/homes/jhonorio/'>Prof. Jean Honorio</a> on <b>statistical learning theory</b>. 
           <br><i class="fa fa-caret-right"></i> &nbsp In May 2024, I earned my <a href="https://www.stat.purdue.edu/academic_programs/graduate/joint_stat_cs.html">M.S. in Statistics</a> along the way of my CS Ph.D. study. Previously in 2020, I received my bachelor's degree in computer science from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University (XJTU)</a>, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen Honors College</a>. I spent 6 wonderful years at XJTU after direct admission from middle school to the <a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young / Honors
             Youth Program</a> in 2014. 
-          <br><i class="fa fa-caret-right"></i> &nbsp In the summer of 2024, I was part of the Ads team at <i class="fab fa-tiktok"></i> TikTok, San Jose, as a machine learning engineer intern working on recommendation ranking models. From 2017 to 2020, I was a research assistant working on <b>deep reinforcement learning</b> at the Institute of Artificial Intelligence and Robotics, XJTU, advised by <a href="http://gr.xjtu.edu.cn/web/zeuslan">Prof. Xuguang Lan</a>, <!-- <a href="http://en.xjtu.edu.cn/info/1018/1640.htm"> <a href="https://scholar.google.com/citations?user=iqMe3p8AAAAJ&hl=en">Prof. Nanning Zheng</a>--> and <a href="https://zhanghanbo.github.io/"> Dr. Hanbo Zhang</a>. I am also interested in and have research experience in robotics, computer vision, and machine learning in general. 
+          <br><i class="fa fa-caret-right"></i> &nbsp For the summer of 2025, I am an applied scientist intern at <i class="fab fa-amazon"></i> Amazon, on the personalization team of Prime Video working on conversational recommendation. In the summer of 2024, I was part of the Ads team at <i class="fab fa-tiktok"></i> TikTok Mall, as a machine learning engineer intern working on recommendation ranking models. From 2017 to 2020, I was a research assistant working on <b>deep reinforcement learning</b> at the Institute of Artificial Intelligence and Robotics, XJTU, advised by <a href="http://gr.xjtu.edu.cn/web/zeuslan">Prof. Xuguang Lan</a>, <!-- <a href="http://en.xjtu.edu.cn/info/1018/1640.htm"> <a href="https://scholar.google.com/citations?user=iqMe3p8AAAAJ&hl=en">Prof. Nanning Zheng</a>--> and <a href="https://zhanghanbo.github.io/"> Dr. Hanbo Zhang</a>. I am also interested in and have research experience in robotics, computer vision, and machine learning in general. 
           <br><i class="fa fa-caret-right"></i> &nbsp In the summer of 2018, I visited National Unversity of Singapore (NUS) for the Summer Workshop in the School of Computing as a research intern. In the Fall semester of 2018, I visited University of California, Berkeley as an exchange student.
         </p>
       </div>
@@ -238,7 +241,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           "></i>News</h2>
         <div style= "height: 200px; overflow-y: scroll; margin-bottom: 20px">
         <p style="margin-right: 50px; margin-left: 50px; margin-top: 0px; font-size: 16px">
-          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://openreview.net/pdf?id=fMTPkDEhLQ">high-order & uniformly convex optimization</a> got accepted for <span style="color: red">ICLR 2025 (Oral, top 1.8%)</span>. See you in Singapore! <span style="float: right">02/11/2025</span><br>
+          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/2505.23760">model immunization through condition number</a> got accepted for <span style="color: red">ICML 2025 (Oral, top 1%)</span>. See you in Vancouver! <span style="float: right">06/06/2025</span><br>
+          <i class="fa-solid fa-circle-up"></i> &nbsp Started summer internship as an applied scientist at <i class="fab fa-amazon"></i> Amazon Prime Video, Seattle, Washington. <span style="float: right">05/12/2025</span><br>
+          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/2409.19200">acceleration for \(\ell_p\) steepest descent</a> got accepted for COLT 2025. <span style="float: right">05/02/2025</span><br>
+          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://openreview.net/pdf?id=TaqwI9qF5Q">stochastic \(\ell_p\) descent for nonconvex optimization</a> got accepted for ICML 2025. <span style="float: right">05/02/2025</span><br>
+          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for NeurIPS 2025 <span style="float: right">05/08/2025</span><br>
+          <i class="fa-regular fa-circle"></i> &nbsp Our paper on <a href="https://openreview.net/pdf?id=fMTPkDEhLQ">high-order & uniformly convex optimization</a> got accepted for <span style="color: red">ICLR 2025 (Oral, top 1.8%)</span>. <span style="float: right">02/11/2025</span><br>
           <i class="fa-regular fa-circle"></i> &nbsp Reviewer for ICML 2025 <span style="float: right">12/11/2024</span><br>
           <i class="fa-regular fa-circle"></i> &nbsp Passed the Ph.D. preliminary exam, counting down now. <span style="float: right">10/24/2024</span><br>
           <i class="fa-regular fa-circle"></i> &nbsp Reviewer for AISTATS 2025 <span style="float: right">10/02/2024</span><br>

@@ -159,15 +159,84 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       <h2 class="w3-text-black w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-black
         "></i>Publication</h2>
       <h5 class="w3-opacity-off"><b>Preprint</b></h5>
+      
+      <hr style="border:3px solid #000099">
+      <h5 class="w3-opacity-off"><b>Published</b></h5>
+
       <div class="w3-container w3-text-black">
         <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[1] Faster Acceleration for Steepest Descent</b></h5>
-        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Prepreint <b>(Under Review)</b></h6>
-        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
+        <h5 class="w3-opacity-off"><b>[1] Model Immunization from a Condition Number Perspective </b></h5>
+        <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Amber Yijia Zheng*, Brian Bullins, Raymond A. Yeh</h6>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://arxiv.org/pdf/2505.23760')"><b>PDF</b></button>
+        <!-- <button type="button" class="w3-round link-button"
+          onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Model immunization aims to pre-train models that are difficult to fine-tune on harmful tasks while retaining their utility 
+            on other non-harmful tasks. Though prior work has shown empirical evidence for immunizing text-to-image models, the key understanding 
+            of when immunization is possible and a precise definition of an immunized model remain unclear. In this work, 
+            we propose a framework, based on the condition number of a Hessian matrix, to analyze model immunization for linear models. 
+            Building on this framework, we design an algorithm with regularization terms to control the resulting condition numbers after pre-training. 
+            Empirical results on linear models and non-linear deep-nets demonstrate the effectiveness of the proposed algorithm on model immunization. 
+            The code is available at <a href="https://github.com/amberyzheng/model-immunization-cond-num">this https URL</a>.
+          </p>
+        </div>
+        <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+            type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+        </div> -->
+        <br>
+      </div>
+
+      <div class="w3-container w3-text-black">
+        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
+        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
+        <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
+        <h5 class="w3-opacity-off"><b>[2] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Xinyu Luo*, Bolian Li*, Petros Drineas, Ruqi Zhang, Brian Bullins</h6>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://openreview.net/pdf?id=TaqwI9qF5Q')"><b>PDF</b></button>
+        <!-- <button type="button" class="w3-round link-button"
+          onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>While popular optimization methods such as SGD, AdamW, and Lion depend on steepest descent updates in either \(\ell_2\) or \(\ell_\infty\)
+            norms, there remains a critical gap in handling the non-Euclidean structure observed in modern deep networks training. 
+            In this work, we address this need by introducing a new accelerated steepest descent algorithm, called Stacey, which uses interpolated 
+            primal-dual iterate sequences to effectively navigate non-Euclidean smooth optimization tasks. In addition to providing novel theoretical guarantees 
+            for the foundations of our algorithm, we empirically compare our approach against these popular methods on tasks including image classification and 
+            language model (LLM) pretraining, demonstrating both faster convergence and higher final accuracy. We further evaluate different values of 
+            across various models and datasets, underscoring the importance and efficiency of non-Euclidean approaches over standard Euclidean methods. 
+            Code can be found at https://github.com/xinyuluo8561/Stacey.
+          </p>
+        </div>
+        <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
+        <div class="content">
+          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+            type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+        </div> -->
+        <br>
+      </div>
+
+      <div class="w3-container w3-text-black">
+        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
+        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+          type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
+        <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
+        <h5 class="w3-opacity-off"><b>[3] Faster Acceleration for Steepest Descent</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 38th Annual Conference on Learning Theory <b>(COLT 2025)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2409.19200')"><b>PDF</b></button>
         <!-- <button type="button" class="w3-round link-button"
@@ -175,8 +244,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
           <p>Recent advances (Sherman, 2017; Sidford and Tian, 2018; Cohen et al., 2021) have overcome the fundamental barrier of 
-            dimension dependence in the iteration complexity of solving $\ell_\infty$ regression with first-order methods. 
-            Yet it remains unclear to what extent such acceleration can be achieved for general $\ell_p$ smooth functions. 
+            dimension dependence in the iteration complexity of solving \(\ell_\infty\) regression with first-order methods. 
+            Yet it remains unclear to what extent such acceleration can be achieved for general \(\ell_p\) smooth functions. 
             In this paper, we propose a new accelerated first-order method for convex optimization under non-Euclidean smoothness assumptions. 
             In contrast to standard acceleration techniques, our approach uses primal-dual iterate sequences taken with respect to differing norms, 
             which are then coupled using an implicitly determined interpolation parameter. For \(\ell_p\) norm smooth problems in \(d\) dimensions, 
@@ -191,19 +260,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div> -->
         <br>
       </div>
-      
-      
-      <hr style="border:3px solid #000099">
-      <h5 class="w3-opacity-off"><b>Published</b></h5>
+
       <div class="w3-container w3-text-black">
         <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/lowerbound.png" width="27%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[1] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
+        <h5 class="w3-opacity-off"><b>[4] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
         <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1.8%]</span> The 13th International Conference on Learning Representations <b>(ICLR 2025)</b></h6>
-        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://openreview.net/pdf?id=fMTPkDEhLQ')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -239,7 +305,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/FeDualEx.png" width="25%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[2] Local Composite Saddle Point Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[5] Local Composite Saddle Point Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 12th International Conference on Learning Representations <b>(ICLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
@@ -285,7 +351,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/dccnn.png" width="35%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[3] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
+        <h5 class="w3-opacity-off"><b>[6] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Transactions on Machine Learning Research <b>(TMLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Chuyang Ke, Jean Honorio</h6>
         <button type="button" class="w3-round link-button"
@@ -319,7 +385,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <h5 class="w3-opacity-off"><b>[4] Hindsight Trust Region Policy Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[7] Hindsight Trust Region Policy Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 30th International Joint Conference on Artificial Intelligence <b>(IJCAI 2021)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, <b>Site Bai</b>, Xuguang
           Lan, David Hsu, Nanning Zheng</h6>
@@ -351,7 +417,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       <div class="w3-container w3-text-black">
         <img src="Robot_image/roi.jpg" width="9%" style="float:right;">
         <img src="Robot_image/cover.jpg" width="10%" style="float:right; margin-right: 10px">
-        <h5 class="w3-opacity-off"><b>[5] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[8] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
         <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
@@ -369,7 +435,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
       </div>
       <br>
       <div class="w3-container w3-text-black">
-        <h5 class="w3-opacity-off"><b>[6] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[9] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
         <img src="Robot_image/relationship.JPG" width="20%" style="float:right; margin-top: 0.01%">
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
