@@ -7,10 +7,10 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Publications | Cedar Site Bai</title>
-  <link rel="stylesheet" href="css/site.css?v=20260814-19">
+  <link rel="stylesheet" href="css/site.css?v=20260815-3">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <script defer src="js/site.js?v=20260814-19"></script>
+  <script defer src="js/site.js?v=20260815-3"></script>
   <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]]}};</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -23,12 +23,49 @@
 </header>
 <main class="site-main">
   <header class="page-heading"><h1>Publications</h1><p class="page-kicker">Complete publication list, with abstracts and media</p></header>
+  <section class="publication-filter-panel" aria-labelledby="publication-filter-heading">
+    <div class="publication-filter-summary">
+      <h2 id="publication-filter-heading">Filter by topic</h2>
+      <span id="publication-filter-count" aria-live="polite">10 papers</span>
+    </div>
+    <div class="publication-filter-level">
+      <span class="publication-filter-label">Area</span>
+      <div class="publication-filters" role="group" aria-label="Research areas">
+        <button type="button" class="publication-filter publication-area-filter tag-all is-active" data-category="all" aria-pressed="true">All</button>
+        <button type="button" class="publication-filter publication-area-filter tag-optimization" data-category="Optimization" aria-pressed="false">Optimization</button>
+        <button type="button" class="publication-filter publication-area-filter tag-llm" data-category="LLM" aria-pressed="false">LLM</button>
+        <button type="button" class="publication-filter publication-area-filter tag-reinforcement-learning" data-category="Reinforcement Learning" aria-pressed="false">Reinforcement Learning</button>
+        <button type="button" class="publication-filter publication-area-filter tag-computer-vision" data-category="Computer Vision" aria-pressed="false">Computer Vision</button>
+        <button type="button" class="publication-filter publication-area-filter tag-ai-safety" data-category="AI Safety" aria-pressed="false">AI Safety</button>
+        <button type="button" class="publication-filter publication-area-filter tag-robotics" data-category="Robotics" aria-pressed="false">Robotics</button>
+      </div>
+    </div>
+    <div class="publication-filter-level publication-topic-level" id="publication-topic-level" hidden>
+      <span class="publication-filter-label">Topic</span>
+      <div class="publication-subfilters" data-category="Optimization" role="group" aria-label="Optimization topics" hidden>
+        <button type="button" class="publication-filter publication-topic-filter tag-optimization is-active" data-topic="all" aria-pressed="true">All Optimization</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-convex" data-topic="Convex Optimization" aria-pressed="false">Convex</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-stochastic" data-topic="Stochastic Optimization" aria-pressed="false">Stochastic</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-nonconvex" data-topic="Nonconvex Optimization" aria-pressed="false">Nonconvex</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-non-euclidean" data-topic="Non-Euclidean Optimization" aria-pressed="false">Non-Euclidean</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-high-order" data-topic="High-order Optimization" aria-pressed="false">High-order</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-composite" data-topic="Composite Optimization" aria-pressed="false">Composite</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-distributed" data-topic="Distributed Optimization" aria-pressed="false">Distributed</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-saddle-point" data-topic="Saddle Point Optimization" aria-pressed="false">Saddle Point</button>
+      </div>
+      <div class="publication-subfilters" data-category="LLM" role="group" aria-label="LLM topics" hidden>
+        <button type="button" class="publication-filter publication-topic-filter tag-llm is-active" data-topic="all" aria-pressed="true">All LLM</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-llm" data-topic="LLM Pretraining" aria-pressed="false">Pretraining</button>
+      </div>
+    </div>
+  </section>
   <section class="complete-publications">
 
-      <div class="publication-entry" data-venue="ICML 2026">
+      <div class="publication-entry" data-venue="ICML 2026" data-tags="Stochastic Optimization|LLM Pretraining">
         <h5 class="w3-opacity-off"><b>[1] Decoupling Variance and Scale-Invariant Updates in Adaptive Gradient Descent for Unified Vector and Matrix Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 43rd International Conference on Machine Learning <b>(ICML 2026)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Zitao Song, <b>Cedar Site Bai</b>, Zhe Zhang, Brian Bullins, David F. Gleich</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2602.06880')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -42,15 +79,16 @@
 
       
 
-      <div class="publication-entry" data-venue="ICML 2025">
+      <div class="publication-entry" data-venue="ICML 2025" data-tags="AI Safety|Computer Vision|Composite Optimization">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
         <h5 class="w3-opacity-off"><b>[2] Model Immunization from a Condition Number Perspective </b></h5>
-        <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
+        <h6 class="w3-text-black"><span class="highlight"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Amber Yijia Zheng*, Brian Bullins, Raymond A. Yeh</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-ai-safety">AI Safety</span><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-composite">Composite Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2505.23760')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -76,7 +114,7 @@
         <br>
       </div>
 
-      <div class="publication-entry" data-venue="ICML 2025">
+      <div class="publication-entry" data-venue="ICML 2025" data-tags="Stochastic Optimization|Nonconvex Optimization|Non-Euclidean Optimization|LLM Pretraining">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
@@ -85,6 +123,7 @@
         <h5 class="w3-opacity-off"><b>[3] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Xinyu Luo*, Bolian Li*, Petros Drineas, Ruqi Zhang, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-nonconvex">Nonconvex Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2506.06606')"><b>PDF</b></button>
         <!-- <button type="button" class="w3-round link-button"
@@ -109,7 +148,7 @@
         <br>
       </div>
 
-      <div class="publication-entry" data-venue="COLT 2025">
+      <div class="publication-entry" data-venue="COLT 2025" data-tags="Convex Optimization|Non-Euclidean Optimization">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
@@ -118,6 +157,7 @@
         <h5 class="w3-opacity-off"><b>[4] Faster Acceleration for Steepest Descent</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 38th Annual Conference on Learning Theory <b>(COLT 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2409.19200')"><b>PDF</b></button>
         <!-- <button type="button" class="w3-round link-button"
@@ -142,15 +182,16 @@
         <br>
       </div>
 
-      <div class="publication-entry" data-venue="ICLR 2025">
+      <div class="publication-entry" data-venue="ICLR 2025" data-tags="Convex Optimization|High-order Optimization">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/lowerbound.png" width="27%" style="float:right;">
         <h5 class="w3-opacity-off"><b>[5] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
-        <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1.8%]</span> The 13th International Conference on Learning Representations <b>(ICLR 2025)</b></h6>
+        <h6 class="w3-text-black"><span class="highlight"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1.8%]</span> The 13th International Conference on Learning Representations <b>(ICLR 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-high-order">High-order Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://openreview.net/pdf?id=fMTPkDEhLQ')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -180,7 +221,7 @@
         </div> 
         <br>
       </div>
-      <div class="publication-entry" data-venue="ICLR 2024">
+      <div class="publication-entry" data-venue="ICLR 2024" data-tags="Convex Optimization|Stochastic Optimization|Distributed Optimization|Saddle Point Optimization|Composite Optimization|AI Safety">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
@@ -189,6 +230,7 @@
         <h5 class="w3-opacity-off"><b>[6] Local Composite Saddle Point Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 12th International Conference on Learning Representations <b>(ICLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-distributed">Distributed Optimization</span><span class="paper-tag tag-saddle-point">Saddle Point Optimization</span><span class="paper-tag tag-composite">Composite Optimization</span><span class="paper-tag tag-ai-safety">AI Safety</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://openreview.net/pdf?id=kklwv4c4dI')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -226,7 +268,7 @@
         </div>
         <br>
       </div>
-      <div class="publication-entry" data-venue="TMLR 2024">
+      <div class="publication-entry" data-venue="TMLR 2024" data-tags="Convex Optimization">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
@@ -235,6 +277,7 @@
         <h5 class="w3-opacity-off"><b>[7] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Transactions on Machine Learning Research <b>(TMLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Chuyang Ke, Jean Honorio</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://openreview.net/pdf?id=0yMuNezwJ1')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -261,7 +304,7 @@
         </div> -->
         <br>
       </div>
-      <div class="publication-entry" data-venue="IJCAI 2021">
+      <div class="publication-entry" data-venue="IJCAI 2021" data-tags="Reinforcement Learning|Robotics|Convex Optimization|High-order Optimization">
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
@@ -270,6 +313,7 @@
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 30th International Joint Conference on Artificial Intelligence <b>(IJCAI 2021)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, <b>Site Bai</b>, Xuguang
           Lan, David Hsu, Nanning Zheng</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-reinforcement-learning">Reinforcement Learning</span><span class="paper-tag tag-robotics">Robotics</span><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-high-order">High-order Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
@@ -295,12 +339,13 @@
         <br>
       </div>
       <br>
-      <div class="publication-entry" data-venue="IROS 2019">
+      <div class="publication-entry" data-venue="IROS 2019" data-tags="Computer Vision|Robotics">
         <img src="Robot_image/roi.jpg" width="9%" style="float:right;">
         <img src="Robot_image/cover.jpg" width="10%" style="float:right; margin-right: 10px">
         <h5 class="w3-opacity-off"><b>[9] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-robotics">Robotics</span></div>
         <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
         <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
         <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
@@ -315,11 +360,12 @@
         <br>
       </div>
       <br>
-      <div class="publication-entry" data-venue="IROS 2019">
+      <div class="publication-entry" data-venue="IROS 2019" data-tags="Computer Vision|Robotics">
         <h5 class="w3-opacity-off"><b>[10] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
         <img src="Robot_image/relationship.JPG" width="20%" style="float:right; margin-top: 0.01%">
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-robotics">Robotics</span></div>
         <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
         <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
         <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
