@@ -1,175 +1,54 @@
-<!DOCTYPE html>
-<html>
-  <link href="//www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
-<title>Cedar Site Bai | Ph.D. @Purdue CS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=.6666">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/theme.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
-</style>
-<style>
-.collapsible {
-  background-color: #000099;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #000099;
-}
-
-.collapsible1 {
-  background-color: #ffffff;
-  color: black;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
-
-.active1, .collapsible1:hover {
-  background-color: #ffffff;
-}
-
-.content {
-  padding: 0 16px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
-.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
-
-.w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
-.link-button{background-color: #000099;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  width: 80px;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;}
-.link-button:hover{background-color: #ff0000;}
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 10%; /* Place the button at the bottom of the page */
-  right: 2%; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #000099; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #ff0000; /* Add a dark-grey background on hover */
-}
-</style>
-<body class="w3-background-grey">
-
-<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left"
-  style="display:none; width: 280px; direction:rtl;" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
-
-  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
-      <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
-      <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
-      <!-- <a href="index.html#News" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
-      <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
-      <a href="publication.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
-      <!-- <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
-        & Projects</a> -->
-      <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
-        & Awards</a>
-      <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
-        Skills</a>
-      <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
-      <a href="personal.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
-      <a href="SiteBai_En.pdf" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
-    </b>
-  </h4>
-  <br>
-  <div class="w3-container"
-    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
-    <script type="text/javascript"
-      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
-      async="async" style="width: 100%"></script>
-    <br>
-    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
-        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
-        style="width: 100%"></a>
-    <br>
-    <br>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Publications | Cedar Site Bai</title>
+  <link rel="stylesheet" href="css/site.css?v=20260814-19">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script defer src="js/site.js?v=20260814-19"></script>
+  <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body id="top">
+<header class="sitehead">
+  <div class="navwrap">
+    <a class="sitename" href="index.html?v=20260814-19">Cedar Site Bai</a>
+    <nav aria-label="Primary navigation"><a href="publication.html?v=20260814-19" aria-current="page">Publications</a><a href="index.html?v=20260814-19#news">News</a><a href="courses.html?v=20260814-19">Coursework</a><a href="honors.html?v=20260814-19">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></nav>
   </div>
+</header>
+<main class="site-main">
+  <header class="page-heading"><h1>Publications</h1><p class="page-kicker">Complete publication list, with abstracts and media</p></header>
+  <section class="complete-publications">
 
-
-  <!-- End Left Column -->
-</div>
-
-<div class="w3-main" style="margin-left:280px">
-<button onclick="topFunction()" id="myBtn" title="Go to top"><b>Back to Top</b></button>
-<!-- Page Container -->
-<div class="w3-content" style="max-width:98%">
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-card-4">
-      <div class="w3-container my-blue w3-card ">
-        <button class="w3-button w3-xlarge w3-hide-large"
-          style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;"
-          onclick="w3_open()">&#9776;</button>
-        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Cedar Site Bai · 柏思特 </h1><br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>Chinese Pronunciation: /sihˈtə/</b></p>
+      <div class="publication-entry" data-venue="ICML 2026">
+        <h5 class="w3-opacity-off"><b>[1] Decoupling Variance and Scale-Invariant Updates in Adaptive Gradient Descent for Unified Vector and Matrix Optimization</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 43rd International Conference on Machine Learning <b>(ICML 2026)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Zitao Song*, <b>Cedar Site Bai*</b>, Zhe Zhang†, Brian Bullins*, David F. Gleich*</h6>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://arxiv.org/pdf/2602.06880')"><b>PDF</b></button>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://github.com/Tsedao/Decoupled-Variance-Adaptation')"><b>Code</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Adaptive methods like Adam have become the de facto standard for large-scale vector and Euclidean optimization due to their coordinate-wise adaptation with a second-order nature. More recently, matrix-based spectral optimizers like Muon show the power of treating weight matrices as matrices rather than long vectors. To address the difficulty of linking these approaches, we reformulate the AdaGrad update and decompose it into a variance adaptation term and a scale-invariant term. This decoupling produces DeVA (Decoupled Variance Adaptation), a framework that bridges vector-based variance adaptation and matrix spectral optimization, enabling a seamless transition from Adam to adaptive spectral descent. Experiments across language modeling and image classification show that DeVA consistently outperforms state-of-the-art methods such as Muon and SOAP, reducing token usage by around 6.6%. Theoretically, the variance adaptation term improves blockwise smoothness and facilitates faster convergence.</p>
+        </div>
+        <br>
       </div>
-    </div> 
-    
-      
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <h2 class="w3-text-black w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-black
-        "></i>Publication</h2>
-      <h5 class="w3-opacity-off"><b>Preprint</b></h5>
-      
-      <hr style="border:3px solid #000099">
-      <h5 class="w3-opacity-off"><b>Published</b></h5>
 
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      
+
+      <div class="publication-entry" data-venue="ICML 2025">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[1] Model Immunization from a Condition Number Perspective </b></h5>
+        <h5 class="w3-opacity-off"><b>[2] Model Immunization from a Condition Number Perspective </b></h5>
         <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Amber Yijia Zheng*, Brian Bullins, Raymond A. Yeh</h6>
         <button type="button" class="w3-round link-button"
@@ -191,19 +70,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+          <video controls="controls" loop="loop" preload="metadata" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div> -->
         <br>
       </div>
 
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="ICML 2025">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[2] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
+        <h5 class="w3-opacity-off"><b>[3] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Xinyu Luo*, Bolian Li*, Petros Drineas, Ruqi Zhang, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
@@ -224,19 +103,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+          <video controls="controls" loop="loop" preload="metadata" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div> -->
         <br>
       </div>
 
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="COLT 2025">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[3] Faster Acceleration for Steepest Descent</b></h5>
+        <h5 class="w3-opacity-off"><b>[4] Faster Acceleration for Steepest Descent</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 38th Annual Conference on Learning Theory <b>(COLT 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
@@ -257,19 +136,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+          <video controls="controls" loop="loop" preload="metadata" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div> -->
         <br>
       </div>
 
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="ICLR 2025">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/lowerbound.png" width="27%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[4] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
+        <h5 class="w3-opacity-off"><b>[5] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
         <h6 class="w3-text-black"><span style="color: red"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1.8%]</span> The 13th International Conference on Learning Representations <b>(ICLR 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
@@ -293,21 +172,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Youtube</b></button>
         <div class="content">
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/_NXUTNGib2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="600" data-src="https://www.youtube.com/embed/_NXUTNGib2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Bilibili</b></button>
         <div class="content">
-          <iframe width="100%" height="600" controls="controls" loop="loop" autoplay="autoplay" src="//player.bilibili.com/player.html?isOutside=true&bvid=BV1gMEDzREPs&p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width=100% height=100% style="margin:5px">Your browser does not support the video tag.</iframe>
+          <iframe width="100%" height="600" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;bvid=BV1gMEDzREPs&amp;p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" style="margin:5px">Your browser does not support the video tag.</iframe>
         </div> 
         <br>
       </div>
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="ICLR 2024">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/FeDualEx.png" width="25%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[5] Local Composite Saddle Point Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[6] Local Composite Saddle Point Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 12th International Conference on Learning Representations <b>(ICLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
         <button type="button" class="w3-round link-button"
@@ -333,27 +212,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Youtube</b></button>
         <div class="content">
-          <!-- <iframe controls="controls" loop="loop" autoplay="autoplay" src="//player.bilibili.com/player.html?isOutside=true&aid=1353360182&bvid=BV17z421k7Pf&cid=1513237503&p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width=100% height=100% style="margin:5px">Your browser does not support the video tag.</iframe> -->
-          <!-- <video controls="controls" loop="loop" autoplay="autoplay" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" width=100%
+          <!-- <iframe data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=1353360182&amp;bvid=BV17z421k7Pf&amp;cid=1513237503&amp;p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" style="margin:5px">Your browser does not support the video tag.</iframe> -->
+          <!-- <video controls="controls" loop="loop" preload="metadata" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video> -->
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="600" data-src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Bilibili</b></button>
         <div class="content">
-          <iframe width="100%" height="600" controls="controls" loop="loop" autoplay="autoplay" src="//player.bilibili.com/player.html?isOutside=true&aid=1353360182&bvid=BV17z421k7Pf&cid=1513237503&p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width=100% height=100% style="margin:5px">Your browser does not support the video tag.</iframe>
-          <!-- <video controls="controls" loop="loop" autoplay="autoplay" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" width=100%
+          <iframe width="100%" height="600" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=1353360182&amp;bvid=BV17z421k7Pf&amp;cid=1513237503&amp;p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" style="margin:5px">Your browser does not support the video tag.</iframe>
+          <!-- <video controls="controls" loop="loop" preload="metadata" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video> -->
-            <!-- <iframe width="100%" height="600" src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <!-- <iframe width="100%" height="600" data-src="https://www.youtube.com/embed/V6EYBEewUz0?si=8rlgzd_F2uujmG1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         </div>
         <br>
       </div>
-      <div class="w3-container w3-text-black">
-        <!-- <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="TMLR 2024">
+        <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/dccnn.png" width="35%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[6] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
+        <h5 class="w3-opacity-off"><b>[7] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Transactions on Machine Learning Research <b>(TMLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Chuyang Ke, Jean Honorio</h6>
         <button type="button" class="w3-round link-button"
@@ -377,17 +256,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+          <video controls="controls" loop="loop" preload="metadata" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div> -->
         <br>
       </div>
-      <div class="w3-container w3-text-black">
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
+      <div class="publication-entry" data-venue="IJCAI 2021">
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <video controls="controls" loop="loop" autoplay="autoplay" width="15%" src="HTRPO_image/fetch_slide.mp4"
+        <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <h5 class="w3-opacity-off"><b>[7] Hindsight Trust Region Policy Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[8] Hindsight Trust Region Policy Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 30th International Joint Conference on Artificial Intelligence <b>(IJCAI 2021)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, <b>Site Bai</b>, Xuguang
           Lan, David Hsu, Nanning Zheng</h6>
@@ -410,16 +289,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
+          <video controls="controls" loop="loop" preload="metadata" src="HTRPO_image/HTRPO_DEMO.mp4" width=100%
             type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
         <br>
       </div>
       <br>
-      <div class="w3-container w3-text-black">
+      <div class="publication-entry" data-venue="IROS 2019">
         <img src="Robot_image/roi.jpg" width="9%" style="float:right;">
         <img src="Robot_image/cover.jpg" width="10%" style="float:right; margin-right: 10px">
-        <h5 class="w3-opacity-off"><b>[8] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[9] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
         <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>PDF</b></button> 
@@ -431,13 +310,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
         <br>
       </div>
       <br>
-      <div class="w3-container w3-text-black">
-        <h5 class="w3-opacity-off"><b>[9] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
+      <div class="publication-entry" data-venue="IROS 2019">
+        <h5 class="w3-opacity-off"><b>[10] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
         <img src="Robot_image/relationship.JPG" width="20%" style="float:right; margin-top: 0.01%">
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>
@@ -450,85 +329,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
         <br>
         <br>
       </div>
-    </div>
-
-  </div>
-     
-  <!-- End Grid -->
-</div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container my-blue w3-center">
-  <p> </p>
-
+  </section>
+<footer class="site-footer">
+  <span>Cedar Site Bai</span>
+  <span class="footer-links"><a href="publication.html?v=20260814-19">Publications</a><a href="index.html?v=20260814-19#news">News</a><a href="courses.html?v=20260814-19">Coursework</a><a href="honors.html?v=20260814-19">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></span>
 </footer>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-var coll = document.getElementsByClassName("collapsible1");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+</main>
 </body>
 </html>

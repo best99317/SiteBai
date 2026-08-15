@@ -1,169 +1,36 @@
-<!DOCTYPE html>
-<html>
-  <link href="//www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
-<title>Cedar Site Bai | Ph.D. @Purdue CS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=.6666">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/theme.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
-</style>
-<style>
-.collapsible {
-  background-color: #000099;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Research &amp; Projects | Cedar Site Bai</title>
+  <link rel="stylesheet" href="css/site.css?v=20260814-17">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script defer src="js/site.js?v=20260814-17"></script>
 
-.active, .collapsible:hover {
-  background-color: #000099;
-}
-
-.collapsible1 {
-  background-color: #ffffff;
-  color: black;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
-
-.active1, .collapsible1:hover {
-  background-color: #ffffff;
-}
-
-.content {
-  padding: 0 16px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
-
-.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
-
-.w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
-.link-button{background-color: #000099;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  width: 80px;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;}
-.link-button:hover{background-color: #ff0000;}
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 10%; /* Place the button at the bottom of the page */
-  right: 2%; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #000099; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #ff0000; /* Add a dark-grey background on hover */
-}
-</style>
-<body class="w3-background-grey">
-
-<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left"
-  style="display:none; width: 280px; direction:rtl;" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
-  
-  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
-      <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
-      <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
-      <!-- <a href="index.html#News" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
-      <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
-      <a href="publication.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
-      <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
-        & Projects</a>
-      <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
-        & Awards</a>
-      <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
-        Skills</a>
-      <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
-      <a href="personal.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
-      <a href="SiteBai_En.pdf" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
-    </b>
-  </h4>
-  <br>
-  <div class="w3-container"
-    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
-    <script type="text/javascript"
-      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
-      async="async" style="width: 100%"></script>
-    <br>
-    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
-        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
-        style="width: 100%"></a>
-    <br>
-    <br>
+</head>
+<body id="top">
+<header class="sitehead">
+  <div class="navwrap">
+    <a class="sitename" href="index.html?v=20260814-17">Cedar Site Bai</a>
+    <nav aria-label="Primary navigation"><a href="publication.html?v=20260814-17">Publications</a><a href="index.html?v=20260814-17#news">News</a><a href="courses.html?v=20260814-17">Coursework</a><a href="honors.html?v=20260814-17">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></nav>
   </div>
+</header>
+<main class="site-main">
+  <header class="page-heading"><h1>Research &amp; Projects</h1><p class="page-kicker">Earlier work in reinforcement learning, robot vision, machine learning, and image processing</p></header>
+  <section class="projects-content">
 
-
-  <!-- End Left Column -->
-</div>
-
-<div class="w3-main" style="margin-left:280px">
-<button onclick="topFunction()" id="myBtn" title="Go to top"><b>Back to Top</b></button>
-
-<!-- Page Container -->
-<div class="w3-content" style="max-width:98%">
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-card-4">
-      <div class="w3-container my-blue w3-card ">
-        <button class="w3-button w3-xlarge w3-hide-large"
-          style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;"
-          onclick="w3_open()">&#9776;</button>
-        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Cedar Site Bai · 柏思特 </h1><br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>Chinese Pronunciation: /sihˈtə/</b></p>
-      </div>
-    </div> 
-      
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <h2 class="w3-text-black w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-black
-        "></i>Research & Projects</h2>
-      <h3 class="w3-opacity-off"><b>&nbsp Deep Reinforcement Learning</b>
+      <h3 class="w3-opacity-off"><b>&nbsp; Deep Reinforcement Learning</b>
         <span style="float:right; font-size: 14px"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>Institute of Artificial Intelligence and Robotics, XJTU<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b>Xuguang Lan, Nanning Zheng; <b>Collaborator: </b>Hanbo Zhang</span></h3>
-      <div class="w3-container w3-text-black">
-        <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Hindsight Trust Region Policy Optimization</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>07/01/2019-04/30/2020</span></h5>
+      <div class="project-entry">
+        <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Hindsight Trust Region Policy Optimization</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>07/01/2019-04/30/2020</span></h5>
         <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 0px">This project aims at the performance of Reinforcement Learning agents in sparse-reward environments. It leverages the idea of Hindsight and the policy-based algorithm Trust Region Policy Optimization (TRPO). Hindsight refers to the algorithm’s ability to generalize learning from encountered samples to all across goal space, including ones not intended for the current task. Other than incorporating hindsight to TRPO, two techniques are proposed here: (1) QKL, a quadratic approximation to the KL divergence constraint on the trust region, leading to reduced variance in KL divergence estimation and improved stability in policy update; (2) Hindsight Goal Filtering (HGF), a filtering mechanism that selects conductive hindsight goals. Experiments also highlight the performance of HTRPO on various tasks.</h6>
         <center><img src="HTRPO_image/HTRPO_optimization.jpg" width="70%" style="margin: 1%"></center>
-        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>Paper</b></button> 
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1907.12439.pdf')"><b>Paper</b></button>
         <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
         <div class="content">
@@ -182,13 +49,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" width="32.3%" src="HTRPO_image/fetch_slide.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
-          <video controls="controls" loop="loop" autoplay="autoplay" width="32.3%" src="HTRPO_image/fetch_pickandplace.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
-          <video controls="controls" loop="loop" autoplay="autoplay" width="32.3%" src="HTRPO_image/fetch_push.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" width="32.3%" src="HTRPO_image/fetch_slide.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" width="32.3%" src="HTRPO_image/fetch_pickandplace.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" width="32.3%" src="HTRPO_image/fetch_push.mp4" type="video/mp4" style="float:right;margin:0.5%">Your browser does not support the video tag.</video>
         </div>
-        </h5>
-        <hr>
-        <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Deep Reinforcement Learning Toolkit Implementation</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>08/01/2019-05/30/2020</span>
+      </div>
+      <div class="project-entry">
+        <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Deep Reinforcement Learning Toolkit Implementation</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>08/01/2019-05/30/2020</span></h5>
         <img src="HTRPO_image/drl.jpg" width="33%" style="float: right; margin-top: 1%">
         <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project implements some main-stream deep reinforcement learning algorithms, currently including "Vanilla" Policy Gradient (PG), Natural Policy Gradient (NPG), Trust Region Policy Optimization (TRPO), Hindsight Experience Replay (HER), Hindsight Policy Gradient (HPG), and Remember and Forget for Experience Replay (ReF-ER). These algorithms are implemented on toy environments like Bit-flipping and Grid World.</h6>
         <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/best99317/Deep-RL-Package')"><b>Code</b></button>
@@ -201,26 +68,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           <p>Policy gradient implementations typically compute advantage function estimates based on the infinite-horizon discounted return, despite otherwise using the finite-horizon un-discounted policy gradient formula.</p>
           <p><b>2. Natural Policy Gradient (NPG): </b> NPG is proposed in <b><a href="https://papers.nips.cc/paper/2001/file/4b86abe48d358ecf194c56c69108433e-Paper.pdf">a NeurIPS 2001 paper</a> by Sham M. Kakade</b>. The spotlight of NPG is that it combines natural gradient with policy gradient, bounds the updates with Fisher Information Matrices, and solves the problem by taylor expansion approximation and conjugate-gradient descent. Borrowed from <a href="">Katerina Fragkiadaki's slides</a>,</p>
           <center><img src="HTRPO_image/npg.jpg" width="60%" style="margin-bottom: 1%"></center>
-          <p><b>3. Trust Region Policy Optimization (TRPO): </b> TRPO is proposed <b><a href="https://arxiv.org/pdf/1502.05477.pdf">a NeurIPS 2015 paper</a> by John Schulman</b>. It is quite similar to NPG. The main difference is the way TRPO bound the update by TV-divergence, which is then approximated by KL-divergence. It also proves that TRPO converges monotonically as the updates increase. With the solving process similar to that of NPG, the optimization problem of TRPO is:</p></p>
+          <p><b>3. Trust Region Policy Optimization (TRPO): </b> TRPO is proposed <b><a href="https://arxiv.org/pdf/1502.05477.pdf">a NeurIPS 2015 paper</a> by John Schulman</b>. It is quite similar to NPG. The main difference is the way TRPO bound the update by TV-divergence, which is then approximated by KL-divergence. It also proves that TRPO converges monotonically as the updates increase. With the solving process similar to that of NPG, the optimization problem of TRPO is:</p>
           <center><img src="HTRPO_image/TRPO_optimization.jpg" width="35%" style="margin-bottom: 1%"></center>
           <p><b>4. Hindsight Experience Replay (HER): </b> HER is proposed <b><a href="https://arxiv.org/pdf/1502.05477.pdf">a NeurIPS 2017 paper</a> by Marcin Andrychowicz</b>. The concept of "Hindsight" in deep reinforcement learning was proposed for the first time. HER construct a replay buffer to collect the hindsight data from past experiences, and incorporate it with value-based and off-policy deep RL algorithms like DQN and DDPG, which can be trained with data of any offline distribution.</p>
-          <p><b>5. Hindsight Policy Gradient (HPG): </b>HPG proposed by <b>Paulo Rauber in <a href="https://arxiv.org/pdf/1711.06006.pdf"> this ICLR 2019 paper</a></b> extends Hindsight from off-policy to on-policy VPG. It formalizes the policy gradient with hindsight data by leveraging goal-conditioned policy gradient and importance sampling. The hindsight policy gradient is given in the following theorem.
+          <p><b>5. Hindsight Policy Gradient (HPG): </b>HPG proposed by <b>Paulo Rauber in <a href="https://arxiv.org/pdf/1711.06006.pdf"> this ICLR 2019 paper</a></b> extends Hindsight from off-policy to on-policy VPG. It formalizes the policy gradient with hindsight data by leveraging goal-conditioned policy gradient and importance sampling. The hindsight policy gradient is given in the following theorem.</p>
           <center><img src="HTRPO_image/hpg.jpg" width="80%" style="margin-bottom: 1%"></center>
-          <p><b>6. Remember and Forget for Experience Replay (ReF-ER): </b>ReF-ER is proposed in <b><a href="https://arxiv.org/pdf/1711.06006.pdf">a ICML 2019 paper</a> by Guido Novati</b>. ReF-ER focuses on the quality of training data in the Experience Replay buffer in general ER methods. It filters out "good" training experiences by defining "near-policy" and "far-policy" and designs concrete mechanisms  for policy updating and gradient clipping.extends Hindsight from off-policy to on-policy VPG. It formalizes the policy gradient with hindsight data by leveraging goal-conditioned policy gradient and importance sampling. The hindsight policy gradient is given in the following theorem.
+          <p><b>6. Remember and Forget for Experience Replay (ReF-ER): </b>ReF-ER is proposed in <b><a href="https://arxiv.org/pdf/1711.06006.pdf">a ICML 2019 paper</a> by Guido Novati</b>. ReF-ER focuses on the quality of training data in the Experience Replay buffer in general ER methods. It filters out "good" training experiences by defining "near-policy" and "far-policy" and designs concrete mechanisms  for policy updating and gradient clipping.extends Hindsight from off-policy to on-policy VPG. It formalizes the policy gradient with hindsight data by leveraging goal-conditioned policy gradient and importance sampling. The hindsight policy gradient is given in the following theorem.</p>
           <center><img src="HTRPO_image/refer.jpg" width="70%" style="margin-bottom: 1%"></center>
 
         </div>
-        </h5>
         <br>
       </div>
-      <hr style="border:3px solid #000099">
-      <h3 class="w3-opacity-off"><b>&nbsp Robot Vision</b>
+
+      <h3 class="w3-opacity-off"><b>&nbsp; Robot Vision</b>
         <span style="float:right; font-size: 14px"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>Institute of Artificial Intelligence and Robotics, XJTU<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b>Xuguang Lan, Nanning Zheng; <b>Collaborators: </b>Hanbo Zhang, Xinwen Zhou</span></h3>
-      <div class="w3-container w3-text-black">
-        <h5 class="w3-opacity-off"><h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp ROI-based Robotic Grasp Detection</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>02/01/2018-04/30/2018, 12/30/2018-02/28/2019</span></h5>
+      <div class="project-entry">
+        <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; ROI-based Robotic Grasp Detection</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>02/01/2018-04/30/2018, 12/30/2018-02/28/2019</span></h5>
         <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">In overlapping scenes, grasps of close or overlapped objects may intersect with each other, which triggers grasp detection error by attributing the labeled grasp intended for object A to its near object B. This project aims to improve the accuracy of grasp detection by regulating the affiliation between the grasps and their corresponding objects. The methodology is that we detect grasps from Region-of-Interest (ROI) features rather than the original scene image, and therefore build up the affiliations between grasps and objects. This project also contributes a dataset that include 5185 images, 17688 object instances that belong to 31 categories, and 100,000+ labeled grasps.</h6>
         <center><img src="Robot_image/roi_gd.jpg" width="80%" style="margin: 1%"></center>
-        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>Paper</b></button> 
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1808.10313.pdf')"><b>Paper</b></button>
         <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
         <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
@@ -234,16 +100,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
         <div class="content">
-          <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+          <video controls="controls" loop="loop" preload="metadata" src="Robot_image/roi.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
         </div>
         <br>
       </div>
       <hr>
-      <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Robotic Grasping System with Visual Manipulation Relationship Reasoning</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>10/30/2018-03/28/2019</span></h5>
+      <div class="project-entry">
+          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Robotic Grasping System with Visual Manipulation Relationship Reasoning</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>10/30/2018-03/28/2019</span></h5>
           <img src="Robot_image/detector.jpg" width="30%" style="margin: 1%; float: right;">
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project aims to construct a robust autonomous robotic grasping system that utilizes a single neural network to detect objects, grasps, and reason the visual manipulation relationship between objects. It allows the robot to grasp objects from top to bottom when overlapping or stacking occurs and therefore avoid collapses or falls, and enable the robot to find out the objects hidden under a pile. We concatenate a grasp detector and a visual manipulation relationship predictor together, which outputs firstly the current object to grasp in order to reach the target based on a relationship tree, and then the grasp configuration of this object. This project also contributes a dataset that include 5185 images, 17688 object instances that belong to 31 categories, and 51000 manipulation relationships.</h6>
-          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button> 
+          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1809.07081.pdf')"><b>PDF</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/ZhangHanbo/Visual-Manipulation-Relationship-Network-Pytorch')"><b>Code</b></button>
           <button type="button" class="w3-round link-button" onclick="window.open('http://gr.xjtu.edu.cn/web/zeuslan/visual-manipulation-relationship-dataset;jsessionid=288F5869C6CAD201982E25C1500F40C4')"><b>Dataset</b></button>
           <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
@@ -257,11 +123,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           </div>
           <button type="button" class="collapsible w3-round link-button"><b>Demo</b></button>
           <div class="content">
-            <video controls="controls" loop="loop" autoplay="autoplay" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
+            <video controls="controls" loop="loop" preload="metadata" src="Robot_image/relation.mp4" width=100% type="video/mp4" style="margin:5px">Your browser does not support the video tag.</video>
           </div>
-          <hr>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Reimplementation of Deep Spatial Autoencoders on Baxter Robot</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>3/30/2019-05/30/2019</span></h5>
+      </div>
+      <div class="project-entry">
+          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Reimplementation of Deep Spatial Autoencoders on Baxter Robot</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>3/30/2019-05/30/2019</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project reimplements Deep Spatial Autoencoder (DSAE) proposed by <b>Chelsea Finn in <a href="https://arxiv.org/pdf/1509.06113.pdf">this paper</a></b> on the Baxter Robot platform for the push task. The image data is collected by running <a href="http://www.jmlr.org/proceedings/papers/v28/levine13.pdf">Guided Policy Search (GPS)</a> on the Baxter Robot Platform. The results of this project show that GPS does not work well on Baxter robot due to the lack of velocity variables and its control precision, and that DSAE is sensitive to the background noise of the images.</h6>
           <center><img src="Robot_image/dsae.jpg" width="90%" style="margin: 1%"></center>
           <button type="button" class="w3-round link-button" onclick="window.open('https://github.com/best99317/Spatial-Auto-Encoder')"><b>Code</b></button>
@@ -273,25 +139,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           <br>
           <br>
         </div>
-        <hr style="border:3px solid #000099">
-        <h3 class="w3-opacity-off"><b>&nbsp Machine Learning</b></h3>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Machine Learning Algorithms Toolkit Python & C++ Implementation</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%; margin-left: 1%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>Home<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Collaborators: </b>Myself<br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>12/10/2020-current</span></h5>
+
+        <h3 class="w3-opacity-off"><b>&nbsp; Machine Learning</b></h3>
+        <div class="project-entry">
+          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Machine Learning Algorithms Toolkit Python & C++ Implementation</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%; margin-left: 1%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>Home<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Collaborators: </b>Myself<br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>12/10/2020-current</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project implements classical machine learning algorithms from scratch in both Python and C++ without any ML frameworks like Pytorch or scikit-learn. It is currently under construction. More implementations are being added...</h6>
-          <button type="button" class="w3-round link-button link-button" onclick="window.open('')"><b>Code</b></button> 
+
           <button type="button" class="collapsible w3-round link-button"><b>Details</b></button>
           <div class="content">
             <p>None at the moment...</p>
           </div>
           <br>
         </div>
-        <hr style="border:3px solid #000099">
-        <h3 class="w3-opacity-off"><b>&nbsp Image Processing</b></h3>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp Image Style Transfer: "Imaginary Singapore"</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%; margin-left: 1%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>School of Computing, National University of Singapore<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b><a href="https://www.comp.nus.edu.sg/~ngtk/">Ng Teck Khim</a><br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>07/11/2018-08/02/2018</span></h5>
+
+        <h3 class="w3-opacity-off"><b>&nbsp; Image Processing</b></h3>
+        <div class="project-entry">
+          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; Image Style Transfer: "Imaginary Singapore"</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%; margin-left: 1%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>School of Computing, National University of Singapore<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b><a href="https://www.comp.nus.edu.sg/~ngtk/">Ng Teck Khim</a><br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>07/11/2018-08/02/2018</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project aims to offer a playful image-processing tool to stylize pictures or even doodles into master paintings. Firstly, it realized style migration with the help of  VGG-19 neural networks. Secondly, using the stylized images from the first part, it allows people to create art pieces on their own, turning simple doodles into beautiful freehand brushwork. In a word, this project helps you to create your own imaginary Singapore. </h6>
           <center><img src="Style_image/style_demo.jpg" width="66%" style="margin:1%;"></center>
-          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1508.06576.pdf')"><b>Reference</b></button> 
+          <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/1508.06576.pdf')"><b>Reference</b></button>
           <button type="button" class="collapsible w3-round link-button"><b>Poster</b></button>
           <div class="content">
             <embed src="Style_image/Poster.pdf" width="100%" height="1000px" />
@@ -309,8 +175,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           <br>
         </div>
         <hr>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp <a href="http://en.mcm.edu.cn/html_en/section/b77a1402496e05863c96de6120931806.html">China Mathematical Contest in Modeling</a>: Parameters Calibration on CT System</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%； margin-left: 0.5%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>School of Mathematics and Statistics<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b><a href="http://gr.xjtu.edu.cn/en/web/chenlei">Lei Chen</a>, <a href="http://gr.xjtu.edu.cn/web/hqlee">Huanqin Li</a>; <b>Collaborators: </b>Zexiao Wang, <a href="https://zhuo-zhi.github.io/">Zhuo Zhi</a><br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>09/15/2017-09/17/2017</span></h5>
+        <div class="project-entry">
+          <h5 class="w3-opacity-off"><b><i class="fa fa-caret-right"></i>&nbsp; <a href="http://en.mcm.edu.cn/html_en/section/b77a1402496e05863c96de6120931806.html">China Mathematical Contest in Modeling</a>: Parameters Calibration on CT System</b><span style="float:right; font-size: 14px; margin-right: 3%; margin-top: 0.5%； margin-left: 0.5%"><i class="fa fa-map-marker fa-fw w3-margin-right"></i><b>Location: </b>School of Mathematics and Statistics<br><i class="fa fa-user fa-fw w3-margin-right"></i><b>Advisors: </b><a href="http://gr.xjtu.edu.cn/en/web/chenlei">Lei Chen</a>, <a href="http://gr.xjtu.edu.cn/web/hqlee">Huanqin Li</a>; <b>Collaborators: </b>Zexiao Wang, <a href="https://zhuo-zhi.github.io/">Zhuo Zhi</a><br><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Duration: </b>09/15/2017-09/17/2017</span></h5>
           <h6 style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%">This project tackles with the Problem A in 2017 China Mathematical Contest in Modeling. It establishes models as well as the corresponding algorithms for CT System parameter calibration and CT imaging reconstruction from radiation data. The CT parametric calibration is firstly formalized into an optimization problem. It is then solved by genetic algorithm, utilizing the geometry of the CT platform, the energy absorption data, and the Radon Transfromation. Secondly, the CT image can be constructed from the energy absorption data by applying the Filtered Back Projection (FBP) algorithm. The paper and code presented (in Chinese) got the National Second Award (500/50000 teams) in the contest.</h6>
           <center><img src="mm_image/mm_ct2.jpg" width="20%" style="margin: 1%;"><img src="mm_image/ct3.jpg" width="20%" style="margin: 1%;"><img src="mm_image/ct4.jpg" width="20%" style="margin: 1%;"><img src="mm_image/mm_demo.jpg" width="20%" style="margin: 1%;"></center>
           <button type="button" class="collapsible w3-round link-button"><b>Problem</b></button>
@@ -336,80 +202,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
           <br>
         </div>
         <br>
-      </div>
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-</div>
-
-<footer class="w3-container my-blue w3-center">
-  <p> </p>
-
+  </section>
+  <p class="back-top"><a href="#top">Back to Top</a></p>
+<footer class="site-footer">
+  <span>Cedar Site Bai</span>
+  <span class="footer-links"><a href="publication.html?v=20260814-17">Publications</a><a href="index.html?v=20260814-17#news">News</a><a href="courses.html?v=20260814-17">Coursework</a><a href="honors.html?v=20260814-17">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></span>
 </footer>
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-</script>
-<script>
-  var coll = document.getElementsByClassName("collapsible1");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-</script>
-<script>
-  //Get the button
-  var mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-</script>
+</main>
 </body>
 </html>

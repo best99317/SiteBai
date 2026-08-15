@@ -1,0 +1,14 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.py[cod]
+.homepage-concepts-preview/
+tmp/
+v0/
+scripts/
+index-suggested.html
+BaiSite1.jpg
+BaiSite2.jpg
+SiteBai1.jpg
+css/cobalt.css
+js/cobalt.js

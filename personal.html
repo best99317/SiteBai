@@ -1,300 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <link href="//www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
-<title>Cedar Site Bai | Ph.D. @Purdue CS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=.6666">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/theme.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
-</style>
-<style>
-.collapsible {
-  background-color: #000099;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #000099;
-}
-
-.collapsible1 {
-  background-color: #ffffff;
-  color: black;
-  cursor: pointer;
-  padding: 3px;
-  width: 10%;
-  border: none;
-  text-align: middle;
-  outline: none;
-  font-size: 15px;
-}
-
-.active1, .collapsible1:hover {
-  background-color: #ffffff;
-}
-
-.content {
-  padding: 0 16px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
-.w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
-.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
-
-.link-button{
-  color: black;
-  cursor: pointer;
-  padding: 1px;
-  width: 10%;
-  background-color: white;
-  border: solid 2px;
-  border-color: #000099;
-  text-align: middle;
-  outline: none;
-  font-size: 14px;}
-
-.filterDiv {
-  float: left;
-  background-color: #ffffff;
-  border: solid 2px;
-  border-color: #000099;
-  color:#000000;
-  width: 30%;
-  line-height: 30px;
-  text-align: left;
-  margin: 2px;
-  padding: 10px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
-<body class="w3-background-grey">
-
-
-<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left"
-  style="display:none; width: 280px; direction:rtl;" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
-
-  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
-      <a href="index.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
-      <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
-      <!-- <a href="index.html#News" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
-      <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
-      <a href="publication.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
-      <!-- <a href="projects.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Research
-        & Projects</a> -->
-      <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
-        & Awards</a>
-      <a href="courses.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Courses &
-        Skills</a>
-      <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
-      <a href="personal.html" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
-      <a href="SiteBai_En.pdf" class="w3-bar-item w3-button"
-        style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
-    </b>
-  </h4>
-  <br>
-  <div class="w3-container"
-    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
-    <script type="text/javascript"
-      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
-      async="async" style="width: 100%"></script>
-    <br>
-    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
-        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
-        style="width: 100%"></a>
-    <br>
-    <br>
-  </div>
-
-
-  <!-- End Left Column -->
-</div>
-
-<div class="w3-main" style="margin-left:280px">
-
-<!-- Page Container -->
-<div class="w3-content" style="max-width:98%">
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-card-4">
-      <div class="w3-container my-blue w3-card ">
-        <button class="w3-button w3-xlarge w3-hide-large"
-          style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;"
-          onclick="w3_open()">&#9776;</button>
-        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Cedar Site Bai · 柏思特 </h1><br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>Chinese Pronunciation: /sihˈtə/</b></p>
-      </div>
-    </div>   
-
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-
-      <div id="myBtnContainer" style="margin-left: 5%;margin-right: 5%;margin-top: 2%;">
-        <button class="btn active" onclick="filterSelection('all')" style="background-color:rgba(65, 63, 206, 0.705)"><b> Show All </b></button>
-        <button class="btn" onclick="filterSelection('fragments')" style="background-color:rgba(99, 255, 85, 0.705)"><b> Knowledge Fragments</b></button>
-        <button class="btn" onclick="filterSelection('tips')" style="background-color:rgba(232, 235, 79, 0.705)"><b> Useful Tips </b></button>
-        <button class="btn" onclick="filterSelection('comments')" style="background-color:rgba(255, 130, 130, 0.667)"><b> Reading Comments </b></button>
-        <button class="btn" onclick="filterSelection('blogs')" style="background-color:rgba(42, 241, 255, 0.667)"><b> Interesting Blogs </b></button>
-      </div>
-
-      <div class="container" style="margin-left: 5%;margin-right: 5%;">
-<!--         <div class="filterDiv blogs" style="background-color:rgba(232, 235, 79, 0.705);cursor: pointer;" onclick="location.href='blogs/Casual/name.html';"><b><font color="red">When You doubt YOU CAN MAKE IT</b></div> -->
-        <div class="filterDiv fragments" style="background-color:rgba(99, 255, 85, 0.705);cursor: pointer;" onclick="location.href='blogs/Tech/ngram.html';"><b> Discounting, Backoff and Interpolation in NLP n-Gram</b></div>
-        <div class="filterDiv blogs" style="background-color:rgba(42, 241, 255, 0.667);cursor: pointer;" onclick="location.href='blogs/Casual/name.html';"><b>About My Name</b></div>
-<!--         <div class="filterDiv comments" style="background-color:rgba(255, 130, 130, 0.667);cursor: pointer;" onclick="location.href='blogs/Casual/被讨厌的勇气.html';"><b>《幸福的勇气》读后感 </b></div> -->
-        <div class="filterDiv fragments" style="background-color:rgba(99, 255, 85, 0.705);cursor: pointer;" onclick="location.href='blogs/Tech/regression.html';"><b> Linear Regression, Regression with Non-linear Basis, Bias-Variance Trade-off</b></div>
-        <div class="filterDiv fragments" style="background-color:rgba(99, 255, 85, 0.705);cursor: pointer;" onclick="location.href='blogs/Tech/chernoff.html';"><b> Chernoff Bounds </b></div>
-        <div class="filterDiv fragments" style="background-color:rgba(99, 255, 85, 0.705);cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=9JfGxKkmBc0')"><b> A Really Good Youtube Video about ELMo (Embeddings from Language Models)</b></div>
-      </div>
-
-    <br>
-    <br>
-      
-    
-  <!-- End Grid -->
-  </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Personal Notes | Cedar Site Bai</title>
+  <link rel="stylesheet" href="css/site.css?v=20260814-17">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script defer src="js/site.js?v=20260814-17"></script>
   
-  <!-- End Page Container -->
-</div>
-</div>
-
-<footer class="w3-container my-blue w3-center">
-  <p> </p>
-
+</head>
+<body id="top">
+<header class="sitehead">
+  <div class="navwrap">
+    <a class="sitename" href="index.html?v=20260814-17">Cedar Site Bai</a>
+    <nav aria-label="Primary navigation"><a href="publication.html?v=20260814-17">Publications</a><a href="index.html?v=20260814-17#news">News</a><a href="courses.html?v=20260814-17">Coursework</a><a href="honors.html?v=20260814-17">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></nav>
+  </div>
+</header>
+<main class="site-main">
+  <header class="page-heading"><h1>Personal Notes</h1><p class="page-kicker">Knowledge fragments, useful references, and occasional personal writing</p></header>
+  <section class="page-section">
+    <div class="filter-bar" aria-label="Filter personal notes">
+      <button class="btn active" type="button" onclick="filterSelection('all')">Show All</button>
+      <button class="btn" type="button" onclick="filterSelection('fragments')">Knowledge Fragments</button>
+      <button class="btn" type="button" onclick="filterSelection('tips')">Useful Tips</button>
+      <button class="btn" type="button" onclick="filterSelection('comments')">Reading Comments</button>
+      <button class="btn" type="button" onclick="filterSelection('blogs')">Interesting Blogs</button>
+    </div>
+    <div class="note-grid">
+      <a class="filterDiv fragments" href="blogs/Tech/ngram.html?v=20260814-17"><strong>Discounting, Backoff and Interpolation in NLP n-Gram</strong></a>
+      <a class="filterDiv blogs" href="blogs/Casual/name.html?v=20260814-17"><strong>About My Name</strong></a>
+      <a class="filterDiv fragments" href="blogs/Tech/regression.html?v=20260814-17"><strong>Linear Regression, Regression with Non-linear Basis, Bias-Variance Trade-off</strong></a>
+      <a class="filterDiv fragments" href="blogs/Tech/chernoff.html?v=20260814-17"><strong>Chernoff Bounds</strong></a>
+      <a class="filterDiv fragments" href="blogs/Tech/inequalities.html?v=20260814-17"><strong>Useful Inequalities and Their Proofs</strong></a>
+      <a class="filterDiv fragments" href="https://www.youtube.com/watch?v=9JfGxKkmBc0"><strong>A Really Good Youtube Video about ELMo (Embeddings from Language Models)</strong></a>
+    </div>
+    <p class="filter-empty" id="filter-empty" hidden>No notes in this category yet.</p>
+  </section>
+<footer class="site-footer">
+  <span>Cedar Site Bai</span>
+  <span class="footer-links"><a href="publication.html?v=20260814-17">Publications</a><a href="index.html?v=20260814-17#news">News</a><a href="courses.html?v=20260814-17">Coursework</a><a href="honors.html?v=20260814-17">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></span>
 </footer>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-var coll = document.getElementsByClassName("collapsible1");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-  function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  }
-</script>
-<script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-    }
-  }
-
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-</script>
+</main>
 </body>
 </html>

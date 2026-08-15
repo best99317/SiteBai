@@ -1,372 +1,115 @@
-<!DOCTYPE html>
-<html>
-<link href="//www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
-<title>Cedar Site Bai | PhD Student @Purdue CS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=.6666">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/theme.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", serif}
-</style>
-<style>
-.parent {
-        position: relative;
-        top: 0;
-        left: 0;
-}
-.image1 {
-        position: relative;
-        top: 0;
-        left: 0;
-        border-left: 4px solid #000099;
-        border-right: 4px solid #000099;
-        border-bottom: 4px solid #000099;
-}
-.image2 {
-        position: absolute;
-        top: 42%;
-        left: 36%;
-        border: 4px solid #000099;
-        border-radius:50%;
-        margin-left: 0px;
-        margin-left: 0px
-}
-.my-blue,.my-hover-blue:hover{color:#fff!important;background-color:#000099!important}
-.background-white,.hover-background-white:hover{color:#000!important;background-color:#FFFFFF!important}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Cedar Site Bai | Applied Scientist at Amazon</title>
+  <link rel="stylesheet" href="css/site.css?v=20260814-18">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script defer src="js/site.js?v=20260814-18"></script>
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.w3-button:hover{color:#000!important;background-color:#FFFFFF!important}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 700px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
-<body class="w3-background-grey">
-
-<div class="w3-sidebar w3-bar-block w3-border-right w3-collapse my-blue w3-animate-left" style="display:none; width: 280px; direction:rtl;" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large my-blue w3-hide-large">Close &times;</button>
-  <div class="w3-bar-block background-white"
-    style="padding-left: 10%;padding-top: 2%; padding-bottom: 5%; border-left: 3px solid #000099; border-right: 3px solid #000099; border-top: 3px solid #000099; direction: ltr;">
-    <h4><b>Contact & Links</b></h4>
-    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
-      href="mailto:bai123@purdue.edu">bai123 AT purdue DOT edu</a>
-    <!-- <br><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
-      href="tel:xxx">xxx</a> -->
-    <br><i class="fa-brands fa-linkedin fa-fw w3-margin-right w3-large w3-text-black"></i><a
-      href="https://www.linkedin.com/in/best99317/">LinkedIn</a>
-    <br><i class="fa-solid fa-location-dot fa-fw w3-margin-right w3-large w3-text-black"></i><a
-      href="https://goo.gl/maps/UfpT1cpfKUnUV4r8A">West Lafayette,
-      IN, USA</a>
-    <br><i class="fa-brands fa-github fa-fw w3-margin-right w3-large w3-text-black"></i><a
-      href="https://github.com/best99317">Github</a>
-    <br>&nbsp;<i class="ai ai-google-scholar w3-margin-right w3-large w3-text-black"></i>&nbsp;<a
-      href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&hl=en"> Google Scholar</a>
-    <br><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-black"></i><a target="_self"
-      href="https://online-calculator.org/howoldami-mdy.aspx?month=3&day=17&year=1999">03/17/1999</a>
+</head>
+<body id="top">
+<header class="sitehead">
+  <div class="navwrap">
+    <a class="sitename" href="index.html?v=20260814-18">Cedar Site Bai</a>
+    <nav aria-label="Primary navigation"><a href="publication.html?v=20260814-19">Publications</a><a href="index.html?v=20260814-18#news">News</a><a href="courses.html?v=20260814-18">Coursework</a><a href="honors.html?v=20260814-18">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></nav>
   </div>
-  <h4 style="margin-top: 0px; margin-bottom: 0px"><b>
-    <a href="index.html" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF; padding-left: 10%">Home</a>
-    <!-- <a href="index.html#Bio" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Bio</a> -->
-    <!-- <a href="index.html#News" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">News</a> -->
-    <!-- <a href="index.html#Education" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Education</a> -->
-    <a href="publication.html" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Publication</a>
-    <!-- <a href="projects.html" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Research & Projects</a> -->
-    <a href="honors.html" class="w3-bar-item w3-button" style="border: 1px solid #FFFFFF;padding-left: 10%">Honors
-      & Awards</a>
-    <a href="courses.html" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Courses & Skills</a>
-    <!-- <a href="honors.html#skills" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Skills</a> -->
-    <a href="personal.html" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Personal</a>
-    <a href="SiteBai_En.pdf" class="w3-bar-item w3-button"
-      style="border: 1px solid #FFFFFF;padding-left: 10%">Curriculum Vitae</a>
-    <!-- <a href="SiteBai_Cn.pdf" class="w3-bar-item w3-button" 
-      style="border: 1px solid #FFFFFF;padding-left: 10%; font-family: kaiti">中文简历</a></b> -->
-  </h4>
-  <br>
-  <div class="w3-container"
-    style="border-left: 3px solid #000099; border-right: 3px solid #000099; border-bottom: 3px solid #000099">
-    <script type="text/javascript"
-      src="//rf.revolvermaps.com/0/0/8.js?i=54039uwva7w&amp;m=7&amp;c=00ff6c&amp;cr1=ff0000&amp;f=arial&amp;l=33"
-      async="async" style="width: 100%"></script>
-    <br>
-    <a href='https://clustrmaps.com/site/1b6vn' title='Visit tracker'><img
-        src='//clustrmaps.com/map_v2.png?cl=32a208&w=300&t=tt&d=Tg6u4rFryWEJ_Ok5VnfY_cySAP4bybAl62e0ceEjt-Q&co=000099' /
-        style="width: 100%"></a>
-    <br>
-    <br>
-  </div>
-
-
-  <!-- End Left Column -->
-</div>
-
-<div class="w3-main" style="margin-left:280px">
-<!-- Page Container -->
-<div class="w3-content" style="max-width:98%">
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-card-4">
-      <div class="w3-container my-blue w3-card ">
-        <button class="w3-button w3-xlarge w3-hide-large" style="float: left; margin-bottom: 0px; margin-top: 0.5%; margin-right: 0.5%; background-color: #000099;" onclick="w3_open()">&#9776;</button>
-        <h1 style="float: left; margin-bottom: 0px; margin-top: 0.5%;">Cedar Site Bai · 柏思特 </h1>
-        <br><br><br>
-        <p style="float: left; margin-top: 0px; margin-bottom: 0.5%"><b>Chinese Pronunciation for Site: /sihˈtə/ &nbsp </b></p>
-        <audio id="player" src="./blogs/Casual/Site.mp3"></audio><a style="color: #FFFFFF" onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-1x' style="margin-top: 0.5%; float:left"></i></a>
-        <!-- <p style="float: left; margin-top: 0.15%; margin-bottom: 0.5%"> &nbsp &nbsp <a href = "personal.html#name" style="color: #FFFFFF">More...</a></p> -->
-        <p style="float: right; margin-top: 0px; margin-bottom: 0.5%"><b>Last Updated: 06/06/2025</b></p>
-      </div>
-    </div> 
-      
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <div class="w3-container">
-        <center>
-          <div class="parent">
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img class="image1 w3-card-4" src="background1.jpg" style="width:100%; height: width/3">
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img class="image1 w3-card-4" src="background2.jpg" style="width:100%; height: width/3">
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img class="image1 w3-card-4" src="background3.jpg" style="width:100%; height: width/3">
-              </div>
-
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <img class="image2 w3-card-4" src="BaiSite.jpg" style="width: 30%" alt=""></div>
-        </center>
-      </div>
-      <section id="Bio">
-      <h2 class="w3-text-black w3-padding" style="width: 150px; margin: 0px"><i class="fa-regular fa-face-smile fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Bio</h2>
-      <div style= "height: 207px; overflow-y: scroll;">
-        <p style="margin-right: 50px; margin-left: 50px; font-size: 16px; margin-top: 0px; margin-bottom: 0px">
-          <i class="fa fa-caret-right"></i> &nbsp I am currently a Ph.D. student at <a href="http://www.purdue.edu">Purdue University</a>, <a href="http://www.cs.purdue.edu/">Department of Computer Science</a>, working with <a href='https://bbullins.github.io/'>Prof. Brian Bullins</a> on <b>optimization (theory) for machine learning</b>. I've also worked with <a href="https://raymond-yeh.com/">Prof. Raymond A. Yeh</a> on <b>model immunization</b>, and <a href='https://www.cs.purdue.edu/homes/jhonorio/'>Prof. Jean Honorio</a> on <b>statistical learning theory</b>. 
-          <br><i class="fa fa-caret-right"></i> &nbsp In May 2024, I earned my <a href="https://www.stat.purdue.edu/academic_programs/graduate/joint_stat_cs.html">M.S. in Statistic and CS</a> along the way of my CS Ph.D. study. Previously in 2020, I received my bachelor's degree in computer science from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University (XJTU)</a>, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen Honors College</a>. I spent 6 wonderful years at XJTU after direct admission from middle school to the <a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young / Honors
-            Youth Program</a> in 2014. 
-          <br><i class="fa fa-caret-right"></i> &nbsp For the summer of 2025, I am an applied scientist intern at <i class="fab fa-amazon"></i> Amazon, on the personalization team of Prime Video working on conversational recommendation. In the summer of 2024, I was part of the Ads team at <i class="fab fa-tiktok"></i> TikTok Mall, as a machine learning engineer intern working on recommendation ranking models. From 2017 to 2020, I was a research assistant working on <b>deep reinforcement learning</b> at the Institute of Artificial Intelligence and Robotics, XJTU, advised by <a href="http://gr.xjtu.edu.cn/web/zeuslan">Prof. Xuguang Lan</a>, <!-- <a href="http://en.xjtu.edu.cn/info/1018/1640.htm"> <a href="https://scholar.google.com/citations?user=iqMe3p8AAAAJ&hl=en">Prof. Nanning Zheng</a>--> and <a href="https://zhanghanbo.github.io/"> Dr. Hanbo Zhang</a>. I am also interested in and have research experience in robotics, computer vision, and machine learning in general. 
-          <br><i class="fa fa-caret-right"></i> &nbsp In the summer of 2018, I visited National Unversity of Singapore (NUS) for the Summer Workshop in the School of Computing as a research intern. In the Fall semester of 2018, I visited University of California, Berkeley as an exchange student.
-        </p>
-      </div>
-      </section>
-      <section id="News">
-        <h2 class="w3-text-black w3-padding"><i class="fa fa-bell fa-fw w3-margin-right w3-xxlarge w3-text-black
-          "></i>News</h2>
-        <div style= "height: 200px; overflow-y: scroll; margin-bottom: 20px">
-        <p style="margin-right: 50px; margin-left: 50px; margin-top: 0px; font-size: 16px">
-          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/2505.23760">model immunization through condition number</a> got accepted for <span style="color: red">ICML 2025 (Oral, top 1%)</span>. See you in Vancouver! <span style="float: right">06/06/2025</span><br>
-          <i class="fa-solid fa-circle-up"></i> &nbsp Started summer internship as an applied scientist at <i class="fab fa-amazon"></i> Amazon Prime Video, Seattle, Washington. <span style="float: right">05/12/2025</span><br>
-          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/2409.19200">acceleration for \(\ell_p\) steepest descent</a> got accepted for COLT 2025. <span style="float: right">05/02/2025</span><br>
-          <i class="fa-solid fa-circle-up"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/2506.06606">stochastic \(\ell_p\) descent for nonconvex optimization</a> got accepted for ICML 2025. <span style="float: right">05/02/2025</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for NeurIPS 2025 <span style="float: right">05/08/2025</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Our paper on <a href="https://openreview.net/pdf?id=fMTPkDEhLQ">high-order & uniformly convex optimization</a> got accepted for <span style="color: red">ICLR 2025 (Oral, top 1.8%)</span>. <span style="float: right">02/11/2025</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for ICML 2025 <span style="float: right">12/11/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Passed the Ph.D. preliminary exam, counting down now. <span style="float: right">10/24/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for AISTATS 2025 <span style="float: right">10/02/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for TMLR <span style="float: right">09/14/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for ICLR 2025 <span style="float: right">08/13/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for AAAI 2025 <span style="float: right">07/19/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Summer internship as a machine learning engineer at <i class="fab fa-tiktok"></i> TikTok, San Jose, California. <span style="float: right">05/20/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for NeurIPS 2024 <span style="float: right">05/20/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Received <a href="https://www.stat.purdue.edu/academic_programs/graduate/joint_stat_cs.html">M.S. in Statistics and Computer Science</a> along the way of my doctoral journey! <span style="float: right">05/10/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Our paper on <a href="https://openreview.net/forum?id=kklwv4c4dI">federated composite saddle point optimization</a> got accepted for ICLR 2024 <span style="float: right">01/16/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Our paper on <a href="https://openreview.net/forum?id=0yMuNezwJ1">dual convexified CNNs</a> got accepted by Transactions on Machine Learning Research (TMLR) 2024 <span style="float: right">01/08/2024</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for ICML 2024 <span style="float: right">12/22/2023</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for ICLR 2024 <span style="float: right">09/04/2023</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for NeurIPS 2023 <span style="float: right">07/30/2023</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Reviewer for AISTATS 2023 <span style="float: right">10/07/2022</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Passed Algorithm and System core courses (equivalence of qualification exam in Purdue CS) <span style="float: right">05/12/2022</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Our paper on <a href="https://arxiv.org/pdf/1907.12439.pdf">hindsight deep reinforcement learning</a> got accepted for IJCAI 2021 <span style="float: right">04/30/2021</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Admitted to fully funded CS Doctoral Program from Purdue University<span style="float: right">02/27/2020</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp A marvelous week with Prof. David Hsu from NUS during his visit to our group <span style="float: right">11/30/2019</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp Wonderful time at Venetian Hotel, Macau, China attending IROS 2019  <span style="float: right">11/07/2019</span><br>
-          <i class="fa-regular fa-circle"></i> &nbsp 2 papers I coauthored in got accepted for IROS 2019 <span style="float: right">06/20/2019</span><br>
-        </p>
-        </div>
-      </section>
-      <!-- <section id="Education">
-        <h2 class="w3-text-black w3-padding"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-black
-          "></i>Education</h2>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><img src="purdue.jpg" height="25px", width="25px"> &nbsp <b>Purdue University</b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Jan. 2021. - Dec. 2025.</span></h5>
-          <br><p><span style="float:left">Ph.D. in Computer Science</span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>West Lafayette, USA</p>
-        </div>
-        <br>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><img src="xjtu.jpg" height="25px", width="25px"> &nbsp <b>Xi’an Jiaotong University, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen College</a></b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Sep. 2016. - Jun. 2020.</span></h5>
-          <br><p><span style="float:left">Bachelor of Engineering in Computer Science (Honors Science Program)</span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Xi'an, China</p>
-        </div>
-        <br>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><img src="xjtu.jpg" height="25px", width="25px"> &nbsp <b>Xi’an Jiaotong University, <a href='http://bjb.xjtu.edu.cn/xygk/xyjj.htm'>Qian Xuesen College</a></b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Sep. 2014 - Sep. 2016.</span></h5>
-          <br><p><span style="float:left"><a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young / Honors Youth Program</a></span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Xi'an, China</p>
-        </div>
-        <br>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><img src="berkeley.jpg" height="25px", width="25px"> &nbsp <b>University of California, Berkeley</b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Aug. 2018. - Dec. 2018.</span></h5>
-          <br><p><span style="float:left">International Study Program</span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Berkeley, USA</p>
-        </div>
-        <br>
-        <div class="w3-container w3-text-black">
-          <h5 class="w3-opacity-off"><span style="float:left"><img src="nus.jpg" height="25px", width="25px"> &nbsp <b>National University of Singapore</b></span><span style="float:right"><i class="fa fa-calendar w3-margin-right"></i>Jul. 2018. - Aug. 2018.</span></h5>
-          <br><p><span style="float:left">Summer Workshop &nbsp &nbsp &nbsp &nbsp &nbsp </span><span style="float:right"><i class="fa fa-map-marker w3-margin-right"></i>Singapore</p>
-        </div>
-        <br>
-      </section> -->
+</header>
+<main class="site-main">
+  <section class="profile">
+    <aside class="identity" aria-label="Profile information">
+      <img class="portrait" src="BaiSite.jpg" alt="Portrait of Cedar Site Bai">
+      <h1>Cedar Site Bai</h1>
+      <span class="chinese">柏思特</span>
+      <p class="role">Applied Scientist<br>Amazon</p>
+      <p class="contact">[BEST990317] AT [GMAIL] DOT [COM]<br>Chinese Name Pron.: /sihˈtə/ <audio id="player" src="blogs/Casual/Site.mp3"></audio><a href="#" aria-label="Play Chinese pronunciation" onclick="document.getElementById('player').play(); return false;"><i class="fa-solid fa-volume-high"></i></a></p>
+      <div class="identity-links"><a href="https://scholar.google.com/citations?user=Vnc1dYAAAAAJ&amp;hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar</a><a href="https://github.com/best99317"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a><a href="https://www.linkedin.com/in/best99317/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a><a href="SiteBai_En.pdf"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>CV</a></div>
+    </aside>
+    <div class="bio">
+      <h2>About</h2>
+      <p>Hi there! I am a <strong>machine learning researcher</strong> interested in both the foundations of learning and their real-world applications. My research interests include optimization for machine learning, reinforcement learning, and mathematical optimization theory.</p>
+      <p>I am currently an <strong>Applied Scientist at Amazon</strong> on the Prime Video Personalization team, where I work on whole-page reranking. My earlier industry experience includes conversational recommendation at Amazon Prime Video and ads ranking models at TikTok Mall.</p>
+      <p>Before joining Amazon, I pursued my Ph.D. in the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at <a href="https://www.purdue.edu/">Purdue University</a>, advised by <a href="https://bbullins.github.io/">Prof. Brian Bullins</a>. My doctoral research gave me a strong foundation in mathematical optimization theory and machine learning. I have also worked with <a href="https://raymond-yeh.com/">Prof. Raymond A. Yeh</a> on AI safety, including model immunization and machine unlearning, and <a href="https://www.cs.purdue.edu/homes/jhonorio/">Prof. Jean Honorio</a> on statistical learning theory.</p>
+      <p>I received an M.S. in Statistics and Computer Science from Purdue in 2024 alongside my Ph.D. studies, and a B.E. in Computer Science from Xi’an Jiaotong University in 2020, where my research focused on deep reinforcement learning and robotics.</p>
     </div>
-  </div>
-    
-    
-  <!-- End Grid -->
-</div>
-  
-  <!-- End Page Container -->
-</div>
+  </section>
 
+  <section id="affiliations">
+    <h2>Affiliations</h2>
+    <div class="affiliations">
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/amazon.webp?v=20260814-18" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="https://www.amazon.com/">Amazon</a><span class="affiliation-date">2026– · Summer 2025</span></div>
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/purdue.webp?v=20260814-18" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="https://www.purdue.edu/">Purdue</a><span class="affiliation-date">2021–2026</span></div>
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/tiktok.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="https://www.tiktok.com/">TikTok</a><span class="affiliation-date">Summer 2024</span></div>
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/xjtu.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="http://en.xjtu.edu.cn/">XJTU</a><span class="affiliation-date">2014–2020</span></div>
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/berkeley.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="https://www.berkeley.edu/">UC Berkeley</a><span class="affiliation-date">Fall 2018</span></div>
+      <div class="affiliation"><div class="affiliation-logo"><img src="assets/affiliations/nus.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></div><a class="affiliation-name" href="https://www.nus.edu.sg/">NUS</a><span class="affiliation-date">Summer 2018</span></div>
+    </div>
+  </section>
 
+  <section id="news">
+    <h2>Recent News</h2>
+    <div class="news-scroll" tabindex="0" aria-label="Recent news; scroll for older items">
+      <ul class="news">
+          <li><time datetime="2026-08-07">08/07/2026</time><span>Our work on multi-turn LLM conversational recommendation was accepted to CIKM 2026.</span></li>
+          <li><time datetime="2026-05-26">05/26/2026</time><span>Joined <i class="fa-brands fa-amazon" aria-hidden="true"></i> Amazon as an Applied Scientist in Sunnyvale, California.</span></li>
+          <li><time datetime="2026-05-16">05/16/2026</time><span>Graduated with a Ph.D. in Computer Science from Purdue University.</span></li>
+          <li><time datetime="2026-04-30">04/30/2026</time><span>Our paper on <a href="https://arxiv.org/pdf/2602.06880">variance adaptive optimizer for LLM pretraining</a> was accepted to ICML 2026.</span></li>
+          <li><time datetime="2026-04-17">04/17/2026</time><span>Defended my thesis, <a href="https://doi.org/10.25394/PGS.32077425">Algorithms and Theory for Optimization with Structured Objectives</a>.</span></li>
+          <li><time datetime="2026-04-11">04/11/2026</time><span>Reviewer for JMLR.</span></li>
+          <li><time datetime="2026-03-24">03/24/2026</time><span>Reviewer for NeurIPS 2026.</span></li>
+          <li><time datetime="2025-12-18">12/18/2025</time><span>Reviewer for ICML 2026.</span></li>
+          <li><time datetime="2025-09-03">09/03/2025</time><span>Reviewer for ICLR 2026.</span></li>
+          <li><time datetime="2025-07-22">07/22/2025</time><span>Reviewer for TPAMI.</span></li>
+          <li><time datetime="2025-06-06">06/06/2025</time><span>Our paper on <a href="https://arxiv.org/pdf/2505.23760">model immunization through condition number</a> was accepted to <span class="highlight">ICML 2025 (Oral, top 1%)</span>. See you in Vancouver!</span></li>
+          <li><time datetime="2025-05-12">05/12/2025</time><span>Started summer internship as an applied scientist at <i class="fa-brands fa-amazon"></i> Amazon Prime Video, Seattle, Washington.</span></li>
+          <li><time datetime="2025-05-08">05/08/2025</time><span>Reviewer for NeurIPS 2025.</span></li>
+          <li><time datetime="2025-05-02">05/02/2025</time><span>Our paper on <a href="https://arxiv.org/pdf/2409.19200">acceleration for ℓ<sub>p</sub> steepest descent</a> was accepted to COLT 2025.</span></li>
+          <li><time datetime="2025-05-02">05/02/2025</time><span>Our paper on <a href="https://arxiv.org/pdf/2506.06606">stochastic ℓ<sub>p</sub> descent for nonconvex optimization</a> was accepted to ICML 2025.</span></li>
+          <li><time datetime="2025-02-11">02/11/2025</time><span>Our paper on <a href="https://openreview.net/pdf?id=fMTPkDEhLQ">high-order &amp; uniformly convex optimization</a> was accepted to <span class="highlight">ICLR 2025 (Oral, top 1.8%)</span>.</span></li>
+          <li><time datetime="2024-12-11">12/11/2024</time><span>Reviewer for ICML 2025.</span></li>
+          <li><time datetime="2024-10-24">10/24/2024</time><span>Passed the Ph.D. preliminary exam, counting down now.</span></li>
+          <li><time datetime="2024-10-02">10/02/2024</time><span>Reviewer for AISTATS 2025.</span></li>
+          <li><time datetime="2024-09-14">09/14/2024</time><span>Reviewer for TMLR.</span></li>
+          <li><time datetime="2024-08-13">08/13/2024</time><span>Reviewer for ICLR 2025.</span></li>
+          <li><time datetime="2024-07-19">07/19/2024</time><span>Reviewer for AAAI 2025.</span></li>
+          <li><time datetime="2024-05-20">05/20/2024</time><span>Summer internship as a machine learning engineer at <i class="fa-brands fa-tiktok"></i> TikTok, San Jose, California.</span></li>
+          <li><time datetime="2024-05-20">05/20/2024</time><span>Reviewer for NeurIPS 2024.</span></li>
+          <li><time datetime="2024-05-10">05/10/2024</time><span>Received <a href="https://www.stat.purdue.edu/academic_programs/graduate/joint_stat_cs.html">M.S. in Statistics and Computer Science</a> along the way of my doctoral journey!</span></li>
+          <li><time datetime="2024-01-16">01/16/2024</time><span>Our paper on <a href="https://openreview.net/forum?id=kklwv4c4dI">federated composite saddle point optimization</a> was accepted to ICLR 2024.</span></li>
+          <li><time datetime="2024-01-08">01/08/2024</time><span>Our paper on <a href="https://openreview.net/forum?id=0yMuNezwJ1">dual convexified CNNs</a> was accepted to Transactions on Machine Learning Research (TMLR) 2024.</span></li>
+          <li><time datetime="2023-12-22">12/22/2023</time><span>Reviewer for ICML 2024.</span></li>
+          <li><time datetime="2023-09-04">09/04/2023</time><span>Reviewer for ICLR 2024.</span></li>
+          <li><time datetime="2023-07-30">07/30/2023</time><span>Reviewer for NeurIPS 2023.</span></li>
+          <li><time datetime="2022-10-07">10/07/2022</time><span>Reviewer for AISTATS 2023.</span></li>
+          <li><time datetime="2022-05-12">05/12/2022</time><span>Passed Algorithm and System core courses (equivalence of qualification exam in Purdue CS).</span></li>
+          <li><time datetime="2021-04-30">04/30/2021</time><span>Our paper on <a href="https://arxiv.org/pdf/1907.12439.pdf">hindsight deep reinforcement learning</a> was accepted to IJCAI 2021.</span></li>
+          <li><time datetime="2020-02-27">02/27/2020</time><span>Admitted to fully funded CS Doctoral Program from Purdue University.</span></li>
+          <li><time datetime="2019-11-30">11/30/2019</time><span>A marvelous week with Prof. David Hsu from NUS during his visit to our group.</span></li>
+          <li><time datetime="2019-11-07">11/07/2019</time><span>Wonderful time at Venetian Hotel, Macau, China attending IROS 2019.</span></li>
+          <li><time datetime="2019-06-20">06/20/2019</time><span>Two papers I coauthored were accepted to IROS 2019.</span></li>
+      </ul>
+    </div>
+    <p class="scroll-note">Scroll for earlier news.</p>
+  </section>
 
-<footer class="w3-container my-blue w3-center">
-  <p> </p>
-
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <div class="publication-list">
+      <article class="pub"><div class="venue-rail">ICML 2025</div><div class="pubbody"><div class="pubtitle"><a href="https://arxiv.org/pdf/2505.23760">Model Immunization from a Condition Number Perspective</a><span class="oral">Oral</span></div><div class="authors">Cedar Site Bai*, Amber Yijia Zheng*, Brian Bullins, Raymond A. Yeh</div><div class="publinks"><a href="https://arxiv.org/pdf/2505.23760">Paper</a><a href="publication.html?v=20260814-19">Details</a></div></div></article>
+      <article class="pub"><div class="venue-rail">COLT 2025</div><div class="pubbody"><div class="pubtitle"><a href="https://arxiv.org/pdf/2409.19200">Faster Acceleration for Steepest Descent</a></div><div class="authors">Cedar Site Bai, Brian Bullins</div><div class="publinks"><a href="https://arxiv.org/pdf/2409.19200">Paper</a><a href="publication.html?v=20260814-19">Details</a></div></div></article>
+      <article class="pub"><div class="venue-rail">ICLR 2025</div><div class="pubbody"><div class="pubtitle"><a href="https://openreview.net/pdf?id=fMTPkDEhLQ">Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</a><span class="oral">Oral</span></div><div class="authors">Cedar Site Bai, Brian Bullins</div><div class="publinks"><a href="https://openreview.net/pdf?id=fMTPkDEhLQ">Paper</a><a href="publication.html?v=20260814-19">Details</a></div></div></article>
+    </div>
+    <p><a href="publication.html?v=20260814-19">See the complete publication list →</a></p>
+  </section>
+<footer class="site-footer">
+  <span>Cedar Site Bai</span>
+  <span class="footer-links"><a href="publication.html?v=20260814-19">Publications</a><a href="index.html?v=20260814-18#news">News</a><a href="courses.html?v=20260814-18">Coursework</a><a href="honors.html?v=20260814-18">Honors &amp; Awards</a><a href="SiteBai_En.pdf">CV</a></span>
 </footer>
-<script type="text/javascript">
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-
-  var slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 10000); // Change image every 2 seconds
-  }
-  function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-</script>
+</main>
 </body>
 </html>
