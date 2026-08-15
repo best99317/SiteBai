@@ -213,6 +213,7 @@ p { margin: 0 0 15px; }
 }
 .visitor-globe .mmvst_outer {
   width: 200px !important;
+  left: -14px !important;
   margin: 0 auto !important;
 }
 .visitor-globe .mmvst_inner {
@@ -597,6 +598,14 @@ button.collapsible1:hover { color: #fff !important; background: var(--nav) !impo
   }
   .sitehead nav::-webkit-scrollbar { display: none; }
   .profile { grid-template-columns: 1fr; gap: 23px; }
+  .visitor-panel {
+    width: 100%;
+    justify-self: stretch;
+  }
+  .visitor-globe {
+    width: min(300px, 100%);
+    margin: 0 auto;
+  }
   .identity {
     display: grid;
     grid-template-columns: 130px minmax(0, 1fr);
