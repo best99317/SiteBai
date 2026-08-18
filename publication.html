@@ -7,10 +7,10 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Publications | Cedar Site Bai</title>
-  <link rel="stylesheet" href="css/site.css?v=20260815-3">
+  <link rel="stylesheet" href="css/site.css?v=20260817-11">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <script defer src="js/site.js?v=20260815-3"></script>
+  <script defer src="js/site.js?v=20260817-11"></script>
   <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]]}};</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -26,7 +26,7 @@
   <section class="publication-filter-panel" aria-labelledby="publication-filter-heading">
     <div class="publication-filter-summary">
       <h2 id="publication-filter-heading">Filter by topic</h2>
-      <span id="publication-filter-count" aria-live="polite">10 papers</span>
+      <span id="publication-filter-count" aria-live="polite">13 papers</span>
     </div>
     <div class="publication-filter-level">
       <span class="publication-filter-label">Area</span>
@@ -35,6 +35,7 @@
         <button type="button" class="publication-filter publication-area-filter tag-optimization" data-category="Optimization" aria-pressed="false">Optimization</button>
         <button type="button" class="publication-filter publication-area-filter tag-llm" data-category="LLM" aria-pressed="false">LLM</button>
         <button type="button" class="publication-filter publication-area-filter tag-reinforcement-learning" data-category="Reinforcement Learning" aria-pressed="false">Reinforcement Learning</button>
+        <button type="button" class="publication-filter publication-area-filter tag-recommendation" data-category="Recommendation" aria-pressed="false">Recommendation</button>
         <button type="button" class="publication-filter publication-area-filter tag-computer-vision" data-category="Computer Vision" aria-pressed="false">Computer Vision</button>
         <button type="button" class="publication-filter publication-area-filter tag-ai-safety" data-category="AI Safety" aria-pressed="false">AI Safety</button>
         <button type="button" class="publication-filter publication-area-filter tag-robotics" data-category="Robotics" aria-pressed="false">Robotics</button>
@@ -56,23 +57,64 @@
       <div class="publication-subfilters" data-category="LLM" role="group" aria-label="LLM topics" hidden>
         <button type="button" class="publication-filter publication-topic-filter tag-llm is-active" data-topic="all" aria-pressed="true">All LLM</button>
         <button type="button" class="publication-filter publication-topic-filter tag-llm" data-topic="LLM Pretraining" aria-pressed="false">Pretraining</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-llm-post-training" data-topic="LLM Post-training" aria-pressed="false">Post-training</button>
+        <button type="button" class="publication-filter publication-topic-filter tag-llm-uncertainty" data-topic="LLM Uncertainty Estimation" aria-pressed="false">Uncertainty Estimation</button>
       </div>
     </div>
   </section>
   <section class="complete-publications">
 
-      <div class="publication-entry" data-venue="ICML 2026" data-tags="Stochastic Optimization|LLM Pretraining">
-        <h5 class="w3-opacity-off"><b>[1] Decoupling Variance and Scale-Invariant Updates in Adaptive Gradient Descent for Unified Vector and Matrix Optimization</b></h5>
+      <div class="publication-entry" data-status="preprint" data-venue="PREPRINT" data-tags="AI Safety|Computer Vision|Composite Optimization|Non-Euclidean Optimization|LLM Post-training|Reinforcement Learning">
+        <h5 class="w3-opacity-off"><b>[1] Spectral Saliency for Machine Unlearning</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Preprint <b>(2026)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Amber Yijia Zheng, Raymond A. Yeh, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-ai-safety">AI Safety</span><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-composite">Composite Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span><span class="paper-tag tag-llm-post-training">LLM Post-training</span><span class="paper-tag tag-reinforcement-learning">Reinforcement Learning</span></div>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/2608.15548')"><b>PDF</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Machine unlearning (MU) aims to remove the influence of specific training data while preserving model utility. As the name suggests, MU can be viewed as the inverse of learning, using gradient-based updates to reduce the influence of a forget-set by counteracting the previously learned behavior. Recently, Muon, a gradient descent variant, has been introduced. Muon applies spectral magnitude normalization to encourage exploration of rare directions and demonstrates promising performance. Inspired by Muon, we adopt the spectral view for unlearning and propose Spectral Saliency Unlearning (SSU). SSU thresholds weak singular components and updates only those directions supported by a confident unlearning signal. We further provide theoretical justification for this thresholding approach from the perspective of the forgetting-retention trade-off. Experiments across image classifiers, diffusion models, and LLMs demonstrate SSU’s effectiveness.</p>
+        </div>
+        <br>
+      </div>
+
+      <div class="publication-entry" data-status="preprint" data-venue="PREPRINT" data-tags="Stochastic Optimization|Nonconvex Optimization|LLM Pretraining">
+        <h5 class="w3-opacity-off"><b>[2] Can Entry-Wise Clipping Give Spectral Control of Stochastic Gradients?</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Preprint <b>(2026)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Zitao Song, <b>Cedar Site Bai</b>, Zhe Zhang, Brian Bullins, David F. Gleich</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-nonconvex">Nonconvex Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/2605.27733')"><b>PDF</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Training instabilities such as loss spikes are frequently the result of stochastic gradient noise. Because of rare expressions in language training data, and multiple layer composition, the noise impact is heavy-tailed and survives mini-batch averaging. Existing remedies trade off structure against cost: vector-norm clipping ignores the matrix structure of weight updates, while spectral normalization (e.g., Muon [1]) respects it at additional cost. We show that this trade-off can be balanced. Real gradient noise appears to be similar to entry-wise heavy-tailed contamination, and a first-order perturbation analysis reveals a localization property of such noise, under which a simple entry-wise method achieves spectral control. Exploiting this, we derive a tractable surrogate for the Bayes-optimal entry-wise estimator under a Gaussian signal prior. We establish an \(O(\epsilon^{-4})\) convergence guarantee under Cauchy-contaminated noise. Empirically, we find that smooth shrinkage improves Adam on NanoGPT pretraining, saving \(\sim 7\%\) of training tokens. We further find that applying the entry-wise clipping before spectral normalization yields a \(\sim 2\%\) token saving on top of Muon.</p>
+        </div>
+        <br>
+      </div>
+
+      <div class="publication-entry" data-venue="CIKM 2026" data-tags="LLM Post-training|LLM Uncertainty Estimation|Reinforcement Learning|Recommendation">
+        <h5 class="w3-opacity-off"><b>[3] Ask to Be Sure: Informative Interactions for Confident Multi-Turn LLM Recommendation</b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 35th ACM International Conference on Information and Knowledge Management <b>(CIKM 2026)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Duanshun Li, Zhenyu Liao, Sheikh Sarwar, Huiyuan Chen, Yuan Chen, Changhe Yuan, Haiyang Zhang, Qilin Qi</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-llm-post-training">LLM Post-training</span><span class="paper-tag tag-llm-uncertainty">LLM Uncertainty Estimation</span><span class="paper-tag tag-reinforcement-learning">Reinforcement Learning</span><span class="paper-tag tag-recommendation">Recommendation</span></div>
+        <button type="button" class="w3-round link-button" onclick="window.open('https://arxiv.org/pdf/2608.15949')"><b>PDF</b></button>
+        <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
+        <div class="content">
+          <p>Recent advances in large language models (LLMs) have enabled their use as conversational recommender systems (CRS), demonstrating strong recommendation accuracy and natural dialogue. However, guiding multi-turn interactions to elicit user preferences effectively remains challenging. Existing approaches either use separate reinforcement learning agents with templated interactions or optimize for interactivity judged by another LLM, without measuring how much useful information is actually gained. We propose a new approach that quantifies the effectiveness of each interaction by the reduction in the assistant’s uncertainty, measured via entropy over recommendations. We apply this entropy reduction as a reward—without relying on ground-truth recommendations, which are often unavailable in real-world scenarios—to fine-tune the LLM, enabling strategic interaction generation. Empirical results with supervised fine-tuning (SFT) and direct preference optimization (DPO) on the INSPIRED and ReDial datasets show that our method improves both recommendation quality and conversational efficiency.</p>
+        </div>
+        <br>
+      </div>
+
+      <div class="publication-entry" data-venue="ICML 2026" data-tags="Stochastic Optimization|Nonconvex Optimization|LLM Pretraining">
+        <h5 class="w3-opacity-off"><b>[4] Decoupling Variance and Scale-Invariant Updates in Adaptive Gradient Descent for Unified Vector and Matrix Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 43rd International Conference on Machine Learning <b>(ICML 2026)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Zitao Song, <b>Cedar Site Bai</b>, Zhe Zhang, Brian Bullins, David F. Gleich</h6>
-        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-nonconvex">Nonconvex Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2602.06880')"><b>PDF</b></button>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://github.com/Tsedao/Decoupled-Variance-Adaptation')"><b>Code</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
-          <p>Adaptive methods like Adam have become the de facto standard for large-scale vector and Euclidean optimization due to their coordinate-wise adaptation with a second-order nature. More recently, matrix-based spectral optimizers like Muon show the power of treating weight matrices as matrices rather than long vectors. To address the difficulty of linking these approaches, we reformulate the AdaGrad update and decompose it into a variance adaptation term and a scale-invariant term. This decoupling produces DeVA (Decoupled Variance Adaptation), a framework that bridges vector-based variance adaptation and matrix spectral optimization, enabling a seamless transition from Adam to adaptive spectral descent. Experiments across language modeling and image classification show that DeVA consistently outperforms state-of-the-art methods such as Muon and SOAP, reducing token usage by around 6.6%. Theoretically, the variance adaptation term improves blockwise smoothness and facilitates faster convergence.</p>
+          <p>Adaptive methods like Adam have become the de facto standard for large-scale vector and Euclidean optimization due to their coordinate-wise adaptation with a second-order nature. More recently, matrix-based spectral optimizers like Muon (Jordan et al., 2024b) show the power of treating weight matrices as matrices rather than long vectors. Linking these is hard because many natural generalizations are not feasible to implement, and we also cannot simply move the Adam adaptation to the matrix spectrum. To address this, we reformulate the AdaGrad update and decompose it into a variance adaptation term and a scale-invariant term. This decoupling produces DeVA (Decoupled Variance Adaptation), a framework that bridges between vector-based variance adaptation and matrix spectral optimization, enabling a seamless transition from Adam to adaptive spectral descent. Extensive experiments across language modeling and image classification demonstrate that DeVA consistently outperforms state-of-the-art methods such as Muon and SOAP (Vyas et al., 2024), reducing token usage by around 6.6%. Theoretically, we show that the variance adaptation term effectively improves the blockwise smoothness, facilitating faster convergence. Our implementation is available at <a href="https://github.com/Tsedao/Decoupled-Variance-Adaptation">this URL</a>.</p>
         </div>
         <br>
       </div>
@@ -85,9 +127,9 @@
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[2] Model Immunization from a Condition Number Perspective </b></h5>
-        <h6 class="w3-text-black"><span class="highlight"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
-        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Amber Yijia Zheng*, Brian Bullins, Raymond A. Yeh</h6>
+        <h5 class="w3-opacity-off"><b>[5] Model Immunization from a Condition Number Perspective </b></h5>
+        <h6 class="w3-text-black"><span class="highlight"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1%]</span> The 42nd International Conference on Machine Learning <b>(ICML 2025)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Amber Yijia Zheng*, <b>Cedar Site Bai*</b>, Brian Bullins, Raymond A. Yeh</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-ai-safety">AI Safety</span><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-composite">Composite Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2505.23760')"><b>PDF</b></button>
@@ -95,6 +137,8 @@
           onclick="window.open('https://github.com/amberyzheng/model-immunization-cond-num')"><b>Code</b></button>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://www.amberyzheng.com/immu_cond_num/')"><b>Webpage</b></button>
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://www.bilibili.com/video/BV1r3YyzbEpM')"><b>Bilibili</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
           <p>Model immunization aims to pre-train models that are difficult to fine-tune on harmful tasks while retaining their utility 
@@ -114,31 +158,23 @@
         <br>
       </div>
 
-      <div class="publication-entry" data-venue="ICML 2025" data-tags="Stochastic Optimization|Nonconvex Optimization|Non-Euclidean Optimization|LLM Pretraining">
+      <div class="publication-entry" data-venue="ICML 2025" data-tags="Convex Optimization|Stochastic Optimization|Nonconvex Optimization|Non-Euclidean Optimization|LLM Pretraining">
         <!-- <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_pickandplace.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[3] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
-        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 42d International Conference on Machine Learning <b>(ICML 2025)</b></h6>
-        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai*</b>, Xinyu Luo*, Bolian Li*, Petros Drineas, Ruqi Zhang, Brian Bullins</h6>
-        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-nonconvex">Nonconvex Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
+        <h5 class="w3-opacity-off"><b>[6] Stacey: Promoting Stochastic Steepest Descent via Accelerated \(\ell_p\)-Smooth Nonconvex Optimization </b></h5>
+        <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 42nd International Conference on Machine Learning <b>(ICML 2025)</b></h6>
+        <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Xinyu Luo*, <b>Cedar Site Bai*</b>, Bolian Li*, Petros Drineas, Ruqi Zhang, Brian Bullins</h6>
+        <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-nonconvex">Nonconvex Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span><span class="paper-tag tag-llm">LLM Pretraining</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2506.06606')"><b>PDF</b></button>
-        <!-- <button type="button" class="w3-round link-button"
-          onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://github.com/xinyuluo8561/Stacey')"><b>Code</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
-          <p>While popular optimization methods such as SGD, AdamW, and Lion depend on steepest descent updates in either \(\ell_2\) or \(\ell_\infty\)
-            norms, there remains a critical gap in handling the non-Euclidean structure observed in modern deep networks training. 
-            In this work, we address this need by introducing a new accelerated steepest descent algorithm, called Stacey, which uses interpolated 
-            primal-dual iterate sequences to effectively navigate non-Euclidean smooth optimization tasks. In addition to providing novel theoretical guarantees 
-            for the foundations of our algorithm, we empirically compare our approach against these popular methods on tasks including image classification and 
-            language model (LLM) pretraining, demonstrating both faster convergence and higher final accuracy. We further evaluate different values of 
-            across various models and datasets, underscoring the importance and efficiency of non-Euclidean approaches over standard Euclidean methods. 
-            Code can be found at https://github.com/xinyuluo8561/Stacey.
-          </p>
+          <p>While popular optimization methods such as SGD, AdamW, and Lion depend on steepest descent updates in either \(\ell_2\) or \(\ell_\infty\) norms, there remains a critical gap in handling the non-Euclidean structure observed in modern deep networks training. In this work, we address this need by introducing a new accelerated \(\ell_p\) steepest descent algorithm, called Stacey, which uses interpolated primal-dual iterate sequences to effectively navigate non-Euclidean smooth optimization tasks. In addition to providing novel theoretical guarantees for the foundations of our algorithm, we empirically compare our approach against these popular methods on tasks including image classification and language model (LLM) pretraining, demonstrating both faster convergence and higher final accuracy. We further evaluate different values of \(p\) across various models and datasets, underscoring the importance and efficiency of non-Euclidean approaches over standard Euclidean methods. Code can be found at <a href="https://github.com/xinyuluo8561/Stacey">this URL</a>.</p>
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
@@ -154,14 +190,14 @@
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <!-- <img src="dccnn_image/FeDualEx.png" width="27%" style="float:right;"> -->
-        <h5 class="w3-opacity-off"><b>[4] Faster Acceleration for Steepest Descent</b></h5>
+        <h5 class="w3-opacity-off"><b>[7] Faster Acceleration for Steepest Descent</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 38th Annual Conference on Learning Theory <b>(COLT 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-non-euclidean">Non-Euclidean Optimization</span></div>
         <button type="button" class="w3-round link-button"
           onclick="window.open('https://arxiv.org/pdf/2409.19200')"><b>PDF</b></button>
-        <!-- <button type="button" class="w3-round link-button"
-          onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
+        <button type="button" class="w3-round link-button"
+          onclick="window.open('https://youtu.be/5j_gejy9n3o?list=PLCHBdlWR7RYx9VNiWhgSboOAFfiYubw8u&amp;t=3611')"><b>YouTube</b></button>
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
           <p>Recent advances (Sherman, 2017; Sidford and Tian, 2018; Cohen et al., 2021) have overcome the fundamental barrier of 
@@ -188,7 +224,7 @@
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/lowerbound.png" width="27%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[5] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
+        <h5 class="w3-opacity-off"><b>[8] Tight Lower Bounds under Asymmetric High-Order Hölder Smoothness and Uniform Convexity</b></h5>
         <h6 class="w3-text-black"><span class="highlight"><i class="fa fa-flag fa-fw w3-margin-right"></i>[Oral, Top 1.8%]</span> The 13th International Conference on Learning Representations <b>(ICLR 2025)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Cedar Site Bai</b>, Brian Bullins</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-high-order">High-order Optimization</span></div>
@@ -200,16 +236,16 @@
           onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
-          <p>In this paper, we provide tight lower bounds for the oracle complexity of minimizing high-order Hölder smooth and uniformly convex functions. 
-            Specifically, for a function whose \(p^{th}\)-order derivatives are Hölder continuous with degree \(\nu\) and parameter \(H\), 
-            and that is uniformly convex with degree \(q\) and parameter \(\sigma\), we focus on two asymmetric cases: (1) \(q > p + \nu\), and (2) \(q < p+\nu\). 
-            Given up to \(p^{th}\)-order oracle access, we establish worst-case oracle complexities of 
+          <p>In this paper, we provide tight lower bounds for the oracle complexity of minimizing high-order Hölder smooth and uniformly convex functions.
+            Specifically, for a function whose \(p^{th}\)-order derivatives are Hölder continuous with degree \(\nu\) and parameter \(H\),
+            and that is uniformly convex with degree \(q\) and parameter \(\sigma\), we focus on two asymmetric cases: (1) \(q > p + \nu\), and (2) \(q < p+\nu\).
+            Given up to \(p^{th}\)-order oracle access, we establish worst-case oracle complexities of
             \(\Omega\left( \left( \frac{H}{\sigma}\right)^\frac{2}{3(p+\nu)-2}\left( \frac{\sigma}{\epsilon}\right)^\frac{2(q-p-\nu)}{q(3(p+\nu)-2)}\right)\)
-            in the first case and \(\Omega\left(\left(\frac{H}{\sigma}\right)^\frac{2}{3(p+\nu)-2}+ \log^2\left(\frac{\sigma^{p+\nu}}{H^q}\right)^\frac{1}{p+\nu-q}\right)\)
-            in the second case for reaching an \(\epsilon\)-approximate solution, in terms of the optimality gap. 
-            Our analysis generalizes previous lower bounds for functions under first- and second-order smoothness as well as those for uniformly convex functions, 
-            and furthermore our results match the corresponding upper bounds in the general setting.
-          </p>
+            in the first case with an \(\ell_\infty\)-ball-truncated-Gaussian smoothed hard function and
+            \(\Omega\left(\left(\frac{H}{\sigma}\right)^\frac{2}{3(p+\nu)-2}+ \log\log\left(\left(\frac{\sigma^{p+\nu}}{H^q}\right)^\frac{1}{p+\nu-q}\frac{1}{\epsilon}\right)\right)\)
+            in the second case, for reaching an \(\epsilon\)-approximate solution in terms of the optimality gap.
+            Our analysis generalizes previous lower bounds for functions under first- and second-order smoothness as well as those for uniformly convex functions,
+            and furthermore our results match the corresponding upper bounds in this general setting.</p>
         </div>
         <button type="button" class="collapsible w3-round link-button"><b>Youtube</b></button>
         <div class="content">
@@ -227,7 +263,7 @@
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/FeDualEx.png" width="25%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[6] Local Composite Saddle Point Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[9] Local Composite Saddle Point Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 12th International Conference on Learning Representations <b>(ICLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Brian Bullins</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span><span class="paper-tag tag-stochastic">Stochastic Optimization</span><span class="paper-tag tag-distributed">Distributed Optimization</span><span class="paper-tag tag-saddle-point">Saddle Point Optimization</span><span class="paper-tag tag-composite">Composite Optimization</span><span class="paper-tag tag-ai-safety">AI Safety</span></div>
@@ -274,7 +310,7 @@
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video> -->
         <img src="dccnn_image/dccnn.png" width="35%" style="float:right;">
-        <h5 class="w3-opacity-off"><b>[7] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
+        <h5 class="w3-opacity-off"><b>[10] On the Dual Problem of Convexified Convolutional Neural Networks</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>Transactions on Machine Learning Research <b>(TMLR 2024)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Site Bai</b>, Chuyang Ke, Jean Honorio</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-convex">Convex Optimization</span></div>
@@ -286,16 +322,7 @@
           onclick="window.open('https://github.com/HTRPOCODES/HTRPO-v2')"><b>Code</b></button> -->
         <button type="button" class="collapsible w3-round link-button"><b>Abstract</b></button>
         <div class="content">
-          <p>We propose the framework of dual convexified convolutional neural networks (DCCNNs). In this framework, we first
-          introduce a primal learning problem motivated from convexified convolutional neural networks (CCNNs), and then construct
-          the dual convex training program through careful analysis of the Karush-Kuhn-Tucker (KKT) conditions and Fenchel
-          conjugates. Our approach reduces the memory overhead of constructing a large kernel matrix and eliminates the ambiguity
-          of factorizing the matrix. Due to the low-rank structure in CCNNs and the related subdifferential of nuclear norms,
-          there is no closed-form expression to recover the primal solution from the dual solution. To overcome this, we propose a
-          highly novel weight recovery algorithm, which takes the dual solution and the kernel information as the input, and
-          recovers the linear and convolutional weights of a CCNN. Furthermore, our recovery algorithm exploits the low-rank
-          structure and imposes a small number of filters indirectly, which reduces the parameter size. As a result, DCCNNs
-          inherit all the statistical benefits of CCNNs, while enjoying a more formal and efficient workflow.</p>
+          <p>We study the dual problem of convexified convolutional neural networks (DCCNNs). First, we introduce a primal learning problem motivated by convexified convolutional neural networks (CCNNs), and then construct the dual convex training program through careful analysis of the Karush-Kuhn-Tucker (KKT) conditions and Fenchel conjugates. Our approach reduces the computational overhead of constructing a large kernel matrix and more importantly, eliminates the ambiguity of factorizing the matrix. Due to the low-rank structure in CCNNs and the related subdifferential of nuclear norms, there is no closed-form expression to recover the primal solution from the dual solution. To overcome this, we propose a highly novel weight recovery algorithm, which takes the dual solution and the kernel information as the input, and recovers the linear weight and the output of convolutional layer, instead of weight parameter. Furthermore, our recovery algorithm exploits the low-rank structure and imposes a small number of filters indirectly, which reduces the parameter size. As a result, DCCNNs inherit all the statistical benefits of CCNNs, while enjoying a more formal and efficient workflow.</p>
         </div>
         <!-- <button type="button" class="collapsible w3-round link-button"><b>Video</b></button>
         <div class="content">
@@ -309,7 +336,7 @@
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
         <video controls="controls" loop="loop" preload="metadata" width="15%" src="HTRPO_image/fetch_slide.mp4"
           type="video/mp4" style="float:right;margin:5px">Your browser does not support the video tag.</video>
-        <h5 class="w3-opacity-off"><b>[8] Hindsight Trust Region Policy Optimization</b></h5>
+        <h5 class="w3-opacity-off"><b>[11] Hindsight Trust Region Policy Optimization</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>The 30th International Joint Conference on Artificial Intelligence <b>(IJCAI 2021)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, <b>Site Bai</b>, Xuguang
           Lan, David Hsu, Nanning Zheng</h6>
@@ -342,7 +369,7 @@
       <div class="publication-entry" data-venue="IROS 2019" data-tags="Computer Vision|Robotics">
         <img src="Robot_image/roi.jpg" width="9%" style="float:right;">
         <img src="Robot_image/cover.jpg" width="10%" style="float:right; margin-right: 10px">
-        <h5 class="w3-opacity-off"><b>[9] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[12] ROI-based Robotic Grasp Detection for Object Overlapping Scenes</b></h5>
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Xinwen Zhou, Zhiqiang Tian, Nanning Zheng</h6>
         <div class="paper-tags" aria-label="Research topics"><span class="paper-tag tag-computer-vision">Computer Vision</span><span class="paper-tag tag-robotics">Robotics</span></div>
@@ -361,7 +388,7 @@
       </div>
       <br>
       <div class="publication-entry" data-venue="IROS 2019" data-tags="Computer Vision|Robotics">
-        <h5 class="w3-opacity-off"><b>[10] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
+        <h5 class="w3-opacity-off"><b>[13] A Multi-task Convolutional Neural Network for Autonomous Robotic Grasping in Object Stacking Scenes</b></h5>
         <img src="Robot_image/relationship.JPG" width="20%" style="float:right; margin-top: 0.01%">
         <h6 class="w3-text-black"><i class="fa fa-flag fa-fw w3-margin-right"></i>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems <b>(IROS 2019)</b></h6>
         <h6 class="w3-text-black"><i class="fa fa-users fa-fw w3-margin-right"></i>Hanbo Zhang, Xuguang Lan, <b>Site Bai</b>, Lipeng Wan, Chenjie Yang, Nanning Zheng</h6>

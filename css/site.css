@@ -455,6 +455,9 @@ button.collapsible1:hover { color: #fff !important; background: var(--nav) !impo
 .tag-saddle-point { --tag-color: #805217; --tag-bg: #fbf5eb; --tag-border: #e0c9a9; }
 .tag-ai-safety { --tag-color: #9a1620; --tag-bg: #fcf0f1; --tag-border: #e7b5b9; }
 .tag-llm { --tag-color: #126b52; --tag-bg: #edf8f4; --tag-border: #afd7ca; }
+.tag-llm-post-training { --tag-color: #0d725f; --tag-bg: #edf8f5; --tag-border: #acd8cd; }
+.tag-llm-uncertainty { --tag-color: #4f6d2d; --tag-bg: #f2f7ed; --tag-border: #c7d8b7; }
+.tag-recommendation { --tag-color: #8a4b18; --tag-bg: #fbf3eb; --tag-border: #e3c4aa; }
 .tag-reinforcement-learning { --tag-color: #2f6f3e; --tag-bg: #eff7f1; --tag-border: #bad5c0; }
 .tag-computer-vision { --tag-color: #97450f; --tag-bg: #fcf3ec; --tag-border: #e6c1a7; }
 .tag-robotics { --tag-color: #5b5f72; --tag-bg: #f2f3f6; --tag-border: #c9cbd3; }
@@ -486,6 +489,10 @@ button.collapsible1:hover { color: #fff !important; background: var(--nav) !impo
   letter-spacing: .025em;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+.publication-entry[data-status="preprint"]::before {
+  background: #d9ebf8;
+  color: #164980;
 }
 .publication-entry > h5:first-of-type {
   margin: 0 0 5px !important;
