@@ -191,34 +191,64 @@ p { margin: 0 0 15px; }
 
 .homepage-lower-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px;
+  grid-template-columns: minmax(0, 1fr) 267px;
   gap: 32px;
   align-items: start;
 }
 .homepage-lower-grid > * { min-width: 0; }
-.visitor-globe {
-  min-height: 220px;
+.visitor-map {
+  min-height: 145px;
   padding: 10px 0 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden;
 }
-.visitor-globe #mmvst_a {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  min-height: 210px;
+.visitor-map #mapmyvisitors-widget {
+  max-width: 100%;
+  margin: 0 auto !important;
   text-decoration: none;
 }
-.visitor-globe .mmvst_outer {
-  width: 200px !important;
-  left: -14px !important;
-  margin: 0 auto !important;
+.visitor-map .mapmyvisitors-map-container,
+.visitor-map .mapmyvisitors-map {
+  max-width: 100%;
 }
-.visitor-globe .mmvst_inner {
-  left: auto !important;
-  margin: 0 auto !important;
+
+@media (min-width: 841px) {
+  .homepage-lower-grid { row-gap: 13px; }
+  .homepage-lower-grid #publications { display: contents; }
+  .homepage-lower-grid #publications > h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 2px;
+  }
+  .homepage-lower-grid #publications .publication-list { display: contents; }
+  .homepage-lower-grid #publications .pub:nth-child(1) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .homepage-lower-grid #publications .pub:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .homepage-lower-grid #publications .pub:nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+  .homepage-lower-grid #publications > p {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    margin: 3px 0 0;
+  }
+  .homepage-lower-grid .visitor-panel {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: stretch;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  .homepage-lower-grid .visitor-panel > h2 { margin-bottom: 2px; }
+  .homepage-lower-grid .visitor-map { align-self: center; }
 }
 
 .publication-list { display: flex; flex-direction: column; gap: 13px; }
@@ -609,7 +639,7 @@ button.collapsible1:hover { color: #fff !important; background: var(--nav) !impo
     width: 100%;
     justify-self: stretch;
   }
-  .visitor-globe {
+  .visitor-map {
     width: min(300px, 100%);
     margin: 0 auto;
   }
